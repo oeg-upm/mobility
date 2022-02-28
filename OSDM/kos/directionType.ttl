@@ -1,0 +1,38 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/osdm/distribution#direction-type> a skos:ConceptScheme;
+  dct:description "direction type";
+  dct:title "direction";
+  skos:hasTopConcept <https://w3id.org/osdm/distribution#direction-type/inward>, <https://w3id.org/osdm/distribution#direction-type/outward>,
+    <https://w3id.org/osdm/distribution#direction-type/single>, <https://w3id.org/osdm/distribution#direction-type/unspecified> .
+
+<https://w3id.org/osdm/distribution#direction-type/single> a skos:Concept;
+  skos:definition "single";
+  skos:inScheme <https://w3id.org/osdm/distribution#direction-type>;
+  skos:notation "single";
+  skos:prefLabel "SINGLE";
+  skos:topConceptOf <https://w3id.org/osdm/distribution#direction-type> .
+
+<https://w3id.org/osdm/distribution#direction-type/outward> a skos:Concept;
+  skos:definition "outward";
+  skos:inScheme <https://w3id.org/osdm/distribution#direction-type>;
+  skos:notation "outward";
+  skos:prefLabel "OUTWARD";
+  skos:topConceptOf <https://w3id.org/osdm/distribution#direction-type> .
+
+<https://w3id.org/osdm/distribution#direction-type/inward> a skos:Concept;
+  skos:definition "inward";
+  skos:inScheme <https://w3id.org/osdm/distribution#direction-type>;
+  skos:notation "inward";
+  skos:prefLabel "INWARD";
+  skos:topConceptOf <https://w3id.org/osdm/distribution#direction-type> .
+
+<https://w3id.org/osdm/distribution#direction-type/unspecified> a skos:Concept;
+  skos:definition "unspecified";
+  skos:inScheme <https://w3id.org/osdm/distribution#direction-type>;
+  skos:notation "unspecified";
+  skos:prefLabel "UNSPECIFIED";
+  skos:topConceptOf <https://w3id.org/osdm/distribution#direction-type> .
