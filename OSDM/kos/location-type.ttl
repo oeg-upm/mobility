@@ -3,44 +3,44 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/osdm/distribution/location> a skos:ConceptScheme;
+<https://w3id.org/osdm/core/location> a skos:ConceptScheme;
   dct:description "Locations are resources representing a specific location in a trip:";
   dct:title "location";
-  skos:hasTopConcept <https://w3id.org/osdm/distribution/Location/address>, <https://w3id.org/osdm/distribution/Location/connectionPoint>,
-    <https://w3id.org/osdm/distribution/Location/geoCoordibnate>, <https://w3id.org/osdm/distribution/Location/poi>,
-    <https://w3id.org/osdm/distribution/Location/station> .
+  skos:hasTopConcept <https://w3id.org/osdm/core/Location/address>, <https://w3id.org/osdm/core/Location/connectionPoint>,
+    <https://w3id.org/osdm/core/Location/geoCoordibnate>, <https://w3id.org/osdm/core/Location/poi>,
+    <https://w3id.org/osdm/core/Location/station> .
 
-<https://w3id.org/osdm/distribution/Location/address> a skos:Concept;
+<https://w3id.org/osdm/core/Location/address> a skos:Concept;
   skos:definition "Any street address can be represented here.";
-  skos:inScheme <https://w3id.org/osdm/distribution/location>;
+  skos:inScheme <https://w3id.org/osdm/core/location>;
   skos:notation "address";
   skos:prefLabel "address";
-  skos:topConceptOf <https://w3id.org/osdm/distribution/location> .
+  skos:topConceptOf <https://w3id.org/osdm/core/location> .
 
-<https://w3id.org/osdm/distribution/Location/station> a skos:Concept;
+<https://w3id.org/osdm/core/Location/station> a skos:Concept;
   skos:definition "represent a train station. It is obviously the most relevant type for OSDM. Stations can be indicated as codes from different code sets.";
-  skos:inScheme <https://w3id.org/osdm/distribution/location>;
+  skos:inScheme <https://w3id.org/osdm/core/location>;
   skos:notation "station";
   skos:prefLabel "station";
-  skos:topConceptOf <https://w3id.org/osdm/distribution/location> .
+  skos:topConceptOf <https://w3id.org/osdm/core/location> .
 
-<https://w3id.org/osdm/distribution/Location/poi> a skos:Concept;
+<https://w3id.org/osdm/core/Location/poi> a skos:Concept;
   skos:definition "Represent a specific point of interest";
-  skos:inScheme <https://w3id.org/osdm/distribution/location>;
+  skos:inScheme <https://w3id.org/osdm/core/location>;
   skos:notation "poi";
   skos:prefLabel "POI";
-  skos:topConceptOf <https://w3id.org/osdm/distribution/location> .
+  skos:topConceptOf <https://w3id.org/osdm/core/location> .
 
-<https://w3id.org/osdm/distribution/Location/geoCoordibnate> a skos:Concept;
+<https://w3id.org/osdm/core/Location/geoCoordibnate> a skos:Concept;
   skos:definition "Providing any location on the globe using its geographical coordinates.";
-  skos:inScheme <https://w3id.org/osdm/distribution/location>;
+  skos:inScheme <https://w3id.org/osdm/core/location>;
   skos:notation "geoCoordibnate";
   skos:prefLabel "GeoCoordibnate";
-  skos:topConceptOf <https://w3id.org/osdm/distribution/location> .
+  skos:topConceptOf <https://w3id.org/osdm/core/location> .
 
-<https://w3id.org/osdm/distribution/Location/connectionPoint> a skos:Concept;
+<https://w3id.org/osdm/core/Location/connectionPoint> a skos:Concept;
   skos:definition "Allows to model virtual border points by defining stations within the connection point lies";
-  skos:inScheme <https://w3id.org/osdm/distribution/location>;
+  skos:inScheme <https://w3id.org/osdm/core/location>;
   skos:notation "connectionPoint";
   skos:prefLabel "ConnectionPoint";
-  skos:topConceptOf <https://w3id.org/osdm/distribution/location> .
+  skos:topConceptOf <https://w3id.org/osdm/core/location> .

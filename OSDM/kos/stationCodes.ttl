@@ -3,36 +3,36 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/osdm/distribution#station-codes> a skos:ConceptScheme;
+<https://w3id.org/osdm/core#station-codes> a skos:ConceptScheme;
   dct:description "Code list used for the station codes";
   dct:title "Station Codes";
-  skos:hasTopConcept <https://w3id.org/osdm/distribution#station-codes/era>, <https://w3id.org/osdm/distribution#station-codes/eva>,
-    <https://w3id.org/osdm/distribution#station-codes/uic>, <https://w3id.org/osdm/distribution#station-codes/uic-r> .
+  skos:hasTopConcept <https://w3id.org/osdm/core#station-codes/era>, <https://w3id.org/osdm/core#station-codes/eva>,
+    <https://w3id.org/osdm/core#station-codes/uic>, <https://w3id.org/osdm/core#station-codes/uic-r> .
 
-<https://w3id.org/osdm/distribution#station-codes/uic> a skos:Concept;
+<https://w3id.org/osdm/core#station-codes/uic> a skos:Concept;
   skos:definition "UIC codes as used by merits (UIC country code + local code)";
-  skos:inScheme <https://w3id.org/osdm/distribution#station-codes>;
+  skos:inScheme <https://w3id.org/osdm/core#station-codes>;
   skos:notation "UIC";
   skos:prefLabel "UIC";
-  skos:topConceptOf <https://w3id.org/osdm/distribution#station-codes> .
+  skos:topConceptOf <https://w3id.org/osdm/core#station-codes> .
 
-<https://w3id.org/osdm/distribution#station-codes/uic-r> a skos:Concept;
+<https://w3id.org/osdm/core#station-codes/uic-r> a skos:Concept;
   skos:definition "UIC codes for reservation (UIC country code + local code reservation)";
-  skos:inScheme <https://w3id.org/osdm/distribution#station-codes>;
+  skos:inScheme <https://w3id.org/osdm/core#station-codes>;
   skos:notation "UIC-R";
   skos:prefLabel "UIC-R";
-  skos:topConceptOf <https://w3id.org/osdm/distribution#station-codes> .
+  skos:topConceptOf <https://w3id.org/osdm/core#station-codes> .
 
-<https://w3id.org/osdm/distribution#station-codes/era> a skos:Concept;
+<https://w3id.org/osdm/core#station-codes/era> a skos:Concept;
   skos:definition "future ERA station code";
-  skos:inScheme <https://w3id.org/osdm/distribution#station-codes>;
+  skos:inScheme <https://w3id.org/osdm/core#station-codes>;
   skos:notation "ERA";
   skos:prefLabel "ERA";
-  skos:topConceptOf <https://w3id.org/osdm/distribution#station-codes> .
+  skos:topConceptOf <https://w3id.org/osdm/core#station-codes> .
 
-<https://w3id.org/osdm/distribution#station-codes/eva> a skos:Concept;
+<https://w3id.org/osdm/core#station-codes/eva> a skos:Concept;
   skos:definition "station codes as used by HAFAS";
-  skos:inScheme <https://w3id.org/osdm/distribution#station-codes>;
+  skos:inScheme <https://w3id.org/osdm/core#station-codes>;
   skos:notation "EVA";
   skos:prefLabel "EVA";
-  skos:topConceptOf <https://w3id.org/osdm/distribution#station-codes> .
+  skos:topConceptOf <https://w3id.org/osdm/core#station-codes> .

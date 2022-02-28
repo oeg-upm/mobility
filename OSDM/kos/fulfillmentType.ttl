@@ -3,37 +3,37 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/osdm/distribution#fulfillment-type> a skos:ConceptScheme;
+<https://w3id.org/osdm/core#fulfillment-type> a skos:ConceptScheme;
   dct:description "fulfillment type";
   dct:title "Fulfillment";
-  skos:hasTopConcept <https://w3id.org/osdm/distribution#fulfillment-type/cit_paper>,
-    <https://w3id.org/osdm/distribution#fulfillment-type/eticket>, <https://w3id.org/osdm/distribution#fulfillment-type/pass_chip>,
-    <https://w3id.org/osdm/distribution#fulfillment-type/pass_reference> .
+  skos:hasTopConcept <https://w3id.org/osdm/core#fulfillment-type/cit_paper>,
+    <https://w3id.org/osdm/core#fulfillment-type/eticket>, <https://w3id.org/osdm/core#fulfillment-type/pass_chip>,
+    <https://w3id.org/osdm/core#fulfillment-type/pass_reference> .
 
-<https://w3id.org/osdm/distribution#fulfillment-type/eticket> a skos:Concept;
+<https://w3id.org/osdm/core#fulfillment-type/eticket> a skos:Concept;
   skos:definition "Electronic ticket";
-  skos:inScheme <https://w3id.org/osdm/distribution#fulfillment-type>;
+  skos:inScheme <https://w3id.org/osdm/core#fulfillment-type>;
   skos:notation "ETICKET";
   skos:prefLabel "ETICKET";
-  skos:topConceptOf <https://w3id.org/osdm/distribution#fulfillment-type> .
+  skos:topConceptOf <https://w3id.org/osdm/core#fulfillment-type> .
 
-<https://w3id.org/osdm/distribution#fulfillment-type/cit_paper> a skos:Concept;
+<https://w3id.org/osdm/core#fulfillment-type/cit_paper> a skos:Concept;
   skos:definition "Value paper";
-  skos:inScheme <https://w3id.org/osdm/distribution#fulfillment-type>;
+  skos:inScheme <https://w3id.org/osdm/core#fulfillment-type>;
   skos:notation "CIT_PAPER";
   skos:prefLabel "CIT_PAPER";
-  skos:topConceptOf <https://w3id.org/osdm/distribution#fulfillment-type> .
+  skos:topConceptOf <https://w3id.org/osdm/core#fulfillment-type> .
 
-<https://w3id.org/osdm/distribution#fulfillment-type/pass_chip> a skos:Concept;
+<https://w3id.org/osdm/core#fulfillment-type/pass_chip> a skos:Concept;
   skos:definition "Fulfillment loaded on pass";
-  skos:inScheme <https://w3id.org/osdm/distribution#fulfillment-type>;
+  skos:inScheme <https://w3id.org/osdm/core#fulfillment-type>;
   skos:notation "PASS_CHIP";
   skos:prefLabel "PASS_CHIP";
-  skos:topConceptOf <https://w3id.org/osdm/distribution#fulfillment-type> .
+  skos:topConceptOf <https://w3id.org/osdm/core#fulfillment-type> .
 
-<https://w3id.org/osdm/distribution#fulfillment-type/pass_reference> a skos:Concept;
+<https://w3id.org/osdm/core#fulfillment-type/pass_reference> a skos:Concept;
   skos:definition "Reference to booking loaded on pass";
-  skos:inScheme <https://w3id.org/osdm/distribution#fulfillment-type>;
+  skos:inScheme <https://w3id.org/osdm/core#fulfillment-type>;
   skos:notation "PASS_REFERENCE";
   skos:prefLabel "PASS_REFERENCE";
-  skos:topConceptOf <https://w3id.org/osdm/distribution#fulfillment-type> .
+  skos:topConceptOf <https://w3id.org/osdm/core#fulfillment-type> .
