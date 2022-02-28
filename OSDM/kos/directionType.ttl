@@ -3,36 +3,36 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<w3id.org/mobility/osdm/kos/direction-type> a skos:ConceptScheme;
+<http://w3id.org/mobility/osdm/kos/direction-type> a skos:ConceptScheme;
   dct:description "direction type";
   dct:title "direction";
-  skos:hasTopConcept <w3id.org/mobility/osdm/kos/direction-type/inward>, <w3id.org/mobility/osdm/kos/direction-type/outward>,
-    <w3id.org/mobility/osdm/kos/direction-type/single>, <w3id.org/mobility/osdm/kos/direction-type/unspecified> .
+  skos:hasTopConcept <http://w3id.org/mobility/osdm/kos/direction-type/inward>, <http://w3id.org/mobility/osdm/kos/direction-type/outward>,
+    <http://w3id.org/mobility/osdm/kos/direction-type/single>, <http://w3id.org/mobility/osdm/kos/direction-type/unspecified> .
 
-<w3id.org/mobility/osdm/kos/direction-type/single> a skos:Concept;
+<http://w3id.org/mobility/osdm/kos/direction-type/single> a skos:Concept;
   skos:definition "single";
-  skos:inScheme <w3id.org/mobility/osdm/kos/direction-type>;
+  skos:inScheme <http://w3id.org/mobility/osdm/kos/direction-type>;
   skos:notation "single";
   skos:prefLabel "SINGLE";
-  skos:topConceptOf <w3id.org/mobility/osdm/kos/direction-type> .
+  skos:topConceptOf <http://w3id.org/mobility/osdm/kos/direction-type> .
 
-<w3id.org/mobility/osdm/kos/direction-type/outward> a skos:Concept;
+<http://w3id.org/mobility/osdm/kos/direction-type/outward> a skos:Concept;
   skos:definition "outward";
-  skos:inScheme <w3id.org/mobility/osdm/kos/direction-type>;
+  skos:inScheme <http://w3id.org/mobility/osdm/kos/direction-type>;
   skos:notation "outward";
   skos:prefLabel "OUTWARD";
-  skos:topConceptOf <w3id.org/mobility/osdm/kos/direction-type> .
+  skos:topConceptOf <http://w3id.org/mobility/osdm/kos/direction-type> .
 
-<w3id.org/mobility/osdm/kos/direction-type/inward> a skos:Concept;
+<http://w3id.org/mobility/osdm/kos/direction-type/inward> a skos:Concept;
   skos:definition "inward";
-  skos:inScheme <w3id.org/mobility/osdm/kos/direction-type>;
+  skos:inScheme <http://w3id.org/mobility/osdm/kos/direction-type>;
   skos:notation "inward";
   skos:prefLabel "INWARD";
-  skos:topConceptOf <w3id.org/mobility/osdm/kos/direction-type> .
+  skos:topConceptOf <http://w3id.org/mobility/osdm/kos/direction-type> .
 
-<w3id.org/mobility/osdm/kos/direction-type/unspecified> a skos:Concept;
+<http://w3id.org/mobility/osdm/kos/direction-type/unspecified> a skos:Concept;
   skos:definition "unspecified";
-  skos:inScheme <w3id.org/mobility/osdm/kos/direction-type>;
+  skos:inScheme <http://w3id.org/mobility/osdm/kos/direction-type>;
   skos:notation "unspecified";
   skos:prefLabel "UNSPECIFIED";
-  skos:topConceptOf <w3id.org/mobility/osdm/kos/direction-type> .
+  skos:topConceptOf <http://w3id.org/mobility/osdm/kos/direction-type> .

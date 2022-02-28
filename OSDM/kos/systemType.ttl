@@ -3,21 +3,21 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<w3id.org/mobility/osdm/kos/system-type> a skos:ConceptScheme;
+<http://w3id.org/mobility/osdm/kos/system-type> a skos:ConceptScheme;
   dct:description "Geo coordinate system indication";
   dct:title "System Type";
-  skos:hasTopConcept <w3id.org/mobility/osdm/kos/system-type/GRS80>, <w3id.org/mobility/osdm/kos/system-type/WGS84> .
+  skos:hasTopConcept <http://w3id.org/mobility/osdm/kos/system-type/GRS80>, <http://w3id.org/mobility/osdm/kos/system-type/WGS84> .
 
-<w3id.org/mobility/osdm/kos/system-type/WGS84> a skos:Concept;
+<http://w3id.org/mobility/osdm/kos/system-type/WGS84> a skos:Concept;
   skos:definition "WGS 84 standard system";
-  skos:inScheme <w3id.org/mobility/osdm/kos/system-type>;
+  skos:inScheme <http://w3id.org/mobility/osdm/kos/system-type>;
   skos:notation "WGS84";
   skos:prefLabel "WGS84";
-  skos:topConceptOf <w3id.org/mobility/osdm/kos/system-type> .
+  skos:topConceptOf <http://w3id.org/mobility/osdm/kos/system-type> .
 
-<w3id.org/mobility/osdm/kos/system-type/GRS80> a skos:Concept;
+<http://w3id.org/mobility/osdm/kos/system-type/GRS80> a skos:Concept;
   skos:definition "(outdated) GRS 80 coordinate system";
-  skos:inScheme <w3id.org/mobility/osdm/kos/system-type>;
+  skos:inScheme <http://w3id.org/mobility/osdm/kos/system-type>;
   skos:notation "GRS80";
   skos:prefLabel "GRS80";
-  skos:topConceptOf <w3id.org/mobility/osdm/kos/system-type> .
+  skos:topConceptOf <http://w3id.org/mobility/osdm/kos/system-type> .
