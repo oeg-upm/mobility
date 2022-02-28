@@ -1,0 +1,83 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/mobility/osdm/kos/transport-mode-type> a skos:ConceptScheme;
+  dct:description "The list of allowed transport types";
+  dct:title "Transport mode";
+  skos:hasTopConcept <https://w3id.org/mobility/osdm/kos/transport-mode-type/air>, <https://w3id.org/mobility/osdm/kos/transport-mode-type/bus>,
+    <https://w3id.org/mobility/osdm/kos/transport-mode-type/cableway>, <https://w3id.org/mobility/osdm/kos/transport-mode-type/coach>,
+    <https://w3id.org/mobility/osdm/kos/transport-mode-type/funicular>, <https://w3id.org/mobility/osdm/kos/transport-mode-type/metro>,
+    <https://w3id.org/mobility/osdm/kos/transport-mode-type/rail>, <https://w3id.org/mobility/osdm/kos/transport-mode-type/taxi>,
+    <https://w3id.org/mobility/osdm/kos/transport-mode-type/tram>, <https://w3id.org/mobility/osdm/kos/transport-mode-type/water> .
+
+<https://w3id.org/mobility/osdm/kos/transport-mode-type/air> a skos:Concept;
+  skos:definition "aeroplanes and helicopters.";
+  skos:inScheme <https://w3id.org/mobility/osdm/kos/transport-mode-type>;
+  skos:notation "air";
+  skos:prefLabel "air";
+  skos:topConceptOf <https://w3id.org/mobility/osdm/kos/transport-mode-type> .
+
+<https://w3id.org/mobility/osdm/kos/transport-mode-type/bus> a skos:Concept;
+  skos:definition "street buses.";
+  skos:inScheme <https://w3id.org/mobility/osdm/kos/transport-mode-type>;
+  skos:notation "bus";
+  skos:prefLabel "bus";
+  skos:topConceptOf <https://w3id.org/mobility/osdm/kos/transport-mode-type> .
+
+<https://w3id.org/mobility/osdm/kos/transport-mode-type/cableway> a skos:Concept;
+  skos:definition "gondolas or any form of transport suspended by wire.";
+  skos:inScheme <https://w3id.org/mobility/osdm/kos/transport-mode-type>;
+  skos:notation "cableway";
+  skos:prefLabel "cableway";
+  skos:topConceptOf <https://w3id.org/mobility/osdm/kos/transport-mode-type> .
+
+<https://w3id.org/mobility/osdm/kos/transport-mode-type/coach> a skos:Concept;
+  skos:definition "long distance bus services, usually including separate luggage spaces and a toilet.";
+  skos:inScheme <https://w3id.org/mobility/osdm/kos/transport-mode-type>;
+  skos:notation "coach";
+  skos:prefLabel "coach";
+  skos:topConceptOf <https://w3id.org/mobility/osdm/kos/transport-mode-type> .
+
+<https://w3id.org/mobility/osdm/kos/transport-mode-type/funicular> a skos:Concept;
+  skos:definition "Cable drawn service on a railway track, often traversing extreme incline routes (mountainsides).";
+  skos:inScheme <https://w3id.org/mobility/osdm/kos/transport-mode-type>;
+  skos:notation "funicular";
+  skos:prefLabel "funicular";
+  skos:topConceptOf <https://w3id.org/mobility/osdm/kos/transport-mode-type> .
+
+<https://w3id.org/mobility/osdm/kos/transport-mode-type/metro> a skos:Concept;
+  skos:definition "underground rail based urban transport, e.g. the Oslo subway in Norway.";
+  skos:inScheme <https://w3id.org/mobility/osdm/kos/transport-mode-type>;
+  skos:notation "metro";
+  skos:prefLabel "metro";
+  skos:topConceptOf <https://w3id.org/mobility/osdm/kos/transport-mode-type> .
+
+<https://w3id.org/mobility/osdm/kos/transport-mode-type/rail> a skos:Concept;
+  skos:definition "heavy trains, or historical heritage rail services.";
+  skos:inScheme <https://w3id.org/mobility/osdm/kos/transport-mode-type>;
+  skos:notation "rail";
+  skos:prefLabel "rail";
+  skos:topConceptOf <https://w3id.org/mobility/osdm/kos/transport-mode-type> .
+
+<https://w3id.org/mobility/osdm/kos/transport-mode-type/taxi> a skos:Concept;
+  skos:definition "taxi (e.g. supplementary- and replacement transport).";
+  skos:inScheme <https://w3id.org/mobility/osdm/kos/transport-mode-type>;
+  skos:notation "taxi";
+  skos:prefLabel "taxi";
+  skos:topConceptOf <https://w3id.org/mobility/osdm/kos/transport-mode-type> .
+
+<https://w3id.org/mobility/osdm/kos/transport-mode-type/tram> a skos:Concept;
+  skos:definition "may cover the specific concept of trams (e.g. “sporvei” or \"trikk\" in Norway), as well as more specific “non-metro” rail-based street level transport (e.g. \"Bybanen\" in Bergen).";
+  skos:inScheme <https://w3id.org/mobility/osdm/kos/transport-mode-type>;
+  skos:notation "tram";
+  skos:prefLabel "tram";
+  skos:topConceptOf <https://w3id.org/mobility/osdm/kos/transport-mode-type> .
+
+<https://w3id.org/mobility/osdm/kos/transport-mode-type/water> a skos:Concept;
+  skos:definition "boats, ferries and other types of public transport on water.";
+  skos:inScheme <https://w3id.org/mobility/osdm/kos/transport-mode-type>;
+  skos:notation "water";
+  skos:prefLabel "water";
+  skos:topConceptOf <https://w3id.org/mobility/osdm/kos/transport-mode-type> .
