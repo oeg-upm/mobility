@@ -159,18 +159,6 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#address -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#address">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Location"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Address"/>
-        <rdfs:comment xml:lang="en">This property sets the relationship Location and Address.</rdfs:comment>
-        <rdfs:label xml:lang="en">address</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/osdm/core#admissions -->
 
 
@@ -250,18 +238,6 @@
         <rdfs:range rdf:resource="https://w3id.org/osdm/core#Price"/>
         <rdfs:comment xml:lang="en">This property sets the relationship Booking and Price.</rdfs:comment>
         <rdfs:label xml:lang="en">confirmedPrice</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/osdm/core#connectionPoint -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#connectionPoint">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Location"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#ConnectionPoint"/>
-        <rdfs:comment xml:lang="en">This property sets the relationship Location and ConnectionPoint.</rdfs:comment>
-        <rdfs:label xml:lang="en">connectionPoint</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -425,18 +401,6 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#geoCoordinate -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#geoCoordinate">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Location"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#GeoCoordinate"/>
-        <rdfs:comment xml:lang="en">This property sets the relationship Location and GeoCoordinate.</rdfs:comment>
-        <rdfs:label xml:lang="en">geoCoordinate</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/osdm/core#identificationDocument -->
 
 
@@ -519,18 +483,6 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#poi -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#poi">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Location"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#POI"/>
-        <rdfs:comment xml:lang="en">This property sets the relationship Location and POI.</rdfs:comment>
-        <rdfs:label xml:lang="en">poi</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/osdm/core#price -->
 
 
@@ -597,18 +549,6 @@
         <rdfs:range rdf:resource="https://w3id.org/osdm/core#Segment"/>
         <rdfs:comment xml:lang="en">A list of segments. A segment represents a property that sets the relationship between Trip and Segment.</rdfs:comment>
         <rdfs:label xml:lang="en">segments</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/osdm/core#station -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#station">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Location"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#StationDetail"/>
-        <rdfs:comment xml:lang="en">This property sets the relationship Location and StationDetail.</rdfs:comment>
-        <rdfs:label xml:lang="en">station</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1525,6 +1465,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/osdm/core#Address">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/osdm/core#Location"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/osdm/core#city"/>
@@ -1721,6 +1662,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/osdm/core#ConnectionPoint">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/osdm/core#Location"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/osdm/core#codes"/>
@@ -1735,13 +1677,6 @@
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#geoCoordinate"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#GeoCoordinate"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Connection point connecting two fare regimes. Providing the UIC code for the station is mandatory.</rdfs:comment>
@@ -1898,6 +1833,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/osdm/core#GeoCoordinate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/osdm/core#Location"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/osdm/core#accuracy"/>
@@ -2014,41 +1950,6 @@
 
 
     <owl:Class rdf:about="https://w3id.org/osdm/core#Location">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#address"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Address"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#connectionPoint"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#ConnectionPoint"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#geoCoordinate"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#GeoCoordinate"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#poi"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#POI"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#station"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#StationDetail"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
@@ -2232,6 +2133,7 @@ A location uniquely identifies a place in space. A location can be of type stati
 
 
     <owl:Class rdf:about="https://w3id.org/osdm/core#POI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/osdm/core#Location"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/osdm/core#codes"/>
@@ -2246,13 +2148,6 @@ A location uniquely identifies a place in space. A location can be of type stati
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#geoCoordinate"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#GeoCoordinate"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2471,6 +2366,13 @@ A location uniquely identifies a place in space. A location can be of type stati
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#realizedBy"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Vehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/osdm/core#duration"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -2493,6 +2395,7 @@ A location uniquely identifies a place in space. A location can be of type stati
 
 
     <owl:Class rdf:about="https://w3id.org/osdm/core#StationDetail">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/osdm/core#Location"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/osdm/core#codes"/>

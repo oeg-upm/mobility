@@ -91,14 +91,6 @@
                                                                                                 "Relates a resource (for example a concept) to a concept scheme in which it is included."@en .
 
 
-###  https://w3id.org/osdm/core#address
-:address rdf:type owl:ObjectProperty ;
-         rdfs:domain :Location ;
-         rdfs:range :Address ;
-         rdfs:comment "This property sets the relationship Location and Address."@en ;
-         rdfs:label "address"@en .
-
-
 ###  https://w3id.org/osdm/core#admissions
 :admissions rdf:type owl:ObjectProperty ;
             rdfs:domain :Offer ;
@@ -153,14 +145,6 @@
                 rdfs:range :Price ;
                 rdfs:comment "This property sets the relationship Booking and Price."@en ;
                 rdfs:label "confirmedPrice"@en .
-
-
-###  https://w3id.org/osdm/core#connectionPoint
-:connectionPoint rdf:type owl:ObjectProperty ;
-                 rdfs:domain :Location ;
-                 rdfs:range :ConnectionPoint ;
-                 rdfs:comment "This property sets the relationship Location and ConnectionPoint."@en ;
-                 rdfs:label "connectionPoint"@en .
 
 
 ###  https://w3id.org/osdm/core#coreType
@@ -270,14 +254,6 @@
         rdfs:label "gender"@en .
 
 
-###  https://w3id.org/osdm/core#geoCoordinate
-:geoCoordinate rdf:type owl:ObjectProperty ;
-               rdfs:domain :Location ;
-               rdfs:range :GeoCoordinate ;
-               rdfs:comment "This property sets the relationship Location and GeoCoordinate."@en ;
-               rdfs:label "geoCoordinate"@en .
-
-
 ###  https://w3id.org/osdm/core#identificationDocument
 :identificationDocument rdf:type owl:ObjectProperty ;
                         rdfs:domain :Passenger ;
@@ -332,14 +308,6 @@
             rdfs:label "passengers"@en .
 
 
-###  https://w3id.org/osdm/core#poi
-:poi rdf:type owl:ObjectProperty ;
-     rdfs:domain :Location ;
-     rdfs:range :POI ;
-     rdfs:comment "This property sets the relationship Location and POI."@en ;
-     rdfs:label "poi"@en .
-
-
 ###  https://w3id.org/osdm/core#price
 :price rdf:type owl:ObjectProperty ;
        rdfs:range :Price ;
@@ -384,14 +352,6 @@
           rdfs:range :Segment ;
           rdfs:comment "A list of segments. A segment represents a property that sets the relationship between Trip and Segment."@en ;
           rdfs:label "segments"@en .
-
-
-###  https://w3id.org/osdm/core#station
-:station rdf:type owl:ObjectProperty ;
-         rdfs:domain :Location ;
-         rdfs:range :StationDetail ;
-         rdfs:comment "This property sets the relationship Location and StationDetail."@en ;
-         rdfs:label "station"@en .
 
 
 ###  https://w3id.org/osdm/core#stops
@@ -986,7 +946,8 @@ rdfs:seeAlso rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/osdm/core#Address
 :Address rdf:type owl:Class ;
-         rdfs:subClassOf [ rdf:type owl:Restriction ;
+         rdfs:subClassOf :Location ,
+                         [ rdf:type owl:Restriction ;
                            owl:onProperty :city ;
                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onDataRange xsd:string
@@ -1121,7 +1082,8 @@ rdfs:seeAlso rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/osdm/core#ConnectionPoint
 :ConnectionPoint rdf:type owl:Class ;
-                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                 rdfs:subClassOf :Location ,
+                                 [ rdf:type owl:Restriction ;
                                    owl:onProperty :codes ;
                                    owl:allValuesFrom [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                                             [ rdf:type owl:Restriction ;
@@ -1131,11 +1093,6 @@ rdfs:seeAlso rdf:type owl:DatatypeProperty ;
                                                                           ) ;
                                                        rdf:type owl:Class
                                                      ]
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty :geoCoordinate ;
-                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass :GeoCoordinate
                                  ] ;
                  rdfs:comment "Connection point connecting two fare regimes. Providing the UIC code for the station is mandatory."@en ;
                  rdfs:label "ConnectionPoint"@en .
@@ -1239,7 +1196,8 @@ rdfs:seeAlso rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/osdm/core#GeoCoordinate
 :GeoCoordinate rdf:type owl:Class ;
-               rdfs:subClassOf [ rdf:type owl:Restriction ;
+               rdfs:subClassOf :Location ,
+                               [ rdf:type owl:Restriction ;
                                  owl:onProperty :accuracy ;
                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onDataRange xsd:float
@@ -1318,31 +1276,6 @@ rdfs:seeAlso rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/osdm/core#Location
 :Location rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
-                            owl:onProperty :address ;
-                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :Address
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :connectionPoint ;
-                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :ConnectionPoint
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :geoCoordinate ;
-                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :GeoCoordinate
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :poi ;
-                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :POI
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :station ;
-                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :StationDetail
-                          ] ,
-                          [ rdf:type owl:Restriction ;
                             owl:onProperty <http://purl.org/dc/elements/1.1/identifier> ;
                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onDataRange xsd:string
@@ -1464,7 +1397,8 @@ A location uniquely identifies a place in space. A location can be of type stati
 
 ###  https://w3id.org/osdm/core#POI
 :POI rdf:type owl:Class ;
-     rdfs:subClassOf [ rdf:type owl:Restriction ;
+     rdfs:subClassOf :Location ,
+                     [ rdf:type owl:Restriction ;
                        owl:onProperty :codes ;
                        owl:allValuesFrom [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                                 [ rdf:type owl:Restriction ;
@@ -1474,11 +1408,6 @@ A location uniquely identifies a place in space. A location can be of type stati
                                                               ) ;
                                            rdf:type owl:Class
                                          ]
-                     ] ,
-                     [ rdf:type owl:Restriction ;
-                       owl:onProperty :geoCoordinate ;
-                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                       owl:onClass :GeoCoordinate
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :country ;
@@ -1625,6 +1554,11 @@ A location uniquely identifies a place in space. A location can be of type stati
                            owl:onClass :Stop
                          ] ,
                          [ rdf:type owl:Restriction ;
+                           owl:onProperty :realizedBy ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Vehicle
+                         ] ,
+                         [ rdf:type owl:Restriction ;
                            owl:onProperty :duration ;
                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onDataRange xsd:string
@@ -1640,7 +1574,8 @@ A location uniquely identifies a place in space. A location can be of type stati
 
 ###  https://w3id.org/osdm/core#StationDetail
 :StationDetail rdf:type owl:Class ;
-               rdfs:subClassOf [ rdf:type owl:Restriction ;
+               rdfs:subClassOf :Location ,
+                               [ rdf:type owl:Restriction ;
                                  owl:onProperty :codes ;
                                  owl:allValuesFrom [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                                           [ rdf:type owl:Restriction ;

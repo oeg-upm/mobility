@@ -78,13 +78,6 @@
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2004/02/skos/core#definition> "Relaciona un recurso, como por ejemplo un concepto, con un esquema de conceptos o taxonomía en el que se incluye."@es .
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2004/02/skos/core#definition> "Relates a resource (for example a concept) to a concept scheme in which it is included."@en .
 # 
-# https://w3id.org/osdm/core#address
-<https://w3id.org/osdm/core#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/osdm/core#address> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/osdm/core#Location> .
-<https://w3id.org/osdm/core#address> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/osdm/core#Address> .
-<https://w3id.org/osdm/core#address> <http://www.w3.org/2000/01/rdf-schema#comment> "This property sets the relationship Location and Address."@en .
-<https://w3id.org/osdm/core#address> <http://www.w3.org/2000/01/rdf-schema#label> "address"@en .
-# 
 # https://w3id.org/osdm/core#admissions
 <https://w3id.org/osdm/core#admissions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/osdm/core#admissions> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/osdm/core#Offer> .
@@ -138,13 +131,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://w3id.org/osdm/core#confirmedPrice> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/osdm/core#Price> .
 <https://w3id.org/osdm/core#confirmedPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "This property sets the relationship Booking and Price."@en .
 <https://w3id.org/osdm/core#confirmedPrice> <http://www.w3.org/2000/01/rdf-schema#label> "confirmedPrice"@en .
-# 
-# https://w3id.org/osdm/core#connectionPoint
-<https://w3id.org/osdm/core#connectionPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/osdm/core#connectionPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/osdm/core#Location> .
-<https://w3id.org/osdm/core#connectionPoint> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/osdm/core#ConnectionPoint> .
-<https://w3id.org/osdm/core#connectionPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "This property sets the relationship Location and ConnectionPoint."@en .
-<https://w3id.org/osdm/core#connectionPoint> <http://www.w3.org/2000/01/rdf-schema#label> "connectionPoint"@en .
 # 
 # https://w3id.org/osdm/core#coreType
 <https://w3id.org/osdm/core#coreType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -254,13 +240,6 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/osdm/core#gender> <http://www.w3.org/2000/01/rdf-schema#label> "gender"@en .
 # 
-# https://w3id.org/osdm/core#geoCoordinate
-<https://w3id.org/osdm/core#geoCoordinate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/osdm/core#geoCoordinate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/osdm/core#Location> .
-<https://w3id.org/osdm/core#geoCoordinate> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/osdm/core#GeoCoordinate> .
-<https://w3id.org/osdm/core#geoCoordinate> <http://www.w3.org/2000/01/rdf-schema#comment> "This property sets the relationship Location and GeoCoordinate."@en .
-<https://w3id.org/osdm/core#geoCoordinate> <http://www.w3.org/2000/01/rdf-schema#label> "geoCoordinate"@en .
-# 
 # https://w3id.org/osdm/core#identificationDocument
 <https://w3id.org/osdm/core#identificationDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/osdm/core#identificationDocument> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/osdm/core#Passenger> .
@@ -308,13 +287,6 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://w3id.org/osdm/core#passengers> <http://www.w3.org/2000/01/rdf-schema#comment> "This property sets the relationship between TripOffer and Passenger."@en .
 <https://w3id.org/osdm/core#passengers> <http://www.w3.org/2000/01/rdf-schema#label> "passengers"@en .
 # 
-# https://w3id.org/osdm/core#poi
-<https://w3id.org/osdm/core#poi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/osdm/core#poi> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/osdm/core#Location> .
-<https://w3id.org/osdm/core#poi> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/osdm/core#POI> .
-<https://w3id.org/osdm/core#poi> <http://www.w3.org/2000/01/rdf-schema#comment> "This property sets the relationship Location and POI."@en .
-<https://w3id.org/osdm/core#poi> <http://www.w3.org/2000/01/rdf-schema#label> "poi"@en .
-# 
 # https://w3id.org/osdm/core#price
 <https://w3id.org/osdm/core#price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/osdm/core#price> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/osdm/core#Price> .
@@ -354,13 +326,6 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://w3id.org/osdm/core#segments> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/osdm/core#Segment> .
 <https://w3id.org/osdm/core#segments> <http://www.w3.org/2000/01/rdf-schema#comment> "A list of segments. A segment represents a property that sets the relationship between Trip and Segment."@en .
 <https://w3id.org/osdm/core#segments> <http://www.w3.org/2000/01/rdf-schema#label> "segments"@en .
-# 
-# https://w3id.org/osdm/core#station
-<https://w3id.org/osdm/core#station> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/osdm/core#station> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/osdm/core#Location> .
-<https://w3id.org/osdm/core#station> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/osdm/core#StationDetail> .
-<https://w3id.org/osdm/core#station> <http://www.w3.org/2000/01/rdf-schema#comment> "This property sets the relationship Location and StationDetail."@en .
-<https://w3id.org/osdm/core#station> <http://www.w3.org/2000/01/rdf-schema#label> "station"@en .
 # 
 # https://w3id.org/osdm/core#stops
 <https://w3id.org/osdm/core#stops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -893,6 +858,7 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # 
 # https://w3id.org/osdm/core#Address
 <https://w3id.org/osdm/core#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/osdm/core#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/osdm/core#Location> .
 <https://w3id.org/osdm/core#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
 _:genid21 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid21 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
@@ -1027,6 +993,7 @@ _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/osdm/core#ConnectionPoint
 <https://w3id.org/osdm/core#ConnectionPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/osdm/core#ConnectionPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/osdm/core#Location> .
 <https://w3id.org/osdm/core#ConnectionPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
 _:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid45 .
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1042,11 +1009,6 @@ _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#codes> .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#ConnectionPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
-_:genid49 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#GeoCoordinate> .
-_:genid49 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#geoCoordinate> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#ConnectionPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection point connecting two fare regimes. Providing the UIC code for the station is mandatory."@en .
 <https://w3id.org/osdm/core#ConnectionPoint> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectionPoint"@en .
 # 
@@ -1057,279 +1019,255 @@ _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/osdm/core#FareOnline
 <https://w3id.org/osdm/core#FareOnline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/osdm/core#FareOnline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/osdm/core#Price> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#price> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#FareOnline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
-_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/osdm/core#Price> .
-_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#price> .
+_:genid50 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid50 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#afterSalesCondition> .
 _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#FareOnline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
-_:genid51 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid51 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid51 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#afterSalesCondition> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#serviceClass> .
 _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#FareOnline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
-_:genid52 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid52 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#serviceClass> .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#FareOnline> <http://www.w3.org/2000/01/rdf-schema#comment> "TODO: check if it's the same with fare of Transmodel"@en .
 # 
 # https://w3id.org/osdm/core#Fee
 <https://w3id.org/osdm/core#Fee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/osdm/core#Fee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/osdm/core#OfferPart> .
+<https://w3id.org/osdm/core#Fee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#productCode> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Fee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
 _:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#productCode> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#providerBookingReference> .
 _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Fee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
-_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#providerBookingReference> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Fee> <http://www.w3.org/2000/01/rdf-schema#comment> "Fees are used to represent additional costs for services or products. Offer parts of type “fee” can be applied to the booking process (e.g. a service fee), the trip (e.g. a reservation fee which is applied to all reservations in trains running in the same direction, namely outward or inward travel) or other offer parts."@en .
 <https://w3id.org/osdm/core#Fee> <http://www.w3.org/2000/01/rdf-schema#label> "Fee"@en .
 # 
 # https://w3id.org/osdm/core#Fulfillment
 <https://w3id.org/osdm/core#Fulfillment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/osdm/core#Fulfillment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/osdm/core#Price> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#price> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Fulfillment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
-_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/osdm/core#Price> .
-_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#price> .
+_:genid55 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#OfferPart> .
+_:genid55 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#offerParts> .
 _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Fulfillment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
-_:genid56 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#OfferPart> .
+_:genid56 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid56 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#offerParts> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#status> .
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Fulfillment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
-_:genid57 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid57 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#status> .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Fulfillment> <http://www.w3.org/2000/01/rdf-schema#comment> "fulfillment representing an offer part"@en .
 <https://w3id.org/osdm/core#Fulfillment> <http://www.w3.org/2000/01/rdf-schema#label> "Fulfillment"@en .
 # 
 # https://w3id.org/osdm/core#FulfillmentDocument
 <https://w3id.org/osdm/core#FulfillmentDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/osdm/core#FulfillmentDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid57 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#FulfillmentDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
 _:genid58 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid58 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#content> .
 _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#FulfillmentDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
 _:genid59 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid59 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#content> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#downloadExpiry> .
 _:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#FulfillmentDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
 _:genid60 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid60 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#downloadExpiry> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#format> .
 _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#FulfillmentDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
 _:genid61 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid61 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#format> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#fulfillmentDocumentType> .
 _:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#FulfillmentDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
 _:genid62 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid62 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#fulfillmentDocumentType> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#medium> .
 _:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#FulfillmentDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
-_:genid63 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid63 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#medium> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#FulfillmentDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for document fulfillment."@en .
 <https://w3id.org/osdm/core#FulfillmentDocument> <http://www.w3.org/2000/01/rdf-schema#label> "FulfillmentDocument"@en .
 # 
 # https://w3id.org/osdm/core#GeoCoordinate
 <https://w3id.org/osdm/core#GeoCoordinate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/osdm/core#GeoCoordinate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/osdm/core#Location> .
+<https://w3id.org/osdm/core#GeoCoordinate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid63 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#accuracy> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#GeoCoordinate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
 _:genid64 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
 _:genid64 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#accuracy> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#latitude> .
 _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#GeoCoordinate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
 _:genid65 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
 _:genid65 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#latitude> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#longitude> .
 _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#GeoCoordinate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
-_:genid66 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid66 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid66 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#longitude> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#system> .
 _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#GeoCoordinate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
-_:genid67 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid67 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#system> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#GeoCoordinate> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to provide any geo-encoded location, regardless of environment, using longitude and latitude coordinates."@en .
 <https://w3id.org/osdm/core#GeoCoordinate> <http://www.w3.org/2000/01/rdf-schema#label> "GeoCoordinate"@en .
 # 
 # https://w3id.org/osdm/core#IdentidicationDocument
 <https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#cityOfBirth> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
 _:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#cityOfBirth> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#cityOfIssue> .
 _:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
 _:genid69 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#cityOfIssue> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#cityOfResidence> .
 _:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
 _:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#cityOfResidence> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#contryOfResidence> .
 _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
 _:genid71 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#contryOfResidence> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#countryOfBirth> .
 _:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
 _:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#countryOfBirth> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#countryOfIssue> .
 _:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
 _:genid73 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#countryOfIssue> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#dateOfIssue> .
 _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
 _:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#dateOfIssue> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#limitOfValidity> .
 _:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
 _:genid75 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#limitOfValidity> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#nationality> .
 _:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
-_:genid76 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#nationality> .
+_:genid76 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid76 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/elements/1.1/identifier> .
 _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
 _:genid77 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid77 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/elements/1.1/identifier> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#name> .
 _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
-_:genid78 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid78 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#name> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Travel document data to be exchanged for border control."@en .
 <https://w3id.org/osdm/core#IdentidicationDocument> <http://www.w3.org/2000/01/rdf-schema#label> "IdentidicationDocument"@en .
 # 
 # https://w3id.org/osdm/core#Location
 <https://w3id.org/osdm/core#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/osdm/core#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
-_:genid79 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Address> .
-_:genid79 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#address> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
-_:genid80 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#ConnectionPoint> .
-_:genid80 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#connectionPoint> .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
-_:genid81 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#GeoCoordinate> .
-_:genid81 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#geoCoordinate> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
-_:genid82 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#POI> .
-_:genid82 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#poi> .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
-_:genid83 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#StationDetail> .
-_:genid83 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#station> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
-_:genid84 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid84 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/elements/1.1/identifier> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid78 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/elements/1.1/identifier> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Representing a specific location in a trip: departure, origin, intermediate stop or other.\nA location uniquely identifies a place in space. A location can be of type station, point-of-interest, address or geo-coordinate."@en .
 <https://w3id.org/osdm/core#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
 # 
 # https://w3id.org/osdm/core#Offer
 <https://w3id.org/osdm/core#Offer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
-_:genid85 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#Admission> .
-_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#admissions> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
-_:genid86 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#Ancillarie> .
-_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#ancillaries> .
+<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#Admission> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#admissions> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#Ancillarie> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#ancillaries> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#FareOnline> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#fares> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#Fee> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#fees> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid84 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid86 .
+_:genid86 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/mobility/osdm/kos/fulfillment-type> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
-_:genid87 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#FareOnline> .
-_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#fares> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#fulfillmentType> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid88 .
-_:genid88 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#Fee> .
-_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#fees> .
+_:genid88 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#OfferSummary> .
+_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#offerSummary> .
 _:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
-_:genid89 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid90 .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid90 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid93 .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid92 .
-_:genid92 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/mobility/osdm/kos/fulfillment-type> .
-_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#fulfillmentType> .
+_:genid89 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#Reservation> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#reservations> .
 _:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
+_:genid90 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#Trip> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#trip> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
+_:genid91 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#appliedThroughTicketTags> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
+_:genid92 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#coveredSegmentIndexes> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
+_:genid93 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#requestedInformation> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid94 .
-_:genid94 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#OfferSummary> .
-_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#offerSummary> .
+_:genid94 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#returnTags> .
 _:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
-_:genid95 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#Reservation> .
-_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#reservations> .
+_:genid95 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#tripTags> .
 _:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid96 .
-_:genid96 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#Trip> .
-_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#trip> .
+_:genid96 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#validFrom> .
 _:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid97 .
 _:genid97 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#appliedThroughTicketTags> .
+_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#validUntil> .
 _:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
-_:genid98 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
-_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#coveredSegmentIndexes> .
+_:genid98 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid98 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#isReusable> .
 _:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
-_:genid99 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#requestedInformation> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
-_:genid100 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#returnTags> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
-_:genid101 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#tripTags> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
-_:genid102 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#validFrom> .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
-_:genid103 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#validUntil> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
-_:genid104 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid104 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#isReusable> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#comment> "Representing bookable elements that covers exactly one a specific trip"@en .
 <https://w3id.org/osdm/core#Offer> <http://www.w3.org/2000/01/rdf-schema#label> "Offer"@en .
 # 
@@ -1340,158 +1278,154 @@ _:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/osdm/core#OfferSummary
 <https://w3id.org/osdm/core#OfferSummary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/osdm/core#OfferSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid105 .
-_:genid105 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid105 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#accommodation> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#OfferSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid106 .
-_:genid106 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid106 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#accommodationDetails> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#OfferSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid107 .
-_:genid107 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid107 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid107 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#comfortClass> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#OfferSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
-_:genid108 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid108 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#serviceClass> .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#OfferSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
+_:genid99 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid99 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#accommodation> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#OfferSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
+_:genid100 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid100 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#accommodationDetails> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#OfferSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
+_:genid101 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid101 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#comfortClass> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#OfferSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
+_:genid102 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid102 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#serviceClass> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#OfferSummary> <http://www.w3.org/2000/01/rdf-schema#comment> "The offer summary indicates the major service class, level or flexibility."@en .
 <https://w3id.org/osdm/core#OfferSummary> <http://www.w3.org/2000/01/rdf-schema#label> "OfferSummary"@en .
 # 
 # https://w3id.org/osdm/core#POI
 <https://w3id.org/osdm/core#POI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/osdm/core#POI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
-_:genid109 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid110 .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid110 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid113 .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid112 .
-_:genid112 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/mobility/osdm/kos/station-codes> .
-_:genid112 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#codes> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#POI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid114 .
-_:genid114 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#GeoCoordinate> .
-_:genid114 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid114 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#geoCoordinate> .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#POI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid115 .
-_:genid115 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid115 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#country> .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#POI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/osdm/core#Location> .
+<https://w3id.org/osdm/core#POI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
+_:genid103 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid104 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid106 .
+_:genid106 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/mobility/osdm/kos/station-codes> .
+_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#codes> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#POI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
+_:genid108 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid108 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#country> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#POI> <http://www.w3.org/2000/01/rdf-schema#comment> "POI (for point of Interest) represents a location that is not a train station but still relevant to the description of the trip. It could be a public transport stop, an exhibition, an event hall, a shopping mall etc."@en .
 <https://w3id.org/osdm/core#POI> <http://www.w3.org/2000/01/rdf-schema#label> "POI"@en .
 # 
 # https://w3id.org/osdm/core#Passenger
 <https://w3id.org/osdm/core#Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/osdm/core#Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid116 .
-_:genid116 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid116 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid116 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#gender> .
-_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid117 .
-_:genid117 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Offer> .
-_:genid117 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid117 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#identificationDocument> .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid118 .
-_:genid118 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid118 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#dateOfBirth> .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
+_:genid109 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid109 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#gender> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid110 .
+_:genid110 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Offer> .
+_:genid110 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#identificationDocument> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid111 .
+_:genid111 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#dateOfBirth> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "A passenger is the person travailing on a vehicle."@en .
 <https://w3id.org/osdm/core#Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger"@en .
 # 
 # https://w3id.org/osdm/core#PassengerDetail
 <https://w3id.org/osdm/core#PassengerDetail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/osdm/core#PassengerDetail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid119 .
-_:genid119 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid119 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid119 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/email> .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#PassengerDetail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid120 .
-_:genid120 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid120 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/telephone> .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#PassengerDetail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid121 .
-_:genid121 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid121 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/firstName> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#PassengerDetail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid122 .
-_:genid122 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid122 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/lastName> .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#PassengerDetail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid112 .
+_:genid112 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid112 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid112 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/email> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#PassengerDetail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid113 .
+_:genid113 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid113 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid113 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/telephone> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#PassengerDetail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid114 .
+_:genid114 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid114 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid114 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/firstName> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#PassengerDetail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid115 .
+_:genid115 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid115 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/lastName> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#PassengerDetail> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger details providing personal information only information required in the booking."@en .
 <https://w3id.org/osdm/core#PassengerDetail> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger Details"@en .
 # 
 # https://w3id.org/osdm/core#Price
 <https://w3id.org/osdm/core#Price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/osdm/core#Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid123 .
-_:genid123 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
-_:genid123 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid123 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#amount> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid124 .
-_:genid124 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid124 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#currency> .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid125 .
-_:genid125 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
-_:genid125 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid125 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#scale> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid116 .
+_:genid116 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid116 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid116 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#amount> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid117 .
+_:genid117 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid117 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid117 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#currency> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid118 .
+_:genid118 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid118 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid118 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#scale> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/osdm/core#Product
 <https://w3id.org/osdm/core#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid126 .
-_:genid126 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Price> .
-_:genid126 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid126 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#feePrice> .
-_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid127 .
-_:genid127 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid127 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid127 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#code> .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid128 .
-_:genid128 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid128 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid128 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#comfortClass> .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid129 .
-_:genid129 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid129 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid129 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#isAllocatorFee> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid130 .
-_:genid130 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid130 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid130 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#isReturnProduct> .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid131 .
-_:genid131 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid131 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid131 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#isTrainBound> .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid132 .
-_:genid132 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid132 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid132 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#serviceClass> .
-_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid119 .
+_:genid119 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Price> .
+_:genid119 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid119 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#feePrice> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid120 .
+_:genid120 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid120 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#code> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid121 .
+_:genid121 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid121 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#comfortClass> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid122 .
+_:genid122 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid122 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#isAllocatorFee> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid123 .
+_:genid123 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid123 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid123 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#isReturnProduct> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid124 .
+_:genid124 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid124 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#isTrainBound> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid125 .
+_:genid125 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid125 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid125 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#serviceClass> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Product> <http://www.w3.org/2000/01/rdf-schema#label> "Product"@en .
 # 
 # https://w3id.org/osdm/core#RefundOffer
@@ -1508,179 +1442,185 @@ _:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/osdm/core#Segment
 <https://w3id.org/osdm/core#Segment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/osdm/core#Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid133 .
-_:genid133 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#Stop> .
-_:genid133 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#stops> .
-_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid134 .
-_:genid134 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Stop> .
-_:genid134 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid134 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#destination> .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid135 .
-_:genid135 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Stop> .
-_:genid135 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid135 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#origin> .
-_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid136 .
-_:genid136 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid136 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid136 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#duration> .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid137 .
-_:genid137 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid137 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid137 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#index> .
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid126 .
+_:genid126 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#Stop> .
+_:genid126 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#stops> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid127 .
+_:genid127 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Stop> .
+_:genid127 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid127 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#destination> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid128 .
+_:genid128 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Stop> .
+_:genid128 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid128 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#origin> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid129 .
+_:genid129 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Vehicle> .
+_:genid129 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid129 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#realizedBy> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid130 .
+_:genid130 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid130 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid130 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#duration> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid131 .
+_:genid131 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid131 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid131 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#index> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Segment> <http://www.w3.org/2000/01/rdf-schema#comment> "A segment represents a subsection of a trip that is realized with the same transport vehicle.  A segment has an origin, a destination and duration."@en .
 <https://w3id.org/osdm/core#Segment> <http://www.w3.org/2000/01/rdf-schema#label> "Segment"@en .
 # 
 # https://w3id.org/osdm/core#StationDetail
 <https://w3id.org/osdm/core#StationDetail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/osdm/core#StationDetail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/osdm/core#Location> .
+<https://w3id.org/osdm/core#StationDetail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid132 .
+_:genid132 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid133 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid135 .
+_:genid135 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/mobility/osdm/kos/station-codes> .
+_:genid135 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid132 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#codes> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#StationDetail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid137 .
+_:genid137 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid137 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid137 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#country> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#StationDetail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid138 .
-_:genid138 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid139 .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid139 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid142 .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid140 .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid141 .
-_:genid141 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/mobility/osdm/kos/station-codes> .
-_:genid141 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid138 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#codes> .
+_:genid138 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid138 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid138 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#localCode> .
 _:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#StationDetail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid143 .
-_:genid143 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid143 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid143 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#country> .
-_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#StationDetail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid144 .
-_:genid144 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid144 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid144 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#localCode> .
-_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#StationDetail> <http://www.w3.org/2000/01/rdf-schema#comment> "Details of a station. In some countries stations have multiple names depending on the countries local languages."@en .
 <https://w3id.org/osdm/core#StationDetail> <http://www.w3.org/2000/01/rdf-schema#label> "StationDetail"@en .
 # 
 # https://w3id.org/osdm/core#Stop
 <https://w3id.org/osdm/core#Stop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/osdm/core#Stop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid145 .
-_:genid145 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Location> .
-_:genid145 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid145 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#location> .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Stop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid146 .
-_:genid146 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid146 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid146 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#arrivalDateTime> .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Stop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid147 .
-_:genid147 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid147 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid147 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#arrivalTrack> .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Stop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid148 .
-_:genid148 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid148 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid148 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#departureDateTime> .
-_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Stop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid149 .
-_:genid149 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid149 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid149 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#departureTrack> .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Stop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid139 .
+_:genid139 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Location> .
+_:genid139 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid139 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#location> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Stop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid140 .
+_:genid140 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid140 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid140 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#arrivalDateTime> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Stop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid141 .
+_:genid141 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid141 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid141 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#arrivalTrack> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Stop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid142 .
+_:genid142 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid142 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid142 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#departureDateTime> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Stop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid143 .
+_:genid143 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid143 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid143 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#departureTrack> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Stop> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a location or station. Either a departure, arrival or intermediate stop along a segment of a trip."@en .
 <https://w3id.org/osdm/core#Stop> <http://www.w3.org/2000/01/rdf-schema#label> "Stop"@en .
 # 
 # https://w3id.org/osdm/core#Trip
 <https://w3id.org/osdm/core#Trip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/osdm/core#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid144 .
+_:genid144 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid145 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid148 .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid146 .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid147 .
+_:genid147 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/mobility/osdm/kos/direction-type> .
+_:genid147 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid144 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#direction> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid149 .
+_:genid149 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Segment> .
+_:genid149 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid149 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#segments> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid150 .
-_:genid150 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid151 .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid151 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid154 .
-_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid152 .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid153 .
-_:genid153 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/mobility/osdm/kos/direction-type> .
-_:genid153 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid150 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#direction> .
+_:genid150 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Stop> .
+_:genid150 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid150 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#destination> .
 _:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid155 .
-_:genid155 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Segment> .
-_:genid155 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid155 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#segments> .
-_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid156 .
-_:genid156 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Stop> .
-_:genid156 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid156 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#destination> .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid157 .
-_:genid157 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Stop> .
-_:genid157 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid157 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#origin> .
-_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid158 .
-_:genid158 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid158 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid158 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/elements/1.1/identifier> .
-_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid151 .
+_:genid151 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Stop> .
+_:genid151 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid151 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#origin> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid152 .
+_:genid152 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid152 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid152 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/elements/1.1/identifier> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Trip> <http://www.w3.org/2000/01/rdf-schema#comment> "Trips represent the concrete realization of a trip going from departure station to destination station. A trip is composed of one or more segments."@en .
 <https://w3id.org/osdm/core#Trip> <http://www.w3.org/2000/01/rdf-schema#label> "Trip"@en .
 # 
 # https://w3id.org/osdm/core#TripOffer
 <https://w3id.org/osdm/core#TripOffer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/osdm/core#TripOffer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid159 .
-_:genid159 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#Passenger> .
-_:genid159 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#passengers> .
-_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#TripOffer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid160 .
-_:genid160 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Offer> .
-_:genid160 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid160 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#offers> .
-_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#TripOffer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid153 .
+_:genid153 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/osdm/core#Passenger> .
+_:genid153 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#passengers> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#TripOffer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid154 .
+_:genid154 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/osdm/core#Offer> .
+_:genid154 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid154 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#offers> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#TripOffer> <http://www.w3.org/2000/01/rdf-schema#comment> "Grouping all the offers relating to one same trip. Indeed, in most cases the Allocator provider will propose several offers of different comfort and flexibility levels."@en .
 <https://w3id.org/osdm/core#TripOffer> <http://www.w3.org/2000/01/rdf-schema#label> "TripOffer"@en .
 # 
 # https://w3id.org/osdm/core#Vehicle
 <https://w3id.org/osdm/core#Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/osdm/core#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid155 .
+_:genid155 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid156 .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid156 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid159 .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid157 .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid158 .
+_:genid158 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/mobility/osdm/kos/transport-mode-type> .
+_:genid158 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid155 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#transportMode> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid160 .
+_:genid160 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid160 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid160 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#lineNumber> .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid161 .
-_:genid161 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid162 .
-_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid162 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid165 .
-_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid163 .
-_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid164 .
-_:genid164 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/mobility/osdm/kos/transport-mode-type> .
-_:genid164 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid161 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#transportMode> .
+_:genid161 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid161 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid161 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#serviceBrand> .
 _:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid166 .
-_:genid166 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid166 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid166 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#lineNumber> .
-_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid167 .
-_:genid167 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid167 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid167 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#serviceBrand> .
-_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/osdm/core#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid168 .
-_:genid168 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid168 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid168 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#vehicleNumber> .
-_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/osdm/core#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid162 .
+_:genid162 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid162 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid162 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/osdm/core#vehicleNumber> .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/osdm/core#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "A vehicle is defined by a number or line and a service brand."@en .
 <https://w3id.org/osdm/core#Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle"@en .
 # 
@@ -1726,7 +1666,7 @@ _:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/mobility/osdm/kos/transport-mode-type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <https://w3id.org/mobility/osdm/kos/transport-mode-type> <http://www.w3.org/2000/01/rdf-schema#label> "transport-mode-type"@en .
 # 
-_:genid169 <https://w3id.org/osdm/core#mbox> "ja.toledo@upm.es"@en .
+_:genid163 <https://w3id.org/osdm/core#mbox> "ja.toledo@upm.es"@en .
 # 
 # 
 # #################################################################

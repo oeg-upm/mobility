@@ -1,4 +1,4 @@
-<h2 id="crossreference" class="list">Cross reference for OSDM classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="crossreference" class="list">Cross reference for OSDM classes, object properties and data properties<span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by OSDM - Distribution Model.
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
@@ -118,18 +118,16 @@ This section provides details for each class and property defined by OSDM - Dist
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
+         <dd>
+            <a href="#Location" title="https://w3id.org/osdm/core#Location">Location</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#city" title="https://w3id.org/osdm/core#city">city</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#postalCode" title="https://w3id.org/osdm/core#postalCode">postalCode</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#street" title="https://w3id.org/osdm/core#street">street</a>
             <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#address" title="https://w3id.org/osdm/core#address">address</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -307,11 +305,9 @@ This section provides details for each class and property defined by OSDM - Dist
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
-         <dt>is in range of</dt>
          <dd>
-            <a href="#connectionPoint" title="https://w3id.org/osdm/core#connectionPoint">connectionPoint</a>
-            <sup class="type-op" title="object property">op</sup>
+            <a href="#Location" title="https://w3id.org/osdm/core#Location">Location</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -451,7 +447,10 @@ This section provides details for each class and property defined by OSDM - Dist
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
+         <dd>
+            <a href="#Location" title="https://w3id.org/osdm/core#Location">Location</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#accuracy" title="https://w3id.org/osdm/core#accuracy">accuracy</a>
@@ -459,11 +458,6 @@ This section provides details for each class and property defined by OSDM - Dist
             <sup class="type-dp" title="data property">dp</sup>, <a href="#longitude" title="https://w3id.org/osdm/core#longitude">longitude</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#system" title="https://w3id.org/osdm/core#system">system</a>
             <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#geoCoordinate" title="https://w3id.org/osdm/core#geoCoordinate">geoCoordinate</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -515,14 +509,14 @@ A location uniquely identifies a place in space. A location can be of type stati
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
-         <dt>is in domain of</dt>
+         <dt>has sub-classes</dt>
          <dd>
-            <a href="#address" title="https://w3id.org/osdm/core#address">address</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#connectionPoint" title="https://w3id.org/osdm/core#connectionPoint">connectionPoint</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#geoCoordinate" title="https://w3id.org/osdm/core#geoCoordinate">geoCoordinate</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#poi" title="https://w3id.org/osdm/core#poi">poi</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#station" title="https://w3id.org/osdm/core#station">station</a>
-            <sup class="type-op" title="object property">op</sup>
+            <a href="#Address" title="https://w3id.org/osdm/core#Address">Address</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ConnectionPoint" title="https://w3id.org/osdm/core#ConnectionPoint">ConnectionPoint</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GeoCoordinate" title="https://w3id.org/osdm/core#GeoCoordinate">GeoCoordinate</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#POI" title="https://w3id.org/osdm/core#POI">POI</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#StationDetail" title="https://w3id.org/osdm/core#StationDetail">StationDetail</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -690,11 +684,9 @@ A location uniquely identifies a place in space. A location can be of type stati
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
-         <dt>is in range of</dt>
          <dd>
-            <a href="#poi" title="https://w3id.org/osdm/core#poi">poi</a>
-            <sup class="type-op" title="object property">op</sup>
+            <a href="#Location" title="https://w3id.org/osdm/core#Location">Location</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -828,17 +820,15 @@ A location uniquely identifies a place in space. A location can be of type stati
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
+         <dd>
+            <a href="#Location" title="https://w3id.org/osdm/core#Location">Location</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#codes" title="https://w3id.org/osdm/core#codes">codes</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#localCode" title="https://w3id.org/osdm/core#localCode">localCode</a>
             <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#station" title="https://w3id.org/osdm/core#station">station</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -956,9 +946,6 @@ A location uniquely identifies a place in space. A location can be of type stati
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#address" title="https://w3id.org/osdm/core#address">address</a>
-      </li>
-      <li>
          <a href="#admissions" title="https://w3id.org/osdm/core#admissions">admissions</a>
       </li>
       <li>
@@ -975,9 +962,6 @@ A location uniquely identifies a place in space. A location can be of type stati
       </li>
       <li>
          <a href="#confirmedPrice" title="https://w3id.org/osdm/core#confirmedPrice">confirmedPrice</a>
-      </li>
-      <li>
-         <a href="#connectionPoint" title="https://w3id.org/osdm/core#connectionPoint">connectionPoint</a>
       </li>
       <li>
          <a href="#destination" title="https://w3id.org/osdm/core#destination">destination</a>
@@ -1010,9 +994,6 @@ A location uniquely identifies a place in space. A location can be of type stati
          <a href="#gender" title="https://w3id.org/osdm/core#gender">gender</a>
       </li>
       <li>
-         <a href="#geoCoordinate" title="https://w3id.org/osdm/core#geoCoordinate">geoCoordinate</a>
-      </li>
-      <li>
          <a href="#identificationDocument"
             title="https://w3id.org/osdm/core#identificationDocument">identificationDocument</a>
       </li>
@@ -1042,9 +1023,6 @@ A location uniquely identifies a place in space. A location can be of type stati
          <a href="#passengers" title="https://w3id.org/osdm/core#passengers">passengers</a>
       </li>
       <li>
-         <a href="#poi" title="https://w3id.org/osdm/core#poi">poi</a>
-      </li>
-      <li>
          <a href="#price" title="https://w3id.org/osdm/core#price">price</a>
       </li>
       <li>
@@ -1063,9 +1041,6 @@ A location uniquely identifies a place in space. A location can be of type stati
          <a href="#segments" title="https://w3id.org/osdm/core#segments">segments</a>
       </li>
       <li>
-         <a href="#station" title="https://w3id.org/osdm/core#station">station</a>
-      </li>
-      <li>
          <a href="#stops" title="https://w3id.org/osdm/core#stops">stops</a>
       </li>
       <li>
@@ -1075,31 +1050,6 @@ A location uniquely identifies a place in space. A location can be of type stati
          <a href="#trip" title="https://w3id.org/osdm/core#trip">trip</a>
       </li>
    </ul>
-   <div class="entity" id="address">
-      <h3>address<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/osdm/core#address</p>
-      <div class="comment">
-         <span class="markdown">This property sets the relationship Location and Address.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Location" title="https://w3id.org/osdm/core#Location">Location</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Address" title="https://w3id.org/osdm/core#Address">Address</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="admissions">
       <h3>admissions<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1255,31 +1205,6 @@ A location uniquely identifies a place in space. A location can be of type stati
             <dt>has range</dt>
             <dd>
                <a href="#Price" title="https://w3id.org/osdm/core#Price">price</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="connectionPoint">
-      <h3>connectionPoint<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/osdm/core#connectionPoint</p>
-      <div class="comment">
-         <span class="markdown">This property sets the relationship Location and ConnectionPoint.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Location" title="https://w3id.org/osdm/core#Location">Location</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#ConnectionPoint" title="https://w3id.org/osdm/core#ConnectionPoint">ConnectionPoint</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1567,31 +1492,6 @@ A location uniquely identifies a place in space. A location can be of type stati
          </dl>
       </div>
    </div>
-   <div class="entity" id="geoCoordinate">
-      <h3>geoCoordinate<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/osdm/core#geoCoordinate</p>
-      <div class="comment">
-         <span class="markdown">This property sets the relationship Location and GeoCoordinate.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Location" title="https://w3id.org/osdm/core#Location">Location</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#GeoCoordinate" title="https://w3id.org/osdm/core#GeoCoordinate">GeoCoordinate</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="identificationDocument">
       <h3>identificationDocument<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1781,31 +1681,6 @@ A location uniquely identifies a place in space. A location can be of type stati
          </dl>
       </div>
    </div>
-   <div class="entity" id="poi">
-      <h3>poi<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/osdm/core#poi</p>
-      <div class="comment">
-         <span class="markdown">This property sets the relationship Location and POI.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Location" title="https://w3id.org/osdm/core#Location">Location</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#POI" title="https://w3id.org/osdm/core#POI">POI</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="price">
       <h3>price<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1943,31 +1818,6 @@ A location uniquely identifies a place in space. A location can be of type stati
             <dt>has range</dt>
             <dd>
                <a href="#Segment" title="https://w3id.org/osdm/core#Segment">Segment</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="station">
-      <h3>station<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/osdm/core#station</p>
-      <div class="comment">
-         <span class="markdown">This property sets the relationship Location and StationDetail.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Location" title="https://w3id.org/osdm/core#Location">Location</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#StationDetail" title="https://w3id.org/osdm/core#StationDetail">StationDetail</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
