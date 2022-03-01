@@ -1,0 +1,1845 @@
+@prefix : <https://w3id.org/osdm/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/osdm/core#> .
+
+<https://w3id.org/osdm/core#> rdf:type owl:Ontology ;
+                               owl:versionIRI <https://w3id.org/osdm/core/0.1> ;
+                               <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> ;
+                               <http://purl.org/dc/elements/1.1/creator> "Jhon Toledo (Ontology Engienering Group - Universidad Politécnica de Madrid)" ,
+                                                                         "Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid" ,
+                                                                         "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" ;
+                               <http://purl.org/dc/elements/1.1/date> "2021-08-20" ;
+                               <http://purl.org/dc/elements/1.1/description> "Module of the OSDM  Ontology focused on Online API. This ontology provides support to the OSDM model. Visit https://github.com/oeg-upm/mobility/ and https://w3id.org/osdm/core/0.1"@en ;
+                               <http://purl.org/dc/elements/1.1/identifier> "https://w3id.org/osdm/core"@en ;
+                               <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" ;
+                               <http://purl.org/dc/elements/1.1/title> "OSDM - Distribution Model"@en ;
+                               rdfs:comment "Module of the OSDM Ontology focused on online API. This ontology provides support to the OSDM model. https://github.com/oeg-upm/mobility/tree/main/OSDM and https://w3id.org/osdm/core/0.1"@en ;
+                               rdfs:label "OSDM - Distribution Model"@en ;
+                               rdfs:seeAlso "https://github.com/oeg-upm/mobility/"@en ;
+                               owl:versionInfo "This is the initial version of the module on OSDM online API(V1.2), after considering the specification and examples of OSDM."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/osdm/core#author
+:author rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/osdm/core#creator
+:creator rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/osdm/core#description
+:description rdf:type owl:AnnotationProperty ;
+             rdfs:range rdfs:Literal .
+
+
+###  https://w3id.org/osdm/core#mbox
+:mbox rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty ;
+                                               rdfs:range <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                               rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Relaciona un recurso, como por ejemplo un concepto, con un esquema de conceptos o taxonomía en el que se incluye."@es ,
+                                                                                                "Relates a resource (for example a concept) to a concept scheme in which it is included."@en .
+
+
+###  https://w3id.org/osdm/core#address
+:address rdf:type owl:ObjectProperty ;
+         rdfs:domain :Location ;
+         rdfs:range :Address ;
+         rdfs:comment "This property sets the relationship Location and Address."@en ;
+         rdfs:label "address"@en .
+
+
+###  https://w3id.org/osdm/core#admissions
+:admissions rdf:type owl:ObjectProperty ;
+            rdfs:domain :Offer ;
+            rdfs:range :Admission ;
+            rdfs:comment "This property sets the relationship between Offer and admission"@en ;
+            rdfs:label "admissions"@en .
+
+
+###  https://w3id.org/osdm/core#ancillaries
+:ancillaries rdf:type owl:ObjectProperty ;
+             rdfs:domain :Offer ;
+             rdfs:range :Ancillarie ;
+             rdfs:comment "This property sets the relationship between Offer and ancillarie"@en ;
+             rdfs:label "ancillaries"@en .
+
+
+###  https://w3id.org/osdm/core#bookedOffers
+:bookedOffers rdf:type owl:ObjectProperty ;
+              rdfs:domain :Booking ;
+              rdfs:range :Offer ;
+              rdfs:comment "This property sets the relationship Booking and Offer."@en ;
+              rdfs:label "bookedOffers"@en .
+
+
+###  https://w3id.org/osdm/core#codes
+:codes rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf owl:topObjectProperty ;
+       rdfs:domain :StationDetail ;
+       rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                           owl:hasValue <https://w3id.org/mobility/osdm/kos/station-codes>
+                                         ]
+                                       ) ;
+                    rdf:type owl:Class
+                  ] ;
+       rdfs:comment "The codes that can be used to represent the given station on the system."@en ;
+       rdfs:label "codes"@en .
+
+
+###  https://w3id.org/osdm/core#conditions
+:conditions rdf:type owl:ObjectProperty ;
+            rdfs:domain :Fee ;
+            rdfs:range :Condition ;
+            rdfs:comment "This property describes the relation of the sales or after-sales conditions."@en ;
+            rdfs:label "conditions"@en .
+
+
+###  https://w3id.org/osdm/core#confirmedPrice
+:confirmedPrice rdf:type owl:ObjectProperty ;
+                rdfs:domain :Booking ;
+                rdfs:range :Price ;
+                rdfs:comment "This property sets the relationship Booking and Price."@en ;
+                rdfs:label "confirmedPrice"@en .
+
+
+###  https://w3id.org/osdm/core#connectionPoint
+:connectionPoint rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Location ;
+                 rdfs:range :ConnectionPoint ;
+                 rdfs:comment "This property sets the relationship Location and ConnectionPoint."@en ;
+                 rdfs:label "connectionPoint"@en .
+
+
+###  https://w3id.org/osdm/core#coreType
+:coreType rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/osdm/core#destination
+:destination rdf:type owl:ObjectProperty ;
+             rdfs:domain :Trip ;
+             rdfs:range :Stop ;
+             rdfs:comment "A location where the vehicle arrives. This property sets the relationship between Trip and Stop."@en ;
+             rdfs:label "destination"@en .
+
+
+###  https://w3id.org/osdm/core#details
+:details rdf:type owl:ObjectProperty ;
+         rdfs:domain :Passenger ;
+         rdfs:range :PassengerDetail ;
+         rdfs:comment "Information needed at booking step."@en ;
+         rdfs:label "details"@en .
+
+
+###  https://w3id.org/osdm/core#direction
+:direction rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :coreType ;
+           rdfs:domain :Trip ;
+           rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                               owl:hasValue <https://w3id.org/mobility/osdm/kos/direction-type>
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class
+                      ] ;
+           rdfs:comment "Indicates the trip direction"@en ;
+           rdfs:label "direction"@en .
+
+
+###  https://w3id.org/osdm/core#exchangeOperations
+:exchangeOperations rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Booking ;
+                    rdfs:range :ExchangeOperation ;
+                    rdfs:label "exchangeOperations"@en .
+
+
+###  https://w3id.org/osdm/core#fares
+:fares rdf:type owl:ObjectProperty ;
+       rdfs:domain :Offer ;
+       rdfs:range :FareOnline ;
+       rdfs:comment "This property sets the relationship between Offer and fare"@en ;
+       rdfs:label "fares"@en .
+
+
+###  https://w3id.org/osdm/core#feePrice
+:feePrice rdf:type owl:ObjectProperty ;
+          rdfs:domain :Condition ;
+          rdfs:range :Price ;
+          rdfs:comment "This property sets the relationship Condition and Price."@en ;
+          rdfs:label "feePrice"@en .
+
+
+###  https://w3id.org/osdm/core#fees
+:fees rdf:type owl:ObjectProperty ;
+      rdfs:domain :Offer ;
+      rdfs:range :Fee ;
+      rdfs:comment "This property sets the relationship between Offer and fee"@en ;
+      rdfs:label "fees"@en .
+
+
+###  https://w3id.org/osdm/core#fulfillmentType
+:fulfillmentType rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :coreType ;
+                 rdfs:domain :Offer ;
+                 rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                     owl:hasValue <https://w3id.org/mobility/osdm/kos/fulfillment-type>
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+                 rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                 rdfs:label "fulfillmentType"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Relates a resource (for example a concept) to a concept scheme in which it is included."@en .
+
+
+###  https://w3id.org/osdm/core#fulfillments
+:fulfillments rdf:type owl:ObjectProperty ;
+              rdfs:domain :Booking ;
+              rdfs:range :Fulfillment ;
+              rdfs:comment "This property sets the relationship Booking and Fulfillment."@en ;
+              rdfs:label "fulfillments"@en .
+
+
+###  https://w3id.org/osdm/core#gender
+:gender rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :coreType ;
+        rdfs:domain :Passenger ;
+        rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                            owl:hasValue <http://purl.org/linked-data/sdmx/2009/code#sex>
+                                          ]
+                                        ) ;
+                     rdf:type owl:Class
+                   ] ;
+        rdfs:label "gender"@en .
+
+
+###  https://w3id.org/osdm/core#geoCoordinate
+:geoCoordinate rdf:type owl:ObjectProperty ;
+               rdfs:domain :Location ;
+               rdfs:range :GeoCoordinate ;
+               rdfs:comment "This property sets the relationship Location and GeoCoordinate."@en ;
+               rdfs:label "geoCoordinate"@en .
+
+
+###  https://w3id.org/osdm/core#identificationDocument
+:identificationDocument rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Passenger ;
+                        rdfs:range :IdentidicationDocument ;
+                        rdfs:comment "This property sets the relationship between Passenger and IdentidicationDocument."@en ;
+                        rdfs:label "identificationDocument"@en .
+
+
+###  https://w3id.org/osdm/core#location
+:location rdf:type owl:ObjectProperty ;
+          rdfs:domain :Stop ;
+          rdfs:range :Location ;
+          rdfs:comment "This property sets the relationship Stop and Location ."@en ;
+          rdfs:label "location"@en .
+
+
+###  https://w3id.org/osdm/core#offerParts
+:offerParts rdf:type owl:ObjectProperty ;
+            rdfs:comment "This property sets the relationship Fulfillment and OfferParts."@en ;
+            rdfs:label "offerParts"@en .
+
+
+###  https://w3id.org/osdm/core#offerSummary
+:offerSummary rdf:type owl:ObjectProperty ;
+              rdfs:domain :Offer ;
+              rdfs:range :OfferSummary ;
+              rdfs:comment "This property sets the relationship between Offer and OfferSummary."@en ;
+              rdfs:label "offerSummary"@en .
+
+
+###  https://w3id.org/osdm/core#offers
+:offers rdf:type owl:ObjectProperty ;
+        rdfs:domain :TripOffer ;
+        rdfs:range :Offer ;
+        rdfs:comment "This property sets the relationship between TripOffer and Offer."@en ,
+                     "offers"@en .
+
+
+###  https://w3id.org/osdm/core#origin
+:origin rdf:type owl:ObjectProperty ;
+        rdfs:domain :Trip ;
+        rdfs:range :Stop ;
+        rdfs:comment "location where the vehicle departs. This property sets the relationship between Trip and Stop."@en ;
+        rdfs:label "origin"@en .
+
+
+###  https://w3id.org/osdm/core#passengers
+:passengers rdf:type owl:ObjectProperty ;
+            rdfs:domain :TripOffer ;
+            rdfs:range :Passenger ;
+            rdfs:comment "This property sets the relationship between TripOffer and Passenger."@en ;
+            rdfs:label "passengers"@en .
+
+
+###  https://w3id.org/osdm/core#poi
+:poi rdf:type owl:ObjectProperty ;
+     rdfs:domain :Location ;
+     rdfs:range :POI ;
+     rdfs:comment "This property sets the relationship Location and POI."@en ;
+     rdfs:label "poi"@en .
+
+
+###  https://w3id.org/osdm/core#price
+:price rdf:type owl:ObjectProperty ;
+       rdfs:range :Price ;
+       rdfs:comment "Represent costs for services or products."@en ;
+       rdfs:label "price"@en .
+
+
+###  https://w3id.org/osdm/core#provisionalPrice
+:provisionalPrice rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Booking ;
+                  rdfs:range :Price ;
+                  rdfs:comment "This property sets the relationship Booking and Price."@en ;
+                  rdfs:label "provisionalPrice"@en .
+
+
+###  https://w3id.org/osdm/core#realizedBy
+:realizedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Segment ;
+            rdfs:range :Vehicle ;
+            rdfs:comment "A trip that is realized with the same transport"@en ;
+            rdfs:label "realizedBy"@en .
+
+
+###  https://w3id.org/osdm/core#refundOffers
+:refundOffers rdf:type owl:ObjectProperty ;
+              rdfs:domain :Booking ;
+              rdfs:range :RefundOffer ;
+              rdfs:label "refundOffers"@en .
+
+
+###  https://w3id.org/osdm/core#reservations
+:reservations rdf:type owl:ObjectProperty ;
+              rdfs:domain :Offer ;
+              rdfs:range :Reservation ;
+              rdfs:comment "This property sets the relationship between Offer and reservation"@en ;
+              rdfs:label "reservations"@en .
+
+
+###  https://w3id.org/osdm/core#segments
+:segments rdf:type owl:ObjectProperty ;
+          rdfs:domain :Trip ;
+          rdfs:range :Segment ;
+          rdfs:comment "A list of segments. A segment represents a property that sets the relationship between Trip and Segment."@en ;
+          rdfs:label "segments"@en .
+
+
+###  https://w3id.org/osdm/core#station
+:station rdf:type owl:ObjectProperty ;
+         rdfs:domain :Location ;
+         rdfs:range :StationDetail ;
+         rdfs:comment "This property sets the relationship Location and StationDetail."@en ;
+         rdfs:label "station"@en .
+
+
+###  https://w3id.org/osdm/core#stops
+:stops rdf:type owl:ObjectProperty ;
+       rdfs:domain :Segment ;
+       rdfs:range :Stop ;
+       rdfs:comment "This property sets the relationship Segment and Stop."@en ;
+       rdfs:label "stops"@en .
+
+
+###  https://w3id.org/osdm/core#transportMode
+:transportMode rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :coreType ;
+               rdfs:domain :Vehicle ;
+               rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                   owl:hasValue <https://w3id.org/mobility/osdm/kos/transport-mode-type>
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+               rdfs:label "transportMode"@en .
+
+
+###  https://w3id.org/osdm/core#trip
+:trip rdf:type owl:ObjectProperty ;
+      rdfs:domain :Offer ;
+      rdfs:range :Trip ;
+      rdfs:comment "This property sets the relationship between Offer and Trip"@en ;
+      rdfs:label "trip"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/email
+<http://schema.org/email> rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :PassengerDetail ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "Email address."@en ;
+                          rdfs:label "email"@en .
+
+
+###  http://schema.org/telephone
+<http://schema.org/telephone> rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :PassengerDetail ;
+                              rdfs:range xsd:string ;
+                              rdfs:label "phoneNumber"@en ,
+                                         "telephone"@en .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:DatatypeProperty ;
+             rdfs:domain :FulfillmentDocument ;
+             rdfs:range xsd:string .
+
+
+###  http://xmlns.com/foaf/0.1/firstName
+<http://xmlns.com/foaf/0.1/firstName> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain :PassengerDetail ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "The first name of a person."@en ;
+                                      rdfs:label "firstName"@en .
+
+
+###  http://xmlns.com/foaf/0.1/lastName
+<http://xmlns.com/foaf/0.1/lastName> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain :PassengerDetail ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:comment "The last name of a person."@en ;
+                                     rdfs:label "lastName"@en .
+
+
+###  https://w3id.org/osdm/core#accommodation
+:accommodation rdf:type owl:DatatypeProperty ;
+               rdfs:domain :OfferSummary ;
+               rdfs:range xsd:string ;
+               rdfs:comment "This property sets the accommodation. example: seat, couchette"@en ;
+               rdfs:label "accommodation"@en .
+
+
+###  https://w3id.org/osdm/core#accommodationDetails
+:accommodationDetails rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :OfferSummary ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Accommodation details. Example: SEAT, COUCHETTE, BERTH or VEHICLE"@en ;
+                      rdfs:label "accommodationDetails"@en .
+
+
+###  https://w3id.org/osdm/core#accuracy
+:accuracy rdf:type owl:DatatypeProperty ;
+          rdfs:domain :GeoCoordinate ;
+          rdfs:range xsd:float ;
+          rdfs:comment "Accuracy of the provided coordinates to be used when comparing coordinates"@en ;
+          rdfs:label "accuracy"@en .
+
+
+###  https://w3id.org/osdm/core#afterSalesCondition
+:afterSalesCondition rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :FareOnline ;
+                     rdfs:range xsd:boolean ;
+                     rdfs:comment "Property that the after sales can be treated independently per person."@en ;
+                     rdfs:label "afterSalesCondition"@en .
+
+
+###  https://w3id.org/osdm/core#amount
+:amount rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Price ;
+        rdfs:range xsd:integer ;
+        rdfs:comment "Amount in cents."@en ;
+        rdfs:label "amount"@en .
+
+
+###  https://w3id.org/osdm/core#appliedThroughTicketTags
+:appliedThroughTicketTags rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Offer ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "This property shows the list of all throughticket tags that were effectively used in building or booking the offer"@en ;
+                          rdfs:label "appliedThroughTicketTags"@en .
+
+
+###  https://w3id.org/osdm/core#arrivalDateTime
+:arrivalDateTime rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Stop ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Date and time in the time zone of the station"@en ;
+                 rdfs:label "arrivalDateTime"@en .
+
+
+###  https://w3id.org/osdm/core#arrivalTrack
+:arrivalTrack rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Stop ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The info about the arrival-track of the stop. Format depends on operator."@en ;
+              rdfs:label "arrivalTrack"@en .
+
+
+###  https://w3id.org/osdm/core#carrierConstraintText
+:carrierConstraintText rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Product ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "carrierConstraintText"@en .
+
+
+###  https://w3id.org/osdm/core#city
+:city rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Address ;
+      rdfs:comment "City"@en ;
+      rdfs:label "city"@en .
+
+
+###  https://w3id.org/osdm/core#cityOfBirth
+:cityOfBirth rdf:type owl:DatatypeProperty ;
+             rdfs:domain :IdentidicationDocument ;
+             rdfs:range xsd:string ;
+             rdfs:label "cityOfBirth"@en .
+
+
+###  https://w3id.org/osdm/core#cityOfIssue
+:cityOfIssue rdf:type owl:DatatypeProperty ;
+             rdfs:domain :IdentidicationDocument ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Place where the document is issued"@en ;
+             rdfs:label "cityOfIssue"@en .
+
+
+###  https://w3id.org/osdm/core#cityOfResidence
+:cityOfResidence rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :IdentidicationDocument ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "cityOfResidence"@en .
+
+
+###  https://w3id.org/osdm/core#code
+:code rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Product ;
+      rdfs:range xsd:string ;
+      rdfs:comment "The product code expressed in the provider system (could be a mapping from an even lower-level provider)."@en ;
+      rdfs:label "code"@en .
+
+
+###  https://w3id.org/osdm/core#comfortClass
+:comfortClass rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:string ;
+              rdfs:comment "This property is mostly used to harmonize choice and representation across multiple carriers.\"FIRST\", \"SECOND\""@en ;
+              rdfs:label "comfortClass"@en .
+
+
+###  https://w3id.org/osdm/core#content
+:content rdf:type owl:DatatypeProperty ;
+         rdfs:domain :FulfillmentDocument ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Base64 encoded binary of the actual fulfillment document."@en ;
+         rdfs:label "content"@en .
+
+
+###  https://w3id.org/osdm/core#controlNumber
+:controlNumber rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Fulfillment ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "Ticket Control Number."@en ;
+               rdfs:label "controlNumber"@en .
+
+
+###  https://w3id.org/osdm/core#contryOfResidence
+:contryOfResidence rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :IdentidicationDocument ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "property according to ISO 3166 2A codes"@en ;
+                   rdfs:label "contryOfResidence"@en .
+
+
+###  https://w3id.org/osdm/core#country
+:country rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:string ;
+         rdfs:comment "This property use ISO 3166 2A codes to define the country"@en ;
+         rdfs:label "country"@en .
+
+
+###  https://w3id.org/osdm/core#countryOfBirth
+:countryOfBirth rdf:type owl:DatatypeProperty ;
+                rdfs:domain :IdentidicationDocument ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Property according to ISO 3166 2A codes"@en ;
+                rdfs:label "countryOfBirth"@en .
+
+
+###  https://w3id.org/osdm/core#countryOfIssue
+:countryOfIssue rdf:type owl:DatatypeProperty ;
+                rdfs:domain :IdentidicationDocument ;
+                rdfs:range xsd:string ;
+                rdfs:comment "property according to ISO 3166 2A codes"@en ;
+                rdfs:label "countryOfIssue"@en .
+
+
+###  https://w3id.org/osdm/core#coveredSegmentIndexes
+:coveredSegmentIndexes rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Offer ;
+                       rdfs:range xsd:integer ;
+                       rdfs:comment "This property indicates which segments are covered by the specific offer"@en ;
+                       rdfs:label "coveredSegmentIndexes"@en .
+
+
+###  https://w3id.org/osdm/core#currency
+:currency rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Price ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Currency (local currency might be required additionally due to local legislation for two carriers in one country). ISO 4217 currency codes"@en ;
+          rdfs:label "currency"@en .
+
+
+###  https://w3id.org/osdm/core#dateOfBirth
+:dateOfBirth rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Passenger ;
+             rdfs:range xsd:string ;
+             rdfs:comment "date of birth of the passenger"@en ;
+             rdfs:label "dateOfBirth"@en .
+
+
+###  https://w3id.org/osdm/core#dateOfIssue
+:dateOfIssue rdf:type owl:DatatypeProperty ;
+             rdfs:domain :IdentidicationDocument ;
+             rdfs:range xsd:string ;
+             rdfs:comment "date of issue"@en ;
+             rdfs:label "dateOfIssue"@en .
+
+
+###  https://w3id.org/osdm/core#departureDateTime
+:departureDateTime rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Stop ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Date and time in the time zone of the station"@en ;
+                   rdfs:label "departureDateTime"@en .
+
+
+###  https://w3id.org/osdm/core#departureTrack
+:departureTrack rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Stop ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The info about the departure-track of the stop. Format depends on operator."@en ;
+                rdfs:label "departureTrack"@en .
+
+
+###  https://w3id.org/osdm/core#downloadExpiry
+:downloadExpiry rdf:type owl:DatatypeProperty ;
+                rdfs:domain :FulfillmentDocument ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Expiration time of the download link, the document will not be available at the given URI after this time."@en ;
+                rdfs:label "downloadExpiry"@en .
+
+
+###  https://w3id.org/osdm/core#duration
+:duration rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Trip ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Total duration over all segment's (format see https://www.w3.org/TR/xmlschema11-2/#duration)"@en ,
+                       "duration of the segment in ISO 8601 Durations"@en ;
+          rdfs:label "duration"@en .
+
+
+###  https://w3id.org/osdm/core#format
+:format rdf:type owl:DatatypeProperty ;
+        rdfs:domain :FulfillmentDocument ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Physical format of the document provided in the content field in Mime-Type format, e.g. application/pdf, image/jpeg, etc. Must be filled if the \"content\" field is present."@en ;
+        rdfs:label "format"@en .
+
+
+###  https://w3id.org/osdm/core#fulfillmentDocumentType
+:fulfillmentDocumentType rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :FulfillmentDocument ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "example : \"BOOKING_RECEIPT\", \"TICKET\", \"BOARDING_PASS\", \"INFORMATION\", \"VOUCHER\""@en ;
+                         rdfs:label "fulfillmentDocumentType"@en .
+
+
+###  https://w3id.org/osdm/core#index
+:index rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Segment ;
+       rdfs:range xsd:string ;
+       rdfs:comment "sequence number of the segment in the ordering of all segments of the trip"@en ;
+       rdfs:label "index"@en .
+
+
+###  https://w3id.org/osdm/core#isAllocatorFee
+:isAllocatorFee rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Product ;
+                rdfs:range xsd:boolean ;
+                rdfs:comment "Indicates whether the fee belongs to the allocator"@en ;
+                rdfs:label "isAllocatorFee"@en .
+
+
+###  https://w3id.org/osdm/core#isReservationRequired
+:isReservationRequired rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Admission ;
+                       rdfs:range xsd:boolean ;
+                       rdfs:comment "Whether admission required reservation"@en ;
+                       rdfs:label "isReservationRequired"@en .
+
+
+###  https://w3id.org/osdm/core#isReturnProduct
+:isReturnProduct rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Product ;
+                 rdfs:range xsd:boolean ;
+                 rdfs:label "isReturnProduct"@en .
+
+
+###  https://w3id.org/osdm/core#isReusable
+:isReusable rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Offer ;
+            rdfs:range xsd:boolean ;
+            rdfs:comment "Indicates whether the offerId can be used in more than one booking."@en ;
+            rdfs:label "isReusable"@en .
+
+
+###  https://w3id.org/osdm/core#isTrainBound
+:isTrainBound rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Product ;
+              rdfs:range xsd:boolean ;
+              rdfs:label "isTrainBound"@en .
+
+
+###  https://w3id.org/osdm/core#latitude
+:latitude rdf:type owl:DatatypeProperty ;
+          rdfs:domain :GeoCoordinate ;
+          rdfs:range xsd:float ;
+          rdfs:comment "Geographic coordinate that specifies the north-south position of a point on the earths surface."@en ;
+          rdfs:label "latitude"@en .
+
+
+###  https://w3id.org/osdm/core#limitOfValidity
+:limitOfValidity rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :IdentidicationDocument ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "limitOfValidity"@en .
+
+
+###  https://w3id.org/osdm/core#lineNumber
+:lineNumber rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Vehicle ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Line number in case the vehicle does not have a number"@en ;
+            rdfs:label "lineNumber"@en .
+
+
+###  https://w3id.org/osdm/core#localCode
+:localCode rdf:type owl:DatatypeProperty ;
+           rdfs:domain :StationDetail ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Code unique with in the country only"@en ;
+           rdfs:label "localCode"@en .
+
+
+###  https://w3id.org/osdm/core#longitude
+:longitude rdf:type owl:DatatypeProperty ;
+           rdfs:domain :GeoCoordinate ;
+           rdfs:range xsd:float ;
+           rdfs:comment "Geographic coordinate that specifies the east-west position of a point on the earths surface."@en ;
+           rdfs:label "longitude"@en .
+
+
+###  https://w3id.org/osdm/core#medium
+:medium rdf:type owl:DatatypeProperty ;
+        rdfs:comment "property from Fulfillment types. RCT2, RCCST and UIC-PDF are official UIC standards."@en ;
+        rdfs:label "medium"@en .
+
+
+###  https://w3id.org/osdm/core#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:comment "ICAO transliteration identical as written in the document"@en ;
+      rdfs:label "name"@en .
+
+
+###  https://w3id.org/osdm/core#nationality
+:nationality rdf:type owl:DatatypeProperty ;
+             rdfs:domain :IdentidicationDocument ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Property according ISO 3166 2A codes"@en ;
+             rdfs:label "nationality"@en .
+
+
+###  https://w3id.org/osdm/core#postalCode
+:postalCode rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Address ;
+            rdfs:comment "postal code"@en ;
+            rdfs:label "postalCode"@en .
+
+
+###  https://w3id.org/osdm/core#productCode
+:productCode rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Fee ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The product code expressed in the provider system"@en ;
+             rdfs:label "productCode"@en .
+
+
+###  https://w3id.org/osdm/core#providerBookingReference
+:providerBookingReference rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Fee ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "The booking reference of the booking"@en ;
+                          rdfs:label "provider booking reference"@en .
+
+
+###  https://w3id.org/osdm/core#reference
+:reference rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Booking ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The unique booking reference in the provider system. Usually refers to an order number or PNR."@en ;
+           rdfs:label "reference"@en .
+
+
+###  https://w3id.org/osdm/core#requestedInformation
+:requestedInformation rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Offer ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "This property describes the Boolean expression indicating the data that must be set in the data model in order to proceed to the next step of the process."@en ;
+                      rdfs:label "requestedInformation"@en .
+
+
+###  https://w3id.org/osdm/core#returnTags
+:returnTags rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Offer ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Identifying sets of compatible offers when booking a return trip involving return-specific fares. All returnTags must be present in the counterpart offer to allow combination If no tag is provided, there is no return constraint on this specific offer."@en ;
+            rdfs:label "returnTags"@en .
+
+
+###  https://w3id.org/osdm/core#scale
+:scale rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Price ;
+       rdfs:range xsd:integer ;
+       rdfs:comment "Scale of the amount - the number of positions after the comma."@en ;
+       rdfs:label "scale"@en .
+
+
+###  https://w3id.org/osdm/core#serviceBrand
+:serviceBrand rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Vehicle ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Service brands identify a type of train. In future version it will be represented with SKOS."@en ;
+              rdfs:label "serviceBrand"@en .
+
+
+###  https://w3id.org/osdm/core#serviceClass
+:serviceClass rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Class of service.This property sets the quality level, finer grained than the comfort class. \"BEST\", \"HIGH\", \"STANDARD\", \"BASIC\""@en ;
+              rdfs:label "serviceClass"@en .
+
+
+###  https://w3id.org/osdm/core#serviceConstraintText
+:serviceConstraintText rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Product ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "serviceConstraintText"@en .
+
+
+###  https://w3id.org/osdm/core#status
+:status rdf:type owl:DatatypeProperty ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Booking status. Example. PREBOOKED, CONFIRMED, FULFILLED, CANCELLED, REFUNDED, EXCHANGE_ONGOING, ERROR"@en ;
+        rdfs:label "status"@en .
+
+
+###  https://w3id.org/osdm/core#street
+:street rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Address ;
+        rdfs:comment "The street name and house number (if applicable)"@en ;
+        rdfs:label "street"@en .
+
+
+###  https://w3id.org/osdm/core#system
+:system rdf:type owl:DatatypeProperty ;
+        rdfs:domain :GeoCoordinate ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Geo coordinate system indication. default: WGS84 standard system"@en ;
+        rdfs:label "system"@en .
+
+
+###  https://w3id.org/osdm/core#ticketTimeLimit
+:ticketTimeLimit rdf:type owl:DatatypeProperty ;
+                 rdfs:comment "ticket-time limit"@en ;
+                 rdfs:label "ticketTimeLimit"@en .
+
+
+###  https://w3id.org/osdm/core#tripKey
+:tripKey rdf:type owl:DatatypeProperty ;
+         rdfs:domain :TripOffer ;
+         rdfs:range xsd:string ;
+         rdfs:comment "This property sets the client reference that could be received in a search with trips in input."@en ;
+         rdfs:label "tripKey"@en .
+
+
+###  https://w3id.org/osdm/core#tripTags
+:tripTags rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Offer ;
+          rdfs:range xsd:string ;
+          rdfs:comment "This property describes sets of compatible offers when trying to combine multiple offers covering one single trip. At least one (not all) tripTags must be in common to allow combination If no tag is provided, there is no trip constraint on this specific offer."@en ;
+          rdfs:label "tripTags"@en .
+
+
+###  https://w3id.org/osdm/core#validFrom
+:validFrom rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Offer ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Defines the minimum validity period of the trip booked, meaning the period during which it will be possible to travel."@en ;
+           rdfs:label "validFrom"@en .
+
+
+###  https://w3id.org/osdm/core#validUntil
+:validUntil rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Offer ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Defines the validity period of the trip booked, meaning the period during which it will be possible to travel"@en ;
+            rdfs:label "validUntil"@en .
+
+
+###  https://w3id.org/osdm/core#vehicleNumber
+:vehicleNumber rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Vehicle ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Vehicle number"@en ;
+               rdfs:label "vehicleNumber"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#> ;
+                                              rdfs:label "Concept"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class ;
+                                                    rdfs:comment "A concept scheme may be defined to include concepts from different sources."@en ,
+                                                                 "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies."@en ;
+                                                    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#> ;
+                                                    rdfs:label "Concept Scheme"@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
+
+
+###  https://w3id.org/osdm/core#Address
+:Address rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :city ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :country ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :postalCode ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :street ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ;
+         rdfs:comment "Used to encode an address using the standard street address attributes."@en ;
+         rdfs:label "Address"@en .
+
+
+###  https://w3id.org/osdm/core#Admission
+:Admission rdf:type owl:Class ;
+           rdfs:subClassOf :OfferPart ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isReservationRequired ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:boolean
+                           ] ;
+           rdfs:comment "Admission offer parts represent a travel right, or the entitlement to travel onboard a train between the given origin and destination, following the given route.It does not include a seat reservation."@en ,
+                        "Represent a travel right, or the entitlement to travel onboard a train between the given origin and destination, following the given route, without a seat reservation"@en ;
+           rdfs:label "Admission"@en .
+
+
+###  https://w3id.org/osdm/core#Ancillarie
+:Ancillarie rdf:type owl:Class ;
+            rdfs:subClassOf :OfferPart ;
+            rdfs:comment "An extra service like meal or WIFI"@en ,
+                         "Ancillaries are used to represent non-transport products associated with the transportation request submitted. It could be onboard services such as a WIFI connection or a meal, or services associated with one of the stops, or origin/destination, like a parking spot or lounge access."@en ;
+            rdfs:label "Ancillarie"@en .
+
+
+###  https://w3id.org/osdm/core#Booking
+:Booking rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :fulfillmentType ;
+                           owl:allValuesFrom [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                      owl:hasValue <https://w3id.org/mobility/osdm/kos/fulfillment-type>
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ]
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bookedOffers ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Offer
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :confirmedPrice ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Price
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :exchangeOperations ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :ExchangeOperation
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :fulfillments ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Fulfillment
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :passengers ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Passenger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :provisionalPrice ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Price
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :refundOffers ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :RefundOffer
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :reference ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :requestedInformation ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:boolean
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :status ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :ticketTimeLimit ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ;
+         rdfs:comment "The booking represents the local booking for the offers that have been selected. It contains a set of sub-resources, most of which were encountered in the offer stage."@en ;
+         rdfs:label "Booking"@en .
+
+
+###  https://w3id.org/osdm/core#Condition
+:Condition rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :validFrom ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :validUntil ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ;
+           rdfs:comment "Describes sales and after sales conditions applicable to the product. For a product to be refundable or exchangeable, at least one refund or exchange (respectively) condition must be present."@en ;
+           rdfs:label "Condition"@en .
+
+
+###  https://w3id.org/osdm/core#ConnectionPoint
+:ConnectionPoint rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :codes ;
+                                   owl:allValuesFrom [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                              owl:hasValue <https://w3id.org/mobility/osdm/kos/station-codes>
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ]
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :geoCoordinate ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :GeoCoordinate
+                                 ] ;
+                 rdfs:comment "Connection point connecting two fare regimes. Providing the UIC code for the station is mandatory."@en ;
+                 rdfs:label "ConnectionPoint"@en .
+
+
+###  https://w3id.org/osdm/core#ExchangeOperation
+:ExchangeOperation rdf:type owl:Class ;
+                   rdfs:comment "An exchange operations represent an ongoing exchange."@en ;
+                   rdfs:label "ExchangeOperations"@en .
+
+
+###  https://w3id.org/osdm/core#FareOnline
+:FareOnline rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :price ;
+                              owl:someValuesFrom :Price
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :afterSalesCondition ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:boolean
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :serviceClass ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ;
+            rdfs:comment "TODO: check if it's the same with fare of Transmodel"@en .
+
+
+###  https://w3id.org/osdm/core#Fee
+:Fee rdf:type owl:Class ;
+     rdfs:subClassOf :OfferPart ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :productCode ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :providerBookingReference ;
+                       owl:someValuesFrom xsd:string
+                     ] ;
+     rdfs:comment "Fees are used to represent additional costs for services or products. Offer parts of type “fee” can be applied to the booking process (e.g. a service fee), the trip (e.g. a reservation fee which is applied to all reservations in trains running in the same direction, namely outward or inward travel) or other offer parts."@en ;
+     rdfs:label "Fee"@en .
+
+
+###  https://w3id.org/osdm/core#Fulfillment
+:Fulfillment rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :price ;
+                               owl:someValuesFrom :Price
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :offerParts ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :OfferPart
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :status ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:string
+                             ] ;
+             rdfs:comment "fulfillment representing an offer part"@en ;
+             rdfs:label "Fulfillment"@en .
+
+
+###  https://w3id.org/osdm/core#FulfillmentDocument
+:FulfillmentDocument rdf:type owl:Class ;
+                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       owl:onProperty rdfs:seeAlso ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :content ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :downloadExpiry ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :format ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :fulfillmentDocumentType ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :medium ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ;
+                     rdfs:comment "Class for document fulfillment."@en ;
+                     rdfs:label "FulfillmentDocument"@en .
+
+
+###  https://w3id.org/osdm/core#GeoCoordinate
+:GeoCoordinate rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :accuracy ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:float
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :latitude ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:float
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :longitude ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:float
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :system ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] ;
+               rdfs:comment "Used to provide any geo-encoded location, regardless of environment, using longitude and latitude coordinates."@en ;
+               rdfs:label "GeoCoordinate"@en .
+
+
+###  https://w3id.org/osdm/core#IdentidicationDocument
+:IdentidicationDocument rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty :cityOfBirth ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :cityOfIssue ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :cityOfResidence ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :contryOfResidence ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :countryOfBirth ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :countryOfIssue ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :dateOfIssue ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :limitOfValidity ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :nationality ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/dc/elements/1.1/identifier> ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :name ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ;
+                        rdfs:comment "Travel document data to be exchanged for border control."@en ;
+                        rdfs:label "IdentidicationDocument"@en .
+
+
+###  https://w3id.org/osdm/core#Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :address ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Address
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :connectionPoint ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :ConnectionPoint
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :geoCoordinate ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :GeoCoordinate
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :poi ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :POI
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :station ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :StationDetail
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://purl.org/dc/elements/1.1/identifier> ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ;
+          rdfs:comment """Representing a specific location in a trip: departure, origin, intermediate stop or other.
+A location uniquely identifies a place in space. A location can be of type station, point-of-interest, address or geo-coordinate."""@en ;
+          rdfs:label "Location"@en .
+
+
+###  https://w3id.org/osdm/core#Offer
+:Offer rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :admissions ;
+                         owl:allValuesFrom :Admission
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :ancillaries ;
+                         owl:allValuesFrom :Ancillarie
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :fares ;
+                         owl:allValuesFrom :FareOnline
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :fees ;
+                         owl:allValuesFrom :Fee
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :fulfillmentType ;
+                         owl:allValuesFrom [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                    owl:hasValue <https://w3id.org/mobility/osdm/kos/fulfillment-type>
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ]
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :offerSummary ;
+                         owl:allValuesFrom :OfferSummary
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :reservations ;
+                         owl:allValuesFrom :Reservation
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :trip ;
+                         owl:allValuesFrom :Trip
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :appliedThroughTicketTags ;
+                         owl:someValuesFrom xsd:string
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :coveredSegmentIndexes ;
+                         owl:someValuesFrom xsd:integer
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :requestedInformation ;
+                         owl:someValuesFrom xsd:string
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :returnTags ;
+                         owl:someValuesFrom xsd:string
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :tripTags ;
+                         owl:someValuesFrom xsd:string
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :validFrom ;
+                         owl:someValuesFrom xsd:string
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :validUntil ;
+                         owl:someValuesFrom xsd:string
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :isReusable ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:boolean
+                       ] ;
+       rdfs:comment "Representing bookable elements that covers exactly one a specific trip"@en ;
+       rdfs:label "Offer"@en .
+
+
+###  https://w3id.org/osdm/core#OfferPart
+:OfferPart rdf:type owl:Class ;
+           rdfs:comment "Representing bookable elements that covers exactly one a specific trip (or the requested section of a trip in case of allocator request to an nTM Provider)"@en ;
+           rdfs:label "OfferParts"@en .
+
+
+###  https://w3id.org/osdm/core#OfferSummary
+:OfferSummary rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :accommodation ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :accommodationDetails ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :comfortClass ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :serviceClass ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ;
+              rdfs:comment "The offer summary indicates the major service class, level or flexibility."@en ;
+              rdfs:label "OfferSummary"@en .
+
+
+###  https://w3id.org/osdm/core#POI
+:POI rdf:type owl:Class ;
+     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                       owl:onProperty :codes ;
+                       owl:allValuesFrom [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                  owl:hasValue <https://w3id.org/mobility/osdm/kos/station-codes>
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ]
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :geoCoordinate ;
+                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                       owl:onClass :GeoCoordinate
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :country ;
+                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                       owl:onDataRange xsd:string
+                     ] ;
+     rdfs:comment "POI (for point of Interest) represents a location that is not a train station but still relevant to the description of the trip. It could be a public transport stop, an exhibition, an event hall, a shopping mall etc."@en ;
+     rdfs:label "POI"@en .
+
+
+###  https://w3id.org/osdm/core#Passenger
+:Passenger rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :gender ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass <http://www.w3.org/2004/02/skos/core#Concept>
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :identificationDocument ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Offer
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :dateOfBirth ;
+                             owl:someValuesFrom xsd:string
+                           ] ;
+           rdfs:comment "A passenger is the person travailing on a vehicle."@en ;
+           rdfs:label "Passenger"@en .
+
+
+###  https://w3id.org/osdm/core#PassengerDetail
+:PassengerDetail rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://schema.org/email> ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://schema.org/telephone> ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://xmlns.com/foaf/0.1/firstName> ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://xmlns.com/foaf/0.1/lastName> ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ;
+                 rdfs:comment "Passenger details providing personal information only information required in the booking."@en ;
+                 rdfs:label "Passenger Details"@en .
+
+
+###  https://w3id.org/osdm/core#Price
+:Price rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :amount ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:integer
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :currency ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:string
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :scale ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:integer
+                       ] .
+
+
+###  https://w3id.org/osdm/core#Product
+:Product rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :feePrice ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Price
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :code ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :comfortClass ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :isAllocatorFee ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:boolean
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :isReturnProduct ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:boolean
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :isTrainBound ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:boolean
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :serviceClass ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ;
+         rdfs:label "Product"@en .
+
+
+###  https://w3id.org/osdm/core#RefundOffer
+:RefundOffer rdf:type owl:Class ;
+             rdfs:comment "Refund offers represent a provisional refund request that is made on all or a subset of the fulfillments contained in a booking."@en ;
+             rdfs:label "RefundOffers"@en .
+
+
+###  https://w3id.org/osdm/core#Reservation
+:Reservation rdf:type owl:Class ;
+             rdfs:subClassOf :OfferPart ;
+             rdfs:comment "Reservation includes the reference to the in the initial offer. The offer needs to be updated with the selected places before the confirmation which creates the reservation details including the reserved places."@en ,
+                          "Reservation offer parts represent a seat (or other accommodation) reservation on the transportation. In contrast with admissions, a reservation is in essence bound to a specific train, although it normally does not include the entitlement to board the train. Travellers therefore typically need an a associated admission offer part or other entitlement (such as a pass)  in order to actually travel."@en ;
+             rdfs:label "Reservation"@en .
+
+
+###  https://w3id.org/osdm/core#Segment
+:Segment rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :stops ;
+                           owl:allValuesFrom :Stop
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :destination ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Stop
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :origin ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Stop
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :duration ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :index ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ;
+         rdfs:comment "A segment represents a subsection of a trip that is realized with the same transport vehicle.  A segment has an origin, a destination and duration."@en ;
+         rdfs:label "Segment"@en .
+
+
+###  https://w3id.org/osdm/core#StationDetail
+:StationDetail rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :codes ;
+                                 owl:allValuesFrom [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                            owl:hasValue <https://w3id.org/mobility/osdm/kos/station-codes>
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ]
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :country ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :localCode ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] ;
+               rdfs:comment "Details of a station. In some countries stations have multiple names depending on the countries local languages."@en ;
+               rdfs:label "StationDetail"@en .
+
+
+###  https://w3id.org/osdm/core#Stop
+:Stop rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :location ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Location
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :arrivalDateTime ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:string
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :arrivalTrack ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:string
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :departureDateTime ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:string
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :departureTrack ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:string
+                      ] ;
+      rdfs:comment "Represents a location or station. Either a departure, arrival or intermediate stop along a segment of a trip."@en ;
+      rdfs:label "Stop"@en .
+
+
+###  https://w3id.org/osdm/core#Trip
+:Trip rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :direction ;
+                        owl:allValuesFrom [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                   owl:hasValue <https://w3id.org/mobility/osdm/kos/direction-type>
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ]
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :segments ;
+                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Segment
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :destination ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Stop
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :origin ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Stop
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <http://purl.org/dc/elements/1.1/identifier> ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:string
+                      ] ;
+      rdfs:comment "Trips represent the concrete realization of a trip going from departure station to destination station. A trip is composed of one or more segments."@en ;
+      rdfs:label "Trip"@en .
+
+
+###  https://w3id.org/osdm/core#TripOffer
+:TripOffer rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :passengers ;
+                             owl:allValuesFrom :Passenger
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :offers ;
+                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Offer
+                           ] ;
+           rdfs:comment "Grouping all the offers relating to one same trip. Indeed, in most cases the Allocator provider will propose several offers of different comfort and flexibility levels."@en ;
+           rdfs:label "TripOffer"@en .
+
+
+###  https://w3id.org/osdm/core#Vehicle
+:Vehicle rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :transportMode ;
+                           owl:allValuesFrom [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                      owl:hasValue <https://w3id.org/mobility/osdm/kos/transport-mode-type>
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ]
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :lineNumber ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :serviceBrand ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :vehicleNumber ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ;
+         rdfs:comment "A vehicle is defined by a number or line and a service brand."@en ;
+         rdfs:label "Vehicle"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.org/linked-data/sdmx/2009/code#sex
+<http://purl.org/linked-data/sdmx/2009/code#sex> rdf:type owl:NamedIndividual ,
+                                                          <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                 rdfs:comment "This  code list provides the gender."@en ;
+                                                 rdfs:label "sex"@en .
+
+
+###  https://w3id.org/mobility/osdm/kos/direction-type
+<https://w3id.org/mobility/osdm/kos/direction-type> rdf:type owl:NamedIndividual ,
+                                                             <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                    rdfs:label "direction type"@en .
+
+
+###  https://w3id.org/mobility/osdm/kos/fulfillment-type
+<https://w3id.org/mobility/osdm/kos/fulfillment-type> rdf:type owl:NamedIndividual ,
+                                                               <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                      rdfs:comment "Type of fulfillment of a Offer : ETICKET, CIT_PAPER, PASS_CHIP or  PASS_REFERENCE."@en ;
+                                                      rdfs:label "fulfillment type"@en .
+
+
+###  https://w3id.org/mobility/osdm/kos/location-type
+<https://w3id.org/mobility/osdm/kos/location-type> rdf:type owl:NamedIndividual ,
+                                                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                   rdfs:comment """Locations are resources representing a specific location in a trip: departure, origin, intermediate stop or other. They can be of different types:
+-Station
+- Address
+-POI
+-GeoCoordinate
+-ConnectionPoint"""@en ;
+                                                   rdfs:label "location type"@en .
+
+
+###  https://w3id.org/mobility/osdm/kos/station-codes
+<https://w3id.org/mobility/osdm/kos/station-codes> rdf:type owl:NamedIndividual ,
+                                                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                   rdfs:label "Station Codes"@en .
+
+
+###  https://w3id.org/mobility/osdm/kos/transport-mode-type
+<https://w3id.org/mobility/osdm/kos/transport-mode-type> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                         rdfs:label "transport-mode-type"@en .
+
+
+[ :mbox "ja.toledo@upm.es"@en
+] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/dc/elements/1.1/identifier> rdfs:comment "An unambiguous reference to the resource within a given context."@en ;
+                                              rdfs:label "identifier"@en .
+
+
+rdfs:seeAlso rdfs:label "downloadLink"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
