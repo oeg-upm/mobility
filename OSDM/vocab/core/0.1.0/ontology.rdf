@@ -10,9 +10,10 @@
      xmlns:core="https://w3id.org/osdm/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:vann="http://purl.org/vocab/vann/">
-    <owl:Ontology rdf:about="https://w3id.org/osdm/core#">
-        <owl:versionIRI rdf:resource="https://w3id.org/osdm/core/0.1"/>
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:core1="https://w3id.org/mobility/osdm/core#">
+    <owl:Ontology rdf:about="https://w3id.org/mobility/osdm/core#">
+        <owl:versionIRI rdf:resource="https://w3id.org/mobility/osdm/core/0.1"/>
         <ns:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dc:creator>Jhon Toledo (Ontology Engienering Group - Universidad Politécnica de Madrid)</dc:creator>
         <dc:creator>Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid</dc:creator>
@@ -38,12 +39,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://creativecommons.org/ns#license -->
-
 
     <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
@@ -51,13 +50,11 @@
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/date -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
     
@@ -65,13 +62,11 @@
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/identifier -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
     
@@ -79,13 +74,11 @@
 
     <!-- http://purl.org/dc/elements/1.1/rights -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/title -->
-
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
@@ -93,45 +86,39 @@
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
-
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
-
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
     
 
 
-    <!-- https://w3id.org/osdm/core#author -->
+    <!-- https://w3id.org/mobility/osdm/core#author -->
 
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/osdm/core#author"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mobility/osdm/core#author"/>
     
 
 
-    <!-- https://w3id.org/osdm/core#creator -->
+    <!-- https://w3id.org/mobility/osdm/core#creator -->
 
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/osdm/core#creator"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mobility/osdm/core#creator"/>
     
 
 
-    <!-- https://w3id.org/osdm/core#description -->
+    <!-- https://w3id.org/mobility/osdm/core#description -->
 
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/osdm/core#description">
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mobility/osdm/core#description">
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:AnnotationProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#mbox -->
+    <!-- https://w3id.org/mobility/osdm/core#mbox -->
 
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/osdm/core#mbox"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mobility/osdm/core#mbox"/>
     
 
 
@@ -143,12 +130,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
-
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
@@ -159,48 +144,44 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#admissions -->
+    <!-- https://w3id.org/mobility/osdm/core#admissions -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#admissions">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Admission"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#admissions">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Admission"/>
         <rdfs:comment xml:lang="en">This property sets the relationship between Offer and admission</rdfs:comment>
         <rdfs:label xml:lang="en">admissions</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#ancillaries -->
+    <!-- https://w3id.org/mobility/osdm/core#ancillaries -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#ancillaries">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Ancillarie"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#ancillaries">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Ancillarie"/>
         <rdfs:comment xml:lang="en">This property sets the relationship between Offer and ancillarie</rdfs:comment>
         <rdfs:label xml:lang="en">ancillaries</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#bookedOffers -->
+    <!-- https://w3id.org/mobility/osdm/core#bookedOffers -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#bookedOffers">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Booking"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Offer"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#bookedOffers">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Booking"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
         <rdfs:comment xml:lang="en">This property sets the relationship Booking and Offer.</rdfs:comment>
         <rdfs:label xml:lang="en">bookedOffers</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#codes -->
+    <!-- https://w3id.org/mobility/osdm/core#codes -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#codes">
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#codes">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#StationDetail"/>
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#StationDetail"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -218,67 +199,61 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#conditions -->
+    <!-- https://w3id.org/mobility/osdm/core#conditions -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#conditions">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Fee"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Condition"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#conditions">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Fee"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Condition"/>
         <rdfs:comment xml:lang="en">This property describes the relation of the sales or after-sales conditions.</rdfs:comment>
         <rdfs:label xml:lang="en">conditions</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#confirmedPrice -->
+    <!-- https://w3id.org/mobility/osdm/core#confirmedPrice -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#confirmedPrice">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Booking"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Price"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#confirmedPrice">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Booking"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Price"/>
         <rdfs:comment xml:lang="en">This property sets the relationship Booking and Price.</rdfs:comment>
         <rdfs:label xml:lang="en">confirmedPrice</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#coreType -->
+    <!-- https://w3id.org/mobility/osdm/core#coreType -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#coreType"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#coreType"/>
     
 
 
-    <!-- https://w3id.org/osdm/core#destination -->
+    <!-- https://w3id.org/mobility/osdm/core#destination -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#destination">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Trip"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Stop"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#destination">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Trip"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Stop"/>
         <rdfs:comment xml:lang="en">A location where the vehicle arrives. This property sets the relationship between Trip and Stop.</rdfs:comment>
         <rdfs:label xml:lang="en">destination</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#details -->
+    <!-- https://w3id.org/mobility/osdm/core#details -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#details">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Passenger"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#PassengerDetail"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#details">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Passenger"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#PassengerDetail"/>
         <rdfs:comment xml:lang="en">Information needed at booking step.</rdfs:comment>
         <rdfs:label xml:lang="en">details</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#direction -->
+    <!-- https://w3id.org/mobility/osdm/core#direction -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#direction">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/osdm/core#coreType"/>
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Trip"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#direction">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/mobility/osdm/core#coreType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Trip"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -296,59 +271,54 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#exchangeOperations -->
+    <!-- https://w3id.org/mobility/osdm/core#exchangeOperations -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#exchangeOperations">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Booking"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#ExchangeOperation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#exchangeOperations">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Booking"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#ExchangeOperation"/>
         <rdfs:label xml:lang="en">exchangeOperations</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#fares -->
+    <!-- https://w3id.org/mobility/osdm/core#fares -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#fares">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#FareOnline"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#fares">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#FareOnline"/>
         <rdfs:comment xml:lang="en">This property sets the relationship between Offer and fare</rdfs:comment>
         <rdfs:label xml:lang="en">fares</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#feePrice -->
+    <!-- https://w3id.org/mobility/osdm/core#feePrice -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#feePrice">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Condition"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Price"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#feePrice">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Condition"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Price"/>
         <rdfs:comment xml:lang="en">This property sets the relationship Condition and Price.</rdfs:comment>
         <rdfs:label xml:lang="en">feePrice</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#fees -->
+    <!-- https://w3id.org/mobility/osdm/core#fees -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#fees">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Fee"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#fees">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Fee"/>
         <rdfs:comment xml:lang="en">This property sets the relationship between Offer and fee</rdfs:comment>
         <rdfs:label xml:lang="en">fees</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#fulfillmentType -->
+    <!-- https://w3id.org/mobility/osdm/core#fulfillmentType -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#fulfillmentType">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/osdm/core#coreType"/>
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#fulfillmentType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/mobility/osdm/core#coreType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -367,24 +337,22 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#fulfillments -->
+    <!-- https://w3id.org/mobility/osdm/core#fulfillments -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#fulfillments">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Booking"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Fulfillment"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#fulfillments">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Booking"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Fulfillment"/>
         <rdfs:comment xml:lang="en">This property sets the relationship Booking and Fulfillment.</rdfs:comment>
         <rdfs:label xml:lang="en">fulfillments</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#gender -->
+    <!-- https://w3id.org/mobility/osdm/core#gender -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#gender">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/osdm/core#coreType"/>
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Passenger"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#gender">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/mobility/osdm/core#coreType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Passenger"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -401,176 +369,161 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#identificationDocument -->
+    <!-- https://w3id.org/mobility/osdm/core#identificationDocument -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#identificationDocument">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Passenger"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#IdentidicationDocument"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#identificationDocument">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Passenger"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#IdentidicationDocument"/>
         <rdfs:comment xml:lang="en">This property sets the relationship between Passenger and IdentidicationDocument.</rdfs:comment>
         <rdfs:label xml:lang="en">identificationDocument</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#location -->
+    <!-- https://w3id.org/mobility/osdm/core#location -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#location">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Stop"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Location"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#location">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Stop"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Location"/>
         <rdfs:comment xml:lang="en">This property sets the relationship Stop and Location .</rdfs:comment>
         <rdfs:label xml:lang="en">location</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#offerParts -->
+    <!-- https://w3id.org/mobility/osdm/core#offerParts -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#offerParts">
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#offerParts">
         <rdfs:comment xml:lang="en">This property sets the relationship Fulfillment and OfferParts.</rdfs:comment>
         <rdfs:label xml:lang="en">offerParts</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#offerSummary -->
+    <!-- https://w3id.org/mobility/osdm/core#offerSummary -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#offerSummary">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#OfferSummary"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#offerSummary">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#OfferSummary"/>
         <rdfs:comment xml:lang="en">This property sets the relationship between Offer and OfferSummary.</rdfs:comment>
         <rdfs:label xml:lang="en">offerSummary</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#offers -->
+    <!-- https://w3id.org/mobility/osdm/core#offers -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#offers">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#TripOffer"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Offer"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#offers">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#TripOffer"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
         <rdfs:comment xml:lang="en">This property sets the relationship between TripOffer and Offer.</rdfs:comment>
         <rdfs:comment xml:lang="en">offers</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#origin -->
+    <!-- https://w3id.org/mobility/osdm/core#origin -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#origin">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Trip"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Stop"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#origin">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Trip"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Stop"/>
         <rdfs:comment xml:lang="en">location where the vehicle departs. This property sets the relationship between Trip and Stop.</rdfs:comment>
         <rdfs:label xml:lang="en">origin</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#passengers -->
+    <!-- https://w3id.org/mobility/osdm/core#passengers -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#passengers">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#TripOffer"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Passenger"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#passengers">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#TripOffer"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Passenger"/>
         <rdfs:comment xml:lang="en">This property sets the relationship between TripOffer and Passenger.</rdfs:comment>
         <rdfs:label xml:lang="en">passengers</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#price -->
+    <!-- https://w3id.org/mobility/osdm/core#price -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#price">
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Price"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#price">
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Price"/>
         <rdfs:comment xml:lang="en">Represent costs for services or products.</rdfs:comment>
         <rdfs:label xml:lang="en">price</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#provisionalPrice -->
+    <!-- https://w3id.org/mobility/osdm/core#provisionalPrice -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#provisionalPrice">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Booking"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Price"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#provisionalPrice">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Booking"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Price"/>
         <rdfs:comment xml:lang="en">This property sets the relationship Booking and Price.</rdfs:comment>
         <rdfs:label xml:lang="en">provisionalPrice</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#realizedBy -->
+    <!-- https://w3id.org/mobility/osdm/core#realizedBy -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#realizedBy">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Segment"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Vehicle"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#realizedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Segment"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Vehicle"/>
         <rdfs:comment xml:lang="en">A trip that is realized with the same transport</rdfs:comment>
         <rdfs:label xml:lang="en">realizedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#refundOffers -->
+    <!-- https://w3id.org/mobility/osdm/core#refundOffers -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#refundOffers">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Booking"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#RefundOffer"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#refundOffers">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Booking"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#RefundOffer"/>
         <rdfs:label xml:lang="en">refundOffers</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#reservations -->
+    <!-- https://w3id.org/mobility/osdm/core#reservations -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#reservations">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Reservation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#reservations">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Reservation"/>
         <rdfs:comment xml:lang="en">This property sets the relationship between Offer and reservation</rdfs:comment>
         <rdfs:label xml:lang="en">reservations</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#segments -->
+    <!-- https://w3id.org/mobility/osdm/core#segments -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#segments">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Trip"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Segment"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#segments">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Trip"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Segment"/>
         <rdfs:comment xml:lang="en">A list of segments. A segment represents a property that sets the relationship between Trip and Segment.</rdfs:comment>
         <rdfs:label xml:lang="en">segments</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#stops -->
+    <!-- https://w3id.org/mobility/osdm/core#stops -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#stops">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Segment"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Stop"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#stops">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Segment"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Stop"/>
         <rdfs:comment xml:lang="en">This property sets the relationship Segment and Stop.</rdfs:comment>
         <rdfs:label xml:lang="en">stops</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#transportMode -->
+    <!-- https://w3id.org/mobility/osdm/core#transportMode -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#transportMode">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/osdm/core#coreType"/>
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Vehicle"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#transportMode">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/mobility/osdm/core#coreType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Vehicle"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -587,12 +540,11 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#trip -->
+    <!-- https://w3id.org/mobility/osdm/core#trip -->
 
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/osdm/core#trip">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
-        <rdfs:range rdf:resource="https://w3id.org/osdm/core#Trip"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/osdm/core#trip">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/osdm/core#Trip"/>
         <rdfs:comment xml:lang="en">This property sets the relationship between Offer and Trip</rdfs:comment>
         <rdfs:label xml:lang="en">trip</rdfs:label>
     </owl:ObjectProperty>
@@ -607,12 +559,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://purl.org/dc/elements/1.1/identifier -->
-
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
     
@@ -620,9 +570,8 @@
 
     <!-- http://schema.org/email -->
 
-
     <owl:DatatypeProperty rdf:about="http://schema.org/email">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#PassengerDetail"/>
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#PassengerDetail"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Email address.</rdfs:comment>
         <rdfs:label xml:lang="en">email</rdfs:label>
@@ -632,9 +581,8 @@
 
     <!-- http://schema.org/telephone -->
 
-
     <owl:DatatypeProperty rdf:about="http://schema.org/telephone">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#PassengerDetail"/>
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#PassengerDetail"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">phoneNumber</rdfs:label>
         <rdfs:label xml:lang="en">telephone</rdfs:label>
@@ -644,9 +592,8 @@
 
     <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
 
-
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#FulfillmentDocument"/>
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#FulfillmentDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -654,9 +601,8 @@
 
     <!-- http://xmlns.com/foaf/0.1/firstName -->
 
-
     <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/firstName">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#PassengerDetail"/>
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#PassengerDetail"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The first name of a person.</rdfs:comment>
         <rdfs:label xml:lang="en">firstName</rdfs:label>
@@ -666,9 +612,8 @@
 
     <!-- http://xmlns.com/foaf/0.1/lastName -->
 
-
     <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/lastName">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#PassengerDetail"/>
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#PassengerDetail"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The last name of a person.</rdfs:comment>
         <rdfs:label xml:lang="en">lastName</rdfs:label>
@@ -676,11 +621,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#accommodation -->
+    <!-- https://w3id.org/mobility/osdm/core#accommodation -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#accommodation">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#OfferSummary"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#accommodation">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#OfferSummary"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">This property sets the accommodation. example: seat, couchette</rdfs:comment>
         <rdfs:label xml:lang="en">accommodation</rdfs:label>
@@ -688,11 +632,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#accommodationDetails -->
+    <!-- https://w3id.org/mobility/osdm/core#accommodationDetails -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#accommodationDetails">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#OfferSummary"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#accommodationDetails">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#OfferSummary"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Accommodation details. Example: SEAT, COUCHETTE, BERTH or VEHICLE</rdfs:comment>
         <rdfs:label xml:lang="en">accommodationDetails</rdfs:label>
@@ -700,11 +643,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#accuracy -->
+    <!-- https://w3id.org/mobility/osdm/core#accuracy -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#accuracy">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#GeoCoordinate"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#accuracy">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#GeoCoordinate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Accuracy of the provided coordinates to be used when comparing coordinates</rdfs:comment>
         <rdfs:label xml:lang="en">accuracy</rdfs:label>
@@ -712,11 +654,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#afterSalesCondition -->
+    <!-- https://w3id.org/mobility/osdm/core#afterSalesCondition -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#afterSalesCondition">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#FareOnline"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#afterSalesCondition">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#FareOnline"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Property that the after sales can be treated independently per person.</rdfs:comment>
         <rdfs:label xml:lang="en">afterSalesCondition</rdfs:label>
@@ -724,11 +665,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#amount -->
+    <!-- https://w3id.org/mobility/osdm/core#amount -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#amount">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Price"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#amount">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Price"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">Amount in cents.</rdfs:comment>
         <rdfs:label xml:lang="en">amount</rdfs:label>
@@ -736,11 +676,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#appliedThroughTicketTags -->
+    <!-- https://w3id.org/mobility/osdm/core#appliedThroughTicketTags -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#appliedThroughTicketTags">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#appliedThroughTicketTags">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">This property shows the list of all throughticket tags that were effectively used in building or booking the offer</rdfs:comment>
         <rdfs:label xml:lang="en">appliedThroughTicketTags</rdfs:label>
@@ -748,11 +687,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#arrivalDateTime -->
+    <!-- https://w3id.org/mobility/osdm/core#arrivalDateTime -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#arrivalDateTime">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Stop"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#arrivalDateTime">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Stop"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Date and time in the time zone of the station</rdfs:comment>
         <rdfs:label xml:lang="en">arrivalDateTime</rdfs:label>
@@ -760,11 +698,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#arrivalTrack -->
+    <!-- https://w3id.org/mobility/osdm/core#arrivalTrack -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#arrivalTrack">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Stop"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#arrivalTrack">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Stop"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The info about the arrival-track of the stop. Format depends on operator.</rdfs:comment>
         <rdfs:label xml:lang="en">arrivalTrack</rdfs:label>
@@ -772,44 +709,40 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#carrierConstraintText -->
+    <!-- https://w3id.org/mobility/osdm/core#carrierConstraintText -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#carrierConstraintText">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Product"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#carrierConstraintText">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Product"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">carrierConstraintText</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#city -->
+    <!-- https://w3id.org/mobility/osdm/core#city -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#city">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Address"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#city">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Address"/>
         <rdfs:comment xml:lang="en">City</rdfs:comment>
         <rdfs:label xml:lang="en">city</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#cityOfBirth -->
+    <!-- https://w3id.org/mobility/osdm/core#cityOfBirth -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#cityOfBirth">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#IdentidicationDocument"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#cityOfBirth">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#IdentidicationDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">cityOfBirth</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#cityOfIssue -->
+    <!-- https://w3id.org/mobility/osdm/core#cityOfIssue -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#cityOfIssue">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#IdentidicationDocument"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#cityOfIssue">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#IdentidicationDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Place where the document is issued</rdfs:comment>
         <rdfs:label xml:lang="en">cityOfIssue</rdfs:label>
@@ -817,22 +750,20 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#cityOfResidence -->
+    <!-- https://w3id.org/mobility/osdm/core#cityOfResidence -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#cityOfResidence">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#IdentidicationDocument"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#cityOfResidence">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#IdentidicationDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">cityOfResidence</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#code -->
+    <!-- https://w3id.org/mobility/osdm/core#code -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#code">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Product"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#code">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Product"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The product code expressed in the provider system (could be a mapping from an even lower-level provider).</rdfs:comment>
         <rdfs:label xml:lang="en">code</rdfs:label>
@@ -840,10 +771,9 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#comfortClass -->
+    <!-- https://w3id.org/mobility/osdm/core#comfortClass -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#comfortClass">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#comfortClass">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">This property is mostly used to harmonize choice and representation across multiple carriers.&quot;FIRST&quot;, &quot;SECOND&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">comfortClass</rdfs:label>
@@ -851,11 +781,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#content -->
+    <!-- https://w3id.org/mobility/osdm/core#content -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#content">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#FulfillmentDocument"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#content">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#FulfillmentDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Base64 encoded binary of the actual fulfillment document.</rdfs:comment>
         <rdfs:label xml:lang="en">content</rdfs:label>
@@ -863,11 +792,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#controlNumber -->
+    <!-- https://w3id.org/mobility/osdm/core#controlNumber -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#controlNumber">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Fulfillment"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#controlNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Fulfillment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">Ticket Control Number.</rdfs:comment>
         <rdfs:label xml:lang="en">controlNumber</rdfs:label>
@@ -875,11 +803,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#contryOfResidence -->
+    <!-- https://w3id.org/mobility/osdm/core#contryOfResidence -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#contryOfResidence">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#IdentidicationDocument"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#contryOfResidence">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#IdentidicationDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">property according to ISO 3166 2A codes</rdfs:comment>
         <rdfs:label xml:lang="en">contryOfResidence</rdfs:label>
@@ -887,10 +814,9 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#country -->
+    <!-- https://w3id.org/mobility/osdm/core#country -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#country">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#country">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">This property use ISO 3166 2A codes to define the country</rdfs:comment>
         <rdfs:label xml:lang="en">country</rdfs:label>
@@ -898,11 +824,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#countryOfBirth -->
+    <!-- https://w3id.org/mobility/osdm/core#countryOfBirth -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#countryOfBirth">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#IdentidicationDocument"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#countryOfBirth">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#IdentidicationDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Property according to ISO 3166 2A codes</rdfs:comment>
         <rdfs:label xml:lang="en">countryOfBirth</rdfs:label>
@@ -910,11 +835,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#countryOfIssue -->
+    <!-- https://w3id.org/mobility/osdm/core#countryOfIssue -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#countryOfIssue">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#IdentidicationDocument"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#countryOfIssue">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#IdentidicationDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">property according to ISO 3166 2A codes</rdfs:comment>
         <rdfs:label xml:lang="en">countryOfIssue</rdfs:label>
@@ -922,11 +846,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#coveredSegmentIndexes -->
+    <!-- https://w3id.org/mobility/osdm/core#coveredSegmentIndexes -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#coveredSegmentIndexes">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#coveredSegmentIndexes">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">This property indicates which segments are covered by the specific offer</rdfs:comment>
         <rdfs:label xml:lang="en">coveredSegmentIndexes</rdfs:label>
@@ -934,11 +857,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#currency -->
+    <!-- https://w3id.org/mobility/osdm/core#currency -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#currency">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Price"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#currency">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Price"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Currency (local currency might be required additionally due to local legislation for two carriers in one country). ISO 4217 currency codes</rdfs:comment>
         <rdfs:label xml:lang="en">currency</rdfs:label>
@@ -946,11 +868,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#dateOfBirth -->
+    <!-- https://w3id.org/mobility/osdm/core#dateOfBirth -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#dateOfBirth">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Passenger"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#dateOfBirth">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Passenger"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">date of birth of the passenger</rdfs:comment>
         <rdfs:label xml:lang="en">dateOfBirth</rdfs:label>
@@ -958,11 +879,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#dateOfIssue -->
+    <!-- https://w3id.org/mobility/osdm/core#dateOfIssue -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#dateOfIssue">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#IdentidicationDocument"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#dateOfIssue">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#IdentidicationDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">date of issue</rdfs:comment>
         <rdfs:label xml:lang="en">dateOfIssue</rdfs:label>
@@ -970,11 +890,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#departureDateTime -->
+    <!-- https://w3id.org/mobility/osdm/core#departureDateTime -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#departureDateTime">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Stop"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#departureDateTime">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Stop"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Date and time in the time zone of the station</rdfs:comment>
         <rdfs:label xml:lang="en">departureDateTime</rdfs:label>
@@ -982,11 +901,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#departureTrack -->
+    <!-- https://w3id.org/mobility/osdm/core#departureTrack -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#departureTrack">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Stop"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#departureTrack">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Stop"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The info about the departure-track of the stop. Format depends on operator.</rdfs:comment>
         <rdfs:label xml:lang="en">departureTrack</rdfs:label>
@@ -994,11 +912,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#downloadExpiry -->
+    <!-- https://w3id.org/mobility/osdm/core#downloadExpiry -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#downloadExpiry">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#FulfillmentDocument"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#downloadExpiry">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#FulfillmentDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Expiration time of the download link, the document will not be available at the given URI after this time.</rdfs:comment>
         <rdfs:label xml:lang="en">downloadExpiry</rdfs:label>
@@ -1006,11 +923,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#duration -->
+    <!-- https://w3id.org/mobility/osdm/core#duration -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#duration">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Trip"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#duration">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Trip"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Total duration over all segment&apos;s (format see https://www.w3.org/TR/xmlschema11-2/#duration)</rdfs:comment>
         <rdfs:comment xml:lang="en">duration of the segment in ISO 8601 Durations</rdfs:comment>
@@ -1019,11 +935,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#format -->
+    <!-- https://w3id.org/mobility/osdm/core#format -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#format">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#FulfillmentDocument"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#format">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#FulfillmentDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Physical format of the document provided in the content field in Mime-Type format, e.g. application/pdf, image/jpeg, etc. Must be filled if the &quot;content&quot; field is present.</rdfs:comment>
         <rdfs:label xml:lang="en">format</rdfs:label>
@@ -1031,11 +946,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#fulfillmentDocumentType -->
+    <!-- https://w3id.org/mobility/osdm/core#fulfillmentDocumentType -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#fulfillmentDocumentType">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#FulfillmentDocument"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#fulfillmentDocumentType">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#FulfillmentDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">example : &quot;BOOKING_RECEIPT&quot;, &quot;TICKET&quot;, &quot;BOARDING_PASS&quot;, &quot;INFORMATION&quot;, &quot;VOUCHER&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">fulfillmentDocumentType</rdfs:label>
@@ -1043,11 +957,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#index -->
+    <!-- https://w3id.org/mobility/osdm/core#index -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#index">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Segment"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#index">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Segment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">sequence number of the segment in the ordering of all segments of the trip</rdfs:comment>
         <rdfs:label xml:lang="en">index</rdfs:label>
@@ -1055,11 +968,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#isAllocatorFee -->
+    <!-- https://w3id.org/mobility/osdm/core#isAllocatorFee -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#isAllocatorFee">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Product"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#isAllocatorFee">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Product"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Indicates whether the fee belongs to the allocator</rdfs:comment>
         <rdfs:label xml:lang="en">isAllocatorFee</rdfs:label>
@@ -1067,11 +979,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#isReservationRequired -->
+    <!-- https://w3id.org/mobility/osdm/core#isReservationRequired -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#isReservationRequired">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Admission"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#isReservationRequired">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Admission"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Whether admission required reservation</rdfs:comment>
         <rdfs:label xml:lang="en">isReservationRequired</rdfs:label>
@@ -1079,22 +990,20 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#isReturnProduct -->
+    <!-- https://w3id.org/mobility/osdm/core#isReturnProduct -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#isReturnProduct">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Product"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#isReturnProduct">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Product"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:label xml:lang="en">isReturnProduct</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#isReusable -->
+    <!-- https://w3id.org/mobility/osdm/core#isReusable -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#isReusable">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#isReusable">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Indicates whether the offerId can be used in more than one booking.</rdfs:comment>
         <rdfs:label xml:lang="en">isReusable</rdfs:label>
@@ -1102,22 +1011,20 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#isTrainBound -->
+    <!-- https://w3id.org/mobility/osdm/core#isTrainBound -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#isTrainBound">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Product"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#isTrainBound">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Product"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:label xml:lang="en">isTrainBound</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#latitude -->
+    <!-- https://w3id.org/mobility/osdm/core#latitude -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#latitude">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#GeoCoordinate"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#latitude">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#GeoCoordinate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Geographic coordinate that specifies the north-south position of a point on the earths surface.</rdfs:comment>
         <rdfs:label xml:lang="en">latitude</rdfs:label>
@@ -1125,22 +1032,20 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#limitOfValidity -->
+    <!-- https://w3id.org/mobility/osdm/core#limitOfValidity -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#limitOfValidity">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#IdentidicationDocument"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#limitOfValidity">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#IdentidicationDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">limitOfValidity</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#lineNumber -->
+    <!-- https://w3id.org/mobility/osdm/core#lineNumber -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#lineNumber">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Vehicle"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#lineNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Vehicle"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Line number in case the vehicle does not have a number</rdfs:comment>
         <rdfs:label xml:lang="en">lineNumber</rdfs:label>
@@ -1148,11 +1053,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#localCode -->
+    <!-- https://w3id.org/mobility/osdm/core#localCode -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#localCode">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#StationDetail"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#localCode">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#StationDetail"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Code unique with in the country only</rdfs:comment>
         <rdfs:label xml:lang="en">localCode</rdfs:label>
@@ -1160,11 +1064,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#longitude -->
+    <!-- https://w3id.org/mobility/osdm/core#longitude -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#longitude">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#GeoCoordinate"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#longitude">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#GeoCoordinate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Geographic coordinate that specifies the east-west position of a point on the earths surface.</rdfs:comment>
         <rdfs:label xml:lang="en">longitude</rdfs:label>
@@ -1172,31 +1075,28 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#medium -->
+    <!-- https://w3id.org/mobility/osdm/core#medium -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#medium">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#medium">
         <rdfs:comment xml:lang="en">property from Fulfillment types. RCT2, RCCST and UIC-PDF are official UIC standards.</rdfs:comment>
         <rdfs:label xml:lang="en">medium</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#name -->
+    <!-- https://w3id.org/mobility/osdm/core#name -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#name">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#name">
         <rdfs:comment xml:lang="en">ICAO transliteration identical as written in the document</rdfs:comment>
         <rdfs:label xml:lang="en">name</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#nationality -->
+    <!-- https://w3id.org/mobility/osdm/core#nationality -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#nationality">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#IdentidicationDocument"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#nationality">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#IdentidicationDocument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Property according ISO 3166 2A codes</rdfs:comment>
         <rdfs:label xml:lang="en">nationality</rdfs:label>
@@ -1204,22 +1104,20 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#postalCode -->
+    <!-- https://w3id.org/mobility/osdm/core#postalCode -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#postalCode">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Address"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#postalCode">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Address"/>
         <rdfs:comment xml:lang="en">postal code</rdfs:comment>
         <rdfs:label xml:lang="en">postalCode</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#productCode -->
+    <!-- https://w3id.org/mobility/osdm/core#productCode -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#productCode">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Fee"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#productCode">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Fee"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The product code expressed in the provider system</rdfs:comment>
         <rdfs:label xml:lang="en">productCode</rdfs:label>
@@ -1227,11 +1125,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#providerBookingReference -->
+    <!-- https://w3id.org/mobility/osdm/core#providerBookingReference -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#providerBookingReference">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Fee"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#providerBookingReference">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Fee"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The booking reference of the booking</rdfs:comment>
         <rdfs:label xml:lang="en">provider booking reference</rdfs:label>
@@ -1239,11 +1136,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#reference -->
+    <!-- https://w3id.org/mobility/osdm/core#reference -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#reference">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Booking"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#reference">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Booking"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The unique booking reference in the provider system. Usually refers to an order number or PNR.</rdfs:comment>
         <rdfs:label xml:lang="en">reference</rdfs:label>
@@ -1251,11 +1147,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#requestedInformation -->
+    <!-- https://w3id.org/mobility/osdm/core#requestedInformation -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#requestedInformation">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#requestedInformation">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">This property describes the Boolean expression indicating the data that must be set in the data model in order to proceed to the next step of the process.</rdfs:comment>
         <rdfs:label xml:lang="en">requestedInformation</rdfs:label>
@@ -1263,11 +1158,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#returnTags -->
+    <!-- https://w3id.org/mobility/osdm/core#returnTags -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#returnTags">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#returnTags">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Identifying sets of compatible offers when booking a return trip involving return-specific fares. All returnTags must be present in the counterpart offer to allow combination If no tag is provided, there is no return constraint on this specific offer.</rdfs:comment>
         <rdfs:label xml:lang="en">returnTags</rdfs:label>
@@ -1275,11 +1169,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#scale -->
+    <!-- https://w3id.org/mobility/osdm/core#scale -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#scale">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Price"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#scale">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Price"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">Scale of the amount - the number of positions after the comma.</rdfs:comment>
         <rdfs:label xml:lang="en">scale</rdfs:label>
@@ -1287,11 +1180,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#serviceBrand -->
+    <!-- https://w3id.org/mobility/osdm/core#serviceBrand -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#serviceBrand">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Vehicle"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#serviceBrand">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Vehicle"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Service brands identify a type of train. In future version it will be represented with SKOS.</rdfs:comment>
         <rdfs:label xml:lang="en">serviceBrand</rdfs:label>
@@ -1299,10 +1191,9 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#serviceClass -->
+    <!-- https://w3id.org/mobility/osdm/core#serviceClass -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#serviceClass">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#serviceClass">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Class of service.This property sets the quality level, finer grained than the comfort class. &quot;BEST&quot;, &quot;HIGH&quot;, &quot;STANDARD&quot;, &quot;BASIC&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">serviceClass</rdfs:label>
@@ -1310,21 +1201,19 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#serviceConstraintText -->
+    <!-- https://w3id.org/mobility/osdm/core#serviceConstraintText -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#serviceConstraintText">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Product"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#serviceConstraintText">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Product"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">serviceConstraintText</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#status -->
+    <!-- https://w3id.org/mobility/osdm/core#status -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#status">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#status">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Booking status. Example. PREBOOKED, CONFIRMED, FULFILLED, CANCELLED, REFUNDED, EXCHANGE_ONGOING, ERROR</rdfs:comment>
         <rdfs:label xml:lang="en">status</rdfs:label>
@@ -1332,22 +1221,20 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#street -->
+    <!-- https://w3id.org/mobility/osdm/core#street -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#street">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Address"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#street">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Address"/>
         <rdfs:comment xml:lang="en">The street name and house number (if applicable)</rdfs:comment>
         <rdfs:label xml:lang="en">street</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#system -->
+    <!-- https://w3id.org/mobility/osdm/core#system -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#system">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#GeoCoordinate"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#system">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#GeoCoordinate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Geo coordinate system indication. default: WGS84 standard system</rdfs:comment>
         <rdfs:label xml:lang="en">system</rdfs:label>
@@ -1355,21 +1242,19 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#ticketTimeLimit -->
+    <!-- https://w3id.org/mobility/osdm/core#ticketTimeLimit -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#ticketTimeLimit">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#ticketTimeLimit">
         <rdfs:comment xml:lang="en">ticket-time limit</rdfs:comment>
         <rdfs:label xml:lang="en">ticketTimeLimit</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/osdm/core#tripKey -->
+    <!-- https://w3id.org/mobility/osdm/core#tripKey -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#tripKey">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#TripOffer"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#tripKey">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#TripOffer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">This property sets the client reference that could be received in a search with trips in input.</rdfs:comment>
         <rdfs:label xml:lang="en">tripKey</rdfs:label>
@@ -1377,11 +1262,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#tripTags -->
+    <!-- https://w3id.org/mobility/osdm/core#tripTags -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#tripTags">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#tripTags">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">This property describes sets of compatible offers when trying to combine multiple offers covering one single trip. At least one (not all) tripTags must be in common to allow combination If no tag is provided, there is no trip constraint on this specific offer.</rdfs:comment>
         <rdfs:label xml:lang="en">tripTags</rdfs:label>
@@ -1389,11 +1273,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#validFrom -->
+    <!-- https://w3id.org/mobility/osdm/core#validFrom -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#validFrom">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#validFrom">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Defines the minimum validity period of the trip booked, meaning the period during which it will be possible to travel.</rdfs:comment>
         <rdfs:label xml:lang="en">validFrom</rdfs:label>
@@ -1401,11 +1284,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#validUntil -->
+    <!-- https://w3id.org/mobility/osdm/core#validUntil -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#validUntil">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Offer"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#validUntil">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Defines the validity period of the trip booked, meaning the period during which it will be possible to travel</rdfs:comment>
         <rdfs:label xml:lang="en">validUntil</rdfs:label>
@@ -1413,11 +1295,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#vehicleNumber -->
+    <!-- https://w3id.org/mobility/osdm/core#vehicleNumber -->
 
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/osdm/core#vehicleNumber">
-        <rdfs:domain rdf:resource="https://w3id.org/osdm/core#Vehicle"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/osdm/core#vehicleNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/osdm/core#Vehicle"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Vehicle number</rdfs:comment>
         <rdfs:label xml:lang="en">vehicleNumber</rdfs:label>
@@ -1433,12 +1314,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
-
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
@@ -1450,7 +1329,6 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
 
-
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
         <rdfs:comment xml:lang="en">A concept scheme may be defined to include concepts from different sources.</rdfs:comment>
         <rdfs:comment xml:lang="en">Thesauri, classification schemes, subject heading lists, taxonomies, &apos;folksonomies&apos;, and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies.</rdfs:comment>
@@ -1461,35 +1339,34 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#Address -->
+    <!-- https://w3id.org/mobility/osdm/core#Address -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Address">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/osdm/core#Location"/>
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Address">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/osdm/core#Location"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#city"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#city"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#country"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#country"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#postalCode"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#postalCode"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#street"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#street"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1500,14 +1377,13 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#Admission -->
+    <!-- https://w3id.org/mobility/osdm/core#Admission -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Admission">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/osdm/core#OfferPart"/>
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Admission">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/osdm/core#OfferPart"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#isReservationRequired"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#isReservationRequired"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
@@ -1519,11 +1395,10 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#Ancillarie -->
+    <!-- https://w3id.org/mobility/osdm/core#Ancillarie -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Ancillarie">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/osdm/core#OfferPart"/>
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Ancillarie">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/osdm/core#OfferPart"/>
         <rdfs:comment xml:lang="en">An extra service like meal or WIFI</rdfs:comment>
         <rdfs:comment xml:lang="en">Ancillaries are used to represent non-transport products associated with the transportation request submitted. It could be onboard services such as a WIFI connection or a meal, or services associated with one of the stops, or origin/destination, like a parking spot or lounge access.</rdfs:comment>
         <rdfs:label xml:lang="en">Ancillarie</rdfs:label>
@@ -1531,13 +1406,12 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#Booking -->
+    <!-- https://w3id.org/mobility/osdm/core#Booking -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Booking">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Booking">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#fulfillmentType"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#fulfillmentType"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -1553,77 +1427,77 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#bookedOffers"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#bookedOffers"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Offer"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#confirmedPrice"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#confirmedPrice"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Price"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Price"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#exchangeOperations"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#exchangeOperations"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#ExchangeOperation"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#ExchangeOperation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#fulfillments"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#fulfillments"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Fulfillment"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Fulfillment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#passengers"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#passengers"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Passenger"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Passenger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#provisionalPrice"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#provisionalPrice"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Price"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Price"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#refundOffers"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#refundOffers"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#RefundOffer"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#RefundOffer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#reference"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#reference"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#requestedInformation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#requestedInformation"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#status"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#status"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#ticketTimeLimit"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#ticketTimeLimit"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1634,20 +1508,19 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#Condition -->
+    <!-- https://w3id.org/mobility/osdm/core#Condition -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Condition">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Condition">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#validFrom"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#validFrom"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#validUntil"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#validUntil"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1658,14 +1531,13 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#ConnectionPoint -->
+    <!-- https://w3id.org/mobility/osdm/core#ConnectionPoint -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#ConnectionPoint">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/osdm/core#Location"/>
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#ConnectionPoint">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/osdm/core#Location"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#codes"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#codes"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -1685,36 +1557,34 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#ExchangeOperation -->
+    <!-- https://w3id.org/mobility/osdm/core#ExchangeOperation -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#ExchangeOperation">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#ExchangeOperation">
         <rdfs:comment xml:lang="en">An exchange operations represent an ongoing exchange.</rdfs:comment>
         <rdfs:label xml:lang="en">ExchangeOperations</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/osdm/core#FareOnline -->
+    <!-- https://w3id.org/mobility/osdm/core#FareOnline -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#FareOnline">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#FareOnline">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#price"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/osdm/core#Price"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#price"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/osdm/core#Price"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#afterSalesCondition"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#afterSalesCondition"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#serviceClass"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#serviceClass"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1724,20 +1594,19 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#Fee -->
+    <!-- https://w3id.org/mobility/osdm/core#Fee -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Fee">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/osdm/core#OfferPart"/>
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Fee">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/osdm/core#OfferPart"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#productCode"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#productCode"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#providerBookingReference"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#providerBookingReference"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1747,26 +1616,25 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#Fulfillment -->
+    <!-- https://w3id.org/mobility/osdm/core#Fulfillment -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Fulfillment">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Fulfillment">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#price"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/osdm/core#Price"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#price"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/osdm/core#Price"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#offerParts"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#offerParts"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#OfferPart"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#OfferPart"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#status"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#status"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1777,10 +1645,9 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#FulfillmentDocument -->
+    <!-- https://w3id.org/mobility/osdm/core#FulfillmentDocument -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#FulfillmentDocument">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#FulfillmentDocument">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
@@ -1790,35 +1657,35 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#content"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#content"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#downloadExpiry"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#downloadExpiry"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#format"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#format"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#fulfillmentDocumentType"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#fulfillmentDocumentType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#medium"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#medium"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1829,35 +1696,34 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#GeoCoordinate -->
+    <!-- https://w3id.org/mobility/osdm/core#GeoCoordinate -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#GeoCoordinate">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/osdm/core#Location"/>
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#GeoCoordinate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/osdm/core#Location"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#accuracy"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#accuracy"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#latitude"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#latitude"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#longitude"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#longitude"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#system"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#system"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1868,61 +1734,60 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#IdentidicationDocument -->
+    <!-- https://w3id.org/mobility/osdm/core#IdentidicationDocument -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#IdentidicationDocument">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#IdentidicationDocument">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#cityOfBirth"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#cityOfBirth"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#cityOfIssue"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#cityOfIssue"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#cityOfResidence"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#cityOfResidence"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#contryOfResidence"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#contryOfResidence"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#countryOfBirth"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#countryOfBirth"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#countryOfIssue"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#countryOfIssue"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#dateOfIssue"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#dateOfIssue"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#limitOfValidity"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#limitOfValidity"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#nationality"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#nationality"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1935,7 +1800,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#name"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#name"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1946,10 +1811,9 @@
     
 
 
-    <!-- https://w3id.org/osdm/core#Location -->
+    <!-- https://w3id.org/mobility/osdm/core#Location -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Location">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Location">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
@@ -1964,37 +1828,36 @@ A location uniquely identifies a place in space. A location can be of type stati
     
 
 
-    <!-- https://w3id.org/osdm/core#Offer -->
+    <!-- https://w3id.org/mobility/osdm/core#Offer -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Offer">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Offer">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#admissions"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/osdm/core#Admission"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#admissions"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/mobility/osdm/core#Admission"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#ancillaries"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/osdm/core#Ancillarie"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#ancillaries"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/mobility/osdm/core#Ancillarie"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#fares"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/osdm/core#FareOnline"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#fares"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/mobility/osdm/core#FareOnline"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#fees"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/osdm/core#Fee"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#fees"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/mobility/osdm/core#Fee"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#fulfillmentType"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#fulfillmentType"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -2010,67 +1873,67 @@ A location uniquely identifies a place in space. A location can be of type stati
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#offerSummary"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/osdm/core#OfferSummary"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#offerSummary"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/mobility/osdm/core#OfferSummary"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#reservations"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/osdm/core#Reservation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#reservations"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/mobility/osdm/core#Reservation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#trip"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/osdm/core#Trip"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#trip"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/mobility/osdm/core#Trip"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#appliedThroughTicketTags"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#appliedThroughTicketTags"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#coveredSegmentIndexes"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#coveredSegmentIndexes"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#requestedInformation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#requestedInformation"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#returnTags"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#returnTags"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#tripTags"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#tripTags"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#validFrom"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#validFrom"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#validUntil"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#validUntil"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#isReusable"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#isReusable"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
@@ -2081,44 +1944,42 @@ A location uniquely identifies a place in space. A location can be of type stati
     
 
 
-    <!-- https://w3id.org/osdm/core#OfferPart -->
+    <!-- https://w3id.org/mobility/osdm/core#OfferPart -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#OfferPart">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#OfferPart">
         <rdfs:comment xml:lang="en">Representing bookable elements that covers exactly one a specific trip (or the requested section of a trip in case of allocator request to an nTM Provider)</rdfs:comment>
         <rdfs:label xml:lang="en">OfferParts</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/osdm/core#OfferSummary -->
+    <!-- https://w3id.org/mobility/osdm/core#OfferSummary -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#OfferSummary">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#OfferSummary">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#accommodation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#accommodation"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#accommodationDetails"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#accommodationDetails"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#comfortClass"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#comfortClass"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#serviceClass"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#serviceClass"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -2129,14 +1990,13 @@ A location uniquely identifies a place in space. A location can be of type stati
     
 
 
-    <!-- https://w3id.org/osdm/core#POI -->
+    <!-- https://w3id.org/mobility/osdm/core#POI -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#POI">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/osdm/core#Location"/>
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#POI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/osdm/core#Location"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#codes"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#codes"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -2152,7 +2012,7 @@ A location uniquely identifies a place in space. A location can be of type stati
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#country"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#country"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -2163,27 +2023,26 @@ A location uniquely identifies a place in space. A location can be of type stati
     
 
 
-    <!-- https://w3id.org/osdm/core#Passenger -->
+    <!-- https://w3id.org/mobility/osdm/core#Passenger -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Passenger">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Passenger">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#gender"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#gender"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#identificationDocument"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#identificationDocument"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Offer"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#dateOfBirth"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#dateOfBirth"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2193,10 +2052,9 @@ A location uniquely identifies a place in space. A location can be of type stati
     
 
 
-    <!-- https://w3id.org/osdm/core#PassengerDetail -->
+    <!-- https://w3id.org/mobility/osdm/core#PassengerDetail -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#PassengerDetail">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#PassengerDetail">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://schema.org/email"/>
@@ -2231,27 +2089,26 @@ A location uniquely identifies a place in space. A location can be of type stati
     
 
 
-    <!-- https://w3id.org/osdm/core#Price -->
+    <!-- https://w3id.org/mobility/osdm/core#Price -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Price">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Price">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#amount"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#amount"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#currency"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#currency"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#scale"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#scale"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
@@ -2260,55 +2117,54 @@ A location uniquely identifies a place in space. A location can be of type stati
     
 
 
-    <!-- https://w3id.org/osdm/core#Product -->
+    <!-- https://w3id.org/mobility/osdm/core#Product -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Product">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Product">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#feePrice"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#feePrice"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Price"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Price"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#code"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#code"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#comfortClass"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#comfortClass"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#isAllocatorFee"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#isAllocatorFee"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#isReturnProduct"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#isReturnProduct"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#isTrainBound"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#isTrainBound"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#serviceClass"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#serviceClass"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -2318,21 +2174,19 @@ A location uniquely identifies a place in space. A location can be of type stati
     
 
 
-    <!-- https://w3id.org/osdm/core#RefundOffer -->
+    <!-- https://w3id.org/mobility/osdm/core#RefundOffer -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#RefundOffer">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#RefundOffer">
         <rdfs:comment xml:lang="en">Refund offers represent a provisional refund request that is made on all or a subset of the fulfillments contained in a booking.</rdfs:comment>
         <rdfs:label xml:lang="en">RefundOffers</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/osdm/core#Reservation -->
+    <!-- https://w3id.org/mobility/osdm/core#Reservation -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Reservation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/osdm/core#OfferPart"/>
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Reservation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/osdm/core#OfferPart"/>
         <rdfs:comment xml:lang="en">Reservation includes the reference to the in the initial offer. The offer needs to be updated with the selected places before the confirmation which creates the reservation details including the reserved places.</rdfs:comment>
         <rdfs:comment xml:lang="en">Reservation offer parts represent a seat (or other accommodation) reservation on the transportation. In contrast with admissions, a reservation is in essence bound to a specific train, although it normally does not include the entitlement to board the train. Travellers therefore typically need an a associated admission offer part or other entitlement (such as a pass)  in order to actually travel.</rdfs:comment>
         <rdfs:label xml:lang="en">Reservation</rdfs:label>
@@ -2340,47 +2194,46 @@ A location uniquely identifies a place in space. A location can be of type stati
     
 
 
-    <!-- https://w3id.org/osdm/core#Segment -->
+    <!-- https://w3id.org/mobility/osdm/core#Segment -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Segment">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Segment">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#stops"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/osdm/core#Stop"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#stops"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/mobility/osdm/core#Stop"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#destination"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#destination"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Stop"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Stop"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#origin"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#origin"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Stop"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Stop"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#realizedBy"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#realizedBy"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Vehicle"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Vehicle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#duration"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#duration"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#index"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#index"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -2391,14 +2244,13 @@ A location uniquely identifies a place in space. A location can be of type stati
     
 
 
-    <!-- https://w3id.org/osdm/core#StationDetail -->
+    <!-- https://w3id.org/mobility/osdm/core#StationDetail -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#StationDetail">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/osdm/core#Location"/>
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#StationDetail">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/osdm/core#Location"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#codes"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#codes"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -2414,14 +2266,14 @@ A location uniquely identifies a place in space. A location can be of type stati
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#country"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#country"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#localCode"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#localCode"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -2432,41 +2284,40 @@ A location uniquely identifies a place in space. A location can be of type stati
     
 
 
-    <!-- https://w3id.org/osdm/core#Stop -->
+    <!-- https://w3id.org/mobility/osdm/core#Stop -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Stop">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Stop">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#location"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#location"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Location"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Location"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#arrivalDateTime"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#arrivalTrack"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#arrivalDateTime"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#departureDateTime"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#arrivalTrack"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#departureTrack"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#departureDateTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#departureTrack"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -2477,13 +2328,12 @@ A location uniquely identifies a place in space. A location can be of type stati
     
 
 
-    <!-- https://w3id.org/osdm/core#Trip -->
+    <!-- https://w3id.org/mobility/osdm/core#Trip -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Trip">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Trip">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#direction"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#direction"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -2499,23 +2349,23 @@ A location uniquely identifies a place in space. A location can be of type stati
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#segments"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#segments"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Segment"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Segment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#destination"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#destination"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Stop"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Stop"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#origin"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#origin"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Stop"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Stop"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2531,21 +2381,20 @@ A location uniquely identifies a place in space. A location can be of type stati
     
 
 
-    <!-- https://w3id.org/osdm/core#TripOffer -->
+    <!-- https://w3id.org/mobility/osdm/core#TripOffer -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#TripOffer">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#TripOffer">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#passengers"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/osdm/core#Passenger"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#passengers"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/mobility/osdm/core#Passenger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#offers"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#offers"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/osdm/core#Offer"/>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/osdm/core#Offer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Grouping all the offers relating to one same trip. Indeed, in most cases the Allocator provider will propose several offers of different comfort and flexibility levels.</rdfs:comment>
@@ -2554,13 +2403,12 @@ A location uniquely identifies a place in space. A location can be of type stati
     
 
 
-    <!-- https://w3id.org/osdm/core#Vehicle -->
+    <!-- https://w3id.org/mobility/osdm/core#Vehicle -->
 
-
-    <owl:Class rdf:about="https://w3id.org/osdm/core#Vehicle">
+    <owl:Class rdf:about="https://w3id.org/mobility/osdm/core#Vehicle">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#transportMode"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#transportMode"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -2576,21 +2424,21 @@ A location uniquely identifies a place in space. A location can be of type stati
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#lineNumber"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#lineNumber"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#serviceBrand"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#serviceBrand"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/osdm/core#vehicleNumber"/>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/osdm/core#vehicleNumber"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -2609,12 +2457,10 @@ A location uniquely identifies a place in space. A location can be of type stati
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- http://purl.org/linked-data/sdmx/2009/code#sex -->
-
 
     <owl:NamedIndividual rdf:about="http://purl.org/linked-data/sdmx/2009/code#sex">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
@@ -2626,7 +2472,6 @@ A location uniquely identifies a place in space. A location can be of type stati
 
     <!-- https://w3id.org/mobility/osdm/kos/direction-type -->
 
-
     <owl:NamedIndividual rdf:about="https://w3id.org/mobility/osdm/kos/direction-type">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:label xml:lang="en">direction type</rdfs:label>
@@ -2635,7 +2480,6 @@ A location uniquely identifies a place in space. A location can be of type stati
 
 
     <!-- https://w3id.org/mobility/osdm/kos/fulfillment-type -->
-
 
     <owl:NamedIndividual rdf:about="https://w3id.org/mobility/osdm/kos/fulfillment-type">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
@@ -2646,7 +2490,6 @@ A location uniquely identifies a place in space. A location can be of type stati
 
 
     <!-- https://w3id.org/mobility/osdm/kos/location-type -->
-
 
     <owl:NamedIndividual rdf:about="https://w3id.org/mobility/osdm/kos/location-type">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
@@ -2663,7 +2506,6 @@ A location uniquely identifies a place in space. A location can be of type stati
 
     <!-- https://w3id.org/mobility/osdm/kos/station-codes -->
 
-
     <owl:NamedIndividual rdf:about="https://w3id.org/mobility/osdm/kos/station-codes">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:label xml:lang="en">Station Codes</rdfs:label>
@@ -2673,13 +2515,12 @@ A location uniquely identifies a place in space. A location can be of type stati
 
     <!-- https://w3id.org/mobility/osdm/kos/transport-mode-type -->
 
-
     <owl:NamedIndividual rdf:about="https://w3id.org/mobility/osdm/kos/transport-mode-type">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:label xml:lang="en">transport-mode-type</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <mbox xml:lang="en">ja.toledo@upm.es</mbox>
+        <core1:mbox xml:lang="en">ja.toledo@upm.es</core1:mbox>
     </rdf:Description>
     
 
@@ -2692,7 +2533,6 @@ A location uniquely identifies a place in space. A location can be of type stati
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/identifier">
         <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
         <rdfs:label xml:lang="en">identifier</rdfs:label>
@@ -2704,6 +2544,5 @@ A location uniquely identifies a place in space. A location can be of type stati
 
 
 
-<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
-
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
