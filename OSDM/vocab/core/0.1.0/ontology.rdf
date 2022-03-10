@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/osdm/core#"
-     xml:base="https://w3id.org/osdm/core"
+<rdf:RDF xmlns="https://w3id.org/mobility/osdm/core#"
+     xml:base="https://w3id.org/mobility/osdm/core"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:core="https://w3id.org/osdm/core#"
+     xmlns:core="https://w3id.org/mobility/osdm/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
@@ -19,11 +19,11 @@
         <dc:creator>Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid</dc:creator>
         <dc:creator>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
         <dc:date>2021-08-20</dc:date>
-        <dc:description xml:lang="en">Module of the OSDM  Ontology focused on Online API. This ontology provides support to the OSDM model. Visit https://github.com/oeg-upm/mobility/ and https://w3id.org/osdm/core/0.1</dc:description>
-        <dc:identifier xml:lang="en">https://w3id.org/osdm/core</dc:identifier>
+        <dc:description xml:lang="en">Module of the OSDM  Ontology focused on Online API. This ontology provides support to the OSDM model. Visit https://github.com/oeg-upm/mobility/ and https://w3id.org/mobility/osdm/core/0.1</dc:description>
+        <dc:identifier xml:lang="en">https://w3id.org/mobility/osdm/core</dc:identifier>
         <dc:rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</dc:rights>
         <dc:title xml:lang="en">OSDM - Distribution Model</dc:title>
-        <rdfs:comment xml:lang="en">Module of the OSDM Ontology focused on online API. This ontology provides support to the OSDM model. https://github.com/oeg-upm/mobility/tree/main/OSDM and https://w3id.org/osdm/core/0.1</rdfs:comment>
+        <rdfs:comment xml:lang="en">Module of the OSDM Ontology focused on online API. This ontology provides support to the OSDM model. https://github.com/oeg-upm/mobility/tree/main/OSDM and https://w3id.org/mobility/osdm/core/0.1</rdfs:comment>
         <rdfs:label xml:lang="en">OSDM - Distribution Model</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://github.com/oeg-upm/mobility/</rdfs:seeAlso>
         <owl:versionInfo xml:lang="en">This is the initial version of the module on OSDM online API(V1.2), after considering the specification and examples of OSDM.</owl:versionInfo>
