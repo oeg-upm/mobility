@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobility Ontology Catalogue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This catalogue contains ontologies generated in the context of the collaboration between the Ontology Engineering Group at Universidad Politécnica de Madrid and Indra (innovation and transports) for the representation of the transport domain.">
+    <meta name="language" content="English">
+    <meta name="author" content="Oscar Corcho">
+    <meta name="author" content="Jhon Toledo">
+
+    <link rel="stylesheet" href="resources/themes/blue/style.css" type="text/css" media="print, projection, screen" />
+    <script src="resources/js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="resources/js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="resources/js/jquery.stickytableheaders.js"></script>
+    <script type="text/javascript" src="resources/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="resources/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="resources/css/jquery-ui.css"></link>
+    <script type="text/javascript" id="js">
+	    $(document).ready(function() 
+		    { 
+		    	$("#tablesorter-demo").tablesorter(); 
+		    	$("#tablesorter-demo").stickyTableHeaders(); 
+		    	$('[data-toggle="tooltip"]').tooltip(); 
+		    } 
+	    ); 
+    </script>
+
+    <!-- Le styles -->
+    <link href="resources/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="resources/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Ontologies</a></li>
+                <li><a href="conceptualview.html">Conceptual View</a></li>
+                <li><a href="skos.html">SKOS Codelists</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+<div class="container">
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>Mobility Ontology Catalogue</h1>
+        <p class="lead">This page contains the list of ontologies for the description of the transport domain developed jointly by the <a href="https://oeg.fi.upm.es">Ontology Engineering Group (OEG)</a> and Indra (innovation and transports).</p>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="ui-widget">
+
+        </div>
+    </div>
+    <br>
+    <table id="tablesorter-demo" class="tablesorter table table-hover table-responsive">
+        <thead>
+        <tr>
+            <th class="col-md-2">Catalogue</th>
+            <th class="col-md-2">Ontology</th>
+            <th class="col-md-2">Serialization</th>
+            <th class="col-md-1">License</th>
+            <th class="col-md-1">Language</th>
+            <th class="col-md-2">Links</th>
+            <th class="col-md-4">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="tr1">
+            <td> <a href = "w3id.org/mobility/osdm" target="_blank">OSDM ontology</a></td>
+            <td><a href = "w3id.org/mobility/osdm/core" target="_blank">Core ontology</a> <a href = "#" target="_blank"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom" title="More information about this ontology"/></a></td>
+            <td>
+                <span class="label label-primary">rdf+xml</span>
+                <span class="label label-primary">html</span>
+            </td>
+            <td><a href="http://purl.org/NET/rdflicense/cc-by4.0" target="_blank"> <span class="label label-success">CC-BY</span> </a></td>
+            <td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+            <!--<td><span class="label label-primary">devops</span></td>-->
+            <td><img src="resources/img/repo.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/tree/main/OSDM/vocab">Repository</a><br><img src="resources/img/issue-opened.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/issues">Issues</a><br><img src="resources/img/tasklist.svg" alt="repository"/><span style="padding-left:18px"><a href="https://unioninternationalcheminsdefer.github.io/OSDM/spec/requirements/">Requirements</a>
+            </td>
+
+            <td>
+                Core ontology is used for the whole  OSDM ontology, which defines the general concepts of Resource and Resource Groups from Online API.</td>
+            <input type="hidden" name="inp1" id="inp1" value="OSDM Core ontology"/></tr>
+
+        <tr id="tr2">
+            <td> <a href = "w3id.org/mobility/transmodel" target="_blank">Transmodel ontology</a></td>
+            <td><a href = "w3id.org/mobility/transmodel/fares" target="_blank">Fares Ontology</a> <a href = "#" target="_blank"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom" title="More information about this ontology"/></a></td>
+            <td>
+                <span class="label label-primary">rdf+xml</span>
+                <span class="label label-primary">html</span>
+            </td>
+            <td><a href="http://purl.org/NET/rdflicense/cc-by4.0" target="_blank"> <span class="label label-success">CC-BY</span> </a></td>
+            <td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+
+            <td><img src="resources/img/repo.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/devops-infra/tree/master/ontology"> Repository</a><br><img src="resources/img/issue-opened.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/devops-infra/issues?q=is%3Aissue+is%3Aopen+label%3Aorganisation">Issues</a><br><img src="resources/img/tasklist.svg" alt="repository"/><span style="padding-left:18px"><a href="https://github.com/oeg-upm/devops-infra/blob/master/Requirements.xlsx">Requirements</a>
+            </td>
+            <td>
+                <p id="collapse2" data-toggle="collapse" >
+                    Module of the Transmodel Ontology focused on fares. This ontology provides ...<a class="more2">See more</a>
+                </p>
+                <script>
+$('#collapse2').click(function () {
+if($('a').hasClass('more2'))
+{
+$('#collapse2').html(' Module of the Transmodel Ontology focused on fares. This ontology provides support to the NeTEx model.  <a class="less2">See less<a>');
+}
+else
+{
+$('#collapse2').html(' Module of the Transmodel Ontology focused on fares. This ontology provides ...  <a  class="more2">See more</a>');
+}
+});
+</script>
+            </td>
+            <input type="hidden" name="inp2" id="inp2" value="Transmodel fares Ontology"/></tr>
+
+
+        <tr id="tr3">
+            <td> <a href = "w3id.org/mobility/trias" target="_blank">Trias ontology</a></td>
+            <td><a href = "w3id.org/mobility/trias/common" target="_blank">Common ontology</a> <a href = "#" target="_blank"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom" title="More information about this ontology"/></a></td>
+            <td>
+                <span class="label label-primary">rdf+xml</span>
+                <span class="label label-primary">html</span>
+            </td>
+            <td><a href="http://purl.org/NET/rdflicense/cc-by4.0" target="_blank"> <span class="label label-success">CC-BY</span> </a></td>
+            <td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+            <!--<td><span class="label label-primary">devops</span></td>-->
+            <td><img src="resources/img/repo.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/tree/main/Trias/vocab/common">Repository</a><br><img src="resources/img/issue-opened.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/issues">Issues</a><br><img src="resources/img/tasklist.svg" alt="repository"/><span style="padding-left:18px"><a href="#">Requirements</a>
+            </td>
+
+            <td>
+                An ontology that is commonly known and required for reusing, it describes a common model in a context.</td>
+            <input type="hidden" name="inp1" id="inp1" value="Trias Common ontology"/></tr>
+
+        <tr id="tr4">
+            <td> <a href = "w3id.org/mobility/trias" target="_blank">Trias ontology</a></td>
+            <td><a href = "w3id.org/mobility/trias/fares" target="_blank">Fares ontology</a> <a href = "#" target="_blank"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom" title="More information about this ontology"/></a></td>
+            <td>
+                <span class="label label-primary">rdf+xml</span>
+                <span class="label label-primary">html</span>
+            </td>
+            <td><a href="http://purl.org/NET/rdflicense/cc-by4.0" target="_blank"> <span class="label label-success">CC-BY</span> </a></td>
+            <td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+            <!--<td><span class="label label-primary">devops</span></td>-->
+            <td><img src="resources/img/repo.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/tree/main/Trias/vocab/fares">Repository</a><br><img src="resources/img/issue-opened.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/issues">Issues</a><br><img src="resources/img/tasklist.svg" alt="repository"/><span style="padding-left:18px"><a href="#">Requirements</a>
+            </td>
+
+            <td> Fare ontology is used for the whole Trias ontology, which defines the general concepts of fares.</td>
+            <input type="hidden" name="inp1" id="inp1" value="Trias Fares ontology"/></tr>
+
+        <tr id="tr5">
+            <td> <a href = "w3id.org/mobility/trias" target="_blank">Trias ontology</a></td>
+            <td><a href = "w3id.org/mobility/trias//journey" target="_blank">Journey ontology</a> <a href = "#" target="_blank"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom" title="More information about this ontology"/></a></td>
+            <td>
+                <span class="label label-primary">rdf+xml</span>
+                <span class="label label-primary">html</span>
+            </td>
+            <td><a href="http://purl.org/NET/rdflicense/cc-by4.0" target="_blank"> <span class="label label-success">CC-BY</span> </a></td>
+            <td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+            <!--<td><span class="label label-primary">devops</span></td>-->
+            <td><img src="resources/img/repo.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/tree/main/Trias/vocab/journey">Repository</a><br><img src="resources/img/issue-opened.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/issues">Issues</a><br><img src="resources/img/tasklist.svg" alt="repository"/><span style="padding-left:18px"><a href="#">Requirements</a>
+            </td>
+
+            <td>
+                Journey ontology is used to describe all characteristics related to travel from one place to another.</td>
+            <input type="hidden" name="inp1" id="inp1" value="Trias Journey ontology"/></tr>
+
+        <tr id="tr6">
+            <td> <a href = "w3id.org/mobility/trias" target="_blank">Trias ontology</a></td>
+            <td><a href = "w3id.org/mobility/trias//location" target="_blank">Location ontology</a> <a href = "#" target="_blank"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom" title="More information about this ontology"/></a></td>
+            <td>
+                <span class="label label-primary">rdf+xml</span>
+                <span class="label label-primary">html</span>
+            </td>
+            <td><a href="http://purl.org/NET/rdflicense/cc-by4.0" target="_blank"> <span class="label label-success">CC-BY</span> </a></td>
+            <td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+            <!--<td><span class="label label-primary">devops</span></td>-->
+            <td><img src="resources/img/repo.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/tree/main/Trias/vocab/location">Repository</a><br><img src="resources/img/issue-opened.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/issues">Issues</a><br><img src="resources/img/tasklist.svg" alt="repository"/><span style="padding-left:18px"><a href="#">Requirements</a>
+            </td>
+
+            <td>
+                Location ontology is used to describe different types of locations (by name and/or coordinates, with restrictions).</td>
+            <input type="hidden" name="inp1" id="inp1" value="Trias Location ontology"/></tr>
+
+        <tr id="tr7">
+            <td> <a href = "w3id.org/mobility/trias" target="_blank">Trias ontology</a></td>
+            <td><a href = "w3id.org/mobility/trias//mode" target="_blank">Mode ontology</a> <a href = "#" target="_blank"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom" title="More information about this ontology"/></a></td>
+            <td>
+                <span class="label label-primary">rdf+xml</span>
+                <span class="label label-primary">html</span>
+            </td>
+            <td><a href="http://purl.org/NET/rdflicense/cc-by4.0" target="_blank"> <span class="label label-success">CC-BY</span> </a></td>
+            <td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+            <!--<td><span class="label label-primary">devops</span></td>-->
+            <td><img src="resources/img/repo.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/tree/main/Trias/vocab/mode">Repository</a><br><img src="resources/img/issue-opened.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/issues">Issues</a><br><img src="resources/img/tasklist.svg" alt="repository"/><span style="padding-left:18px"><a href="#">Requirements</a>
+            </td>
+
+            <td>
+                Mode ontology is used to describe different types of transport with classification and names.</td>
+            <input type="hidden" name="inp1" id="inp1" value="Trias Mode ontology"/></tr>
+
+        <tr id="tr8">
+            <td> <a href = "w3id.org/mobility/trias" target="_blank">Trias ontology</a></td>
+            <td><a href = "w3id.org/mobility/trias//trips" target="_blank">Trips ontology</a> <a href = "#" target="_blank"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom" title="More information about this ontology"/></a></td>
+            <td>
+                <span class="label label-primary">rdf+xml</span>
+                <span class="label label-primary">html</span>
+            </td>
+            <td><a href="http://purl.org/NET/rdflicense/cc-by4.0" target="_blank"> <span class="label label-success">CC-BY</span> </a></td>
+            <td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+            <!--<td><span class="label label-primary">devops</span></td>-->
+            <td><img src="resources/img/repo.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/tree/main/Trias/vocab/trips">Repository</a><br><img src="resources/img/issue-opened.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/issues">Issues</a><br><img src="resources/img/tasklist.svg" alt="repository"/><span style="padding-left:18px"><a href="#">Requirements</a>
+            </td>
+
+            <td>
+                Trips ontology is used to describe all characteristics related to visiting a place that involves a journey.</td>
+            <input type="hidden" name="inp1" id="inp1" value="Trias Trips ontology"/></tr>
+
+        <tr id="tr9">
+            <td> <a href = "w3id.org/mobility/trias" target="_blank">Trias ontology</a></td>
+            <td><a href = "w3id.org/mobility/trias//utility" target="_blank">Utility ontology</a> <a href = "#" target="_blank"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom" title="More information about this ontology"/></a></td>
+            <td>
+                <span class="label label-primary">rdf+xml</span>
+                <span class="label label-primary">html</span>
+            </td>
+            <td><a href="http://purl.org/NET/rdflicense/cc-by4.0" target="_blank"> <span class="label label-success">CC-BY</span> </a></td>
+            <td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+            <!--<td><span class="label label-primary">devops</span></td>-->
+            <td><img src="resources/img/repo.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/tree/main/Trias/vocab/utility">Repository</a><br><img src="resources/img/issue-opened.svg" alt="repository"/><span style="padding-left:20px"><a href="https://github.com/oeg-upm/mobility/issues">Issues</a><br><img src="resources/img/tasklist.svg" alt="repository"/><span style="padding-left:18px"><a href="#">Requirements</a>
+            </td>
+
+            <td>
+                Utility ontology is used to describe types and structures that are not directly related to the public transport domain.</td>
+            <input type="hidden" name="inp1" id="inp1" value="Trias Utility ontology"/></tr>
+
+
+        </tbody></table>
+    <hr>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-md-9">
+                Catalogue developed by 	        <a href = "https://oeg.fi.upm.es" target="_blank">Ontology Engineering Group</a>
+                <br>
+                Built with <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>
+                Icons from <a target="_blank" href="http://glyphicons.com/">Glyphicons</a>
+                <br>
+                Latest revision March, 2022
+            </div>
+            <div class="col-md-3">
+                <a href="https://oeg.fi.upm.es/" target="_blank"><img src="resources/img/logo-oeg.gif" alt="OEG logo" class="img-rounded" class="img-responsive" /></a>
+
+            </div>
+        </div>
+    </footer>
+</div> <!-- /container -->
+<script>
+$(function() {
+var availableTags = ["DevOps", "core", "organisation", "network", "business product", "data center", "server", "software", "database", "hardware", "certificate", "resource requirement"];
+$( "#tags" ).autocomplete({
+source: availableTags,
+select: function(event, ui) {
+hideRows(ui.item.value);
+}
+});
+});
+</script>
+<script>
+function hideRows(text) {
+index = 1;
+tr = document.getElementById('tr'+index);
+while (tr!=null){
+valores = document.getElementById('inp'+index).value;
+if (valores.indexOf(text+'--')==-1){
+tr.style.display='none';
+}
+index++;
+tr = document.getElementById('tr'+index);
+}
+document.getElementById('remButt').style.display='';
+}
+
+function showRows() {	
+index = 1;
+tr = document.getElementById('tr'+index);
+while (tr!=null){
+tr.style.display='';
+index++;
+tr = document.getElementById('tr'+index);
+}
+butt = document.getElementById('remButt').style.display='none';
+}
+</script>
+</body>
+</html>
