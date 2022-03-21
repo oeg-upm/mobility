@@ -1,0 +1,608 @@
+@prefix : <https://w3id.org/mobility/trias/journey#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/mobility/trias/journey#> .
+
+<https://w3id.org/mobility/trias/journey#> rdf:type owl:Ontology ;
+                                            owl:versionIRI <https://w3id.org/mobility/trias/journey/0.1> ;
+                                            owl:imports <https://w3id.org/mobility/trias/common/0.1> ,
+                                                        <https://w3id.org/mobility/trias/mode/0.1> ,
+                                                        <https://w3id.org/mobility/trias/utility/0.1> ;
+                                            <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> ,
+                                                                                    "2021-11-8"@en ;
+                                            <http://purl.org/dc/elements/1.1/creator> "Jhon Toledo (Ontology Engienering Group - Universidad Politécnica de Madrid)"@en ,
+                                                                                      "Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid"@en ,
+                                                                                      "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"@en ;
+                                            <http://purl.org/dc/elements/1.1/description> "//TODO"@en ;
+                                            <http://purl.org/dc/elements/1.1/identifier> "https://w3id.org/mobility/trias/journey"@en ;
+                                            <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)"@en ;
+                                            <http://purl.org/dc/elements/1.1/title> "Trias - Travellor Realtime Information and Advisory Standard"@en ;
+                                            rdfs:comment "//TODO"@en ;
+                                            rdfs:label "Trias - Travellor Realtime Information and Advisory Standard"@en ;
+                                            rdfs:seeAlso "//TODO"@en ;
+                                            owl:versionInfo "//TODO"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/mobility/trias/journey#destinationText
+:destinationText rdf:type owl:ObjectProperty ;
+                 rdfs:domain :DatedJourney ;
+                 rdfs:range <https://w3id.org/mobility/trias/utility#InternationalText> ;
+                 rdfs:label "destinationText"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#hasAttribute
+:hasAttribute rdf:type owl:ObjectProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :ContinuousService
+                                          :DatedJourney
+                                          <https://w3id.org/mobility/trias/trips#InterchangeLeg>
+                                        )
+                          ] ;
+              rdfs:range :ServiceAttribute ;
+              rdfs:label "hasAttribute"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#hasMode
+:hasMode rdf:type owl:ObjectProperty ;
+         rdfs:domain :ServiceSection ;
+         rdfs:range <https://w3id.org/mobility/trias/utility#Mode> ;
+         rdfs:label "hasMode"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#hasServiceSection
+:hasServiceSection rdf:type owl:ObjectProperty ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( :ContinuousService
+                                               :DatedJourney
+                                             )
+                               ] ;
+                   rdfs:range :ServiceSection ;
+                   rdfs:comment "Sequence of stop sequence intervals with respective service properties."@en ;
+                   rdfs:label "hasServiceSection"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#hasVia
+:hasVia rdf:type owl:ObjectProperty ;
+        rdfs:label "hasVia"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#originText
+:originText rdf:type owl:ObjectProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :ContinuousService
+                                        :DatedJourney
+                                      )
+                        ] ;
+            rdfs:range <https://w3id.org/mobility/trias/utility#InternationalText> ;
+            rdfs:comment "Label for first stop."@en ;
+            rdfs:label "originText"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#projection
+:projection rdf:type owl:ObjectProperty ;
+            rdfs:domain :TrackSection ;
+            rdfs:range <https://w3id.org/mobility/trias/utility#GeoPosition> ;
+            rdfs:comment "Geographic projection as polyline."@en ;
+            rdfs:label "projection"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#publishedLineName
+:publishedLineName rdf:type owl:ObjectProperty ;
+                   rdfs:domain :ServiceSection ;
+                   rdfs:range <https://w3id.org/mobility/trias/utility#InternationalText> ;
+                   rdfs:label "publishedLineName"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#routeDescription
+:routeDescription rdf:type owl:ObjectProperty ;
+                  rdfs:domain :ServiceSection ;
+                  rdfs:range <https://w3id.org/mobility/trias/utility#InternationalText> ;
+                  rdfs:label "routeDescription"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#service
+:service rdf:type owl:ObjectProperty ;
+         rdfs:domain :ParallelService ;
+         rdfs:range :DatedJourney ;
+         rdfs:comment "Relation from the parallel service."@en ;
+         rdfs:label "service"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#sharingService
+:sharingService rdf:type owl:ObjectProperty ;
+                rdfs:domain :ContinuousService ;
+                rdfs:range <https://w3id.org/mobility/trias/common#SharingService> ;
+                rdfs:label "sharingService"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/mobility/trias/journey#cancelled
+:cancelled rdf:type owl:DatatypeProperty ;
+           rdfs:domain :DatedJourney ;
+           rdfs:range xsd:boolean ;
+           rdfs:comment "Whether this trip is cancelled and will not be run. Default is false."@en ;
+           rdfs:label "cancelled"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#destinationStopPointRef
+:destinationStopPointRef rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :DatedJourney ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "Last stop of vehicle journey."@en ;
+                         rdfs:label "destinationStopPointRef"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#deviation
+:deviation rdf:type owl:DatatypeProperty ;
+           rdfs:domain :DatedJourney ;
+           rdfs:range xsd:boolean ;
+           rdfs:comment "Whether this trip deviates from the planned service pattern. Default is false."@en ;
+           rdfs:label "deviation"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#directionRef
+:directionRef rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ServiceSection ;
+              rdfs:range xsd:string ;
+              rdfs:label "directionRef"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#duration
+:duration rdf:type owl:DatatypeProperty ;
+          rdfs:domain :TrackSection ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Duration the passenger needs to travel through this track section."@en ;
+          rdfs:label "duration"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#estimatedTime
+:estimatedTime rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ServiceCall ;
+               rdfs:range xsd:dateTime ;
+               rdfs:comment "estimated time (for prognosis)"@en ;
+               rdfs:label "estimatedTime"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#estimatedTimeHigh
+:estimatedTimeHigh rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :ServiceCall ;
+                   rdfs:range xsd:dateTime ;
+                   rdfs:comment "Estimated upper limit for time."@en ;
+                   rdfs:label "estimatedTimeHigh"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#estimatedTimeLow
+:estimatedTimeLow rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :ServiceCall ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:comment "Estimated lower limit for time."@en ;
+                  rdfs:label "estimatedTimeLow"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#fromStopSeqNumber
+:fromStopSeqNumber rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:positiveInteger ;
+                   rdfs:comment "Stop sequence number, where the interval ends (inclusive). If missing, the interval ends at the end of the leg (or at the end of the journey for uses in StopEvents and TripInfo)."@en ;
+                   rdfs:label "fromStopSeqNumber"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#journeyRef
+:journeyRef rdf:type owl:DatatypeProperty ;
+            rdfs:domain :DatedJourney ;
+            rdfs:range xsd:string ;
+            rdfs:label "journeyRef"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#length
+:length rdf:type owl:DatatypeProperty ;
+        rdfs:domain [ rdf:type owl:Class ;
+                      owl:unionOf ( :TrackSection
+                                    <https://w3id.org/mobility/trias/trips#InterchangeLeg>
+                                  )
+                    ] ;
+        rdfs:range xsd:float ;
+        rdfs:comment "Length of this track section or interchange path"@en ;
+        rdfs:label "length"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#lineRef
+:lineRef rdf:type owl:DatatypeProperty ;
+         rdfs:domain :ServiceSection ;
+         rdfs:range xsd:string ;
+         rdfs:label "lineRef"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#operatingDayRef
+:operatingDayRef rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :DatedJourney ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "operatingDayRef"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#operatorRef
+:operatorRef rdf:type owl:DatatypeProperty ;
+             rdfs:domain :ServiceSection ;
+             rdfs:range xsd:string ;
+             rdfs:label "operatorRef"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#originStopPointRef
+:originStopPointRef rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "originStopPointRef"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#recordedAtTime
+:recordedAtTime rdf:type owl:DatatypeProperty ;
+                rdfs:domain :ServiceCall ;
+                rdfs:range xsd:dateTime ;
+                rdfs:comment "Time as it was recorded."@en ;
+                rdfs:label "recordedAtTime"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#roadName
+:roadName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :TrackSection ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Name of the road this track section is attached to."@en ;
+          rdfs:label "roadName"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#scope
+:scope rdf:type owl:DatatypeProperty ;
+       rdfs:domain :ServiceAttribute ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Scope of the attribute. Defines where the attribute references to (on track, at stops, at boarding, at alighting)."@en ;
+       rdfs:label "scope"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#timetabledTime
+:timetabledTime rdf:type owl:DatatypeProperty ;
+                rdfs:domain :ServiceCall ;
+                rdfs:range xsd:dateTime ;
+                rdfs:comment "Time at point as it is published"@en ;
+                rdfs:label "timetabledTime"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#toStopSeqNumber
+:toStopSeqNumber rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:positiveInteger ;
+                 rdfs:comment "Stop sequence number, where the interval begins (inclusive). If missing, the interval begins at the beginning of the leg (or at the beginning of the journey for uses in StopEvents and TripInfo)."@en ;
+                 rdfs:label "toStopSeqNumber"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#unplanned
+:unplanned rdf:type owl:DatatypeProperty ;
+           rdfs:domain :DatedJourney ;
+           rdfs:range xsd:boolean ;
+           rdfs:comment "Whether this trip is an additional one that has not been planned. Default is false."@en ;
+           rdfs:label "unplanned"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#vehicleRef
+:vehicleRef rdf:type owl:DatatypeProperty ;
+            rdfs:domain :DatedJourney ;
+            rdfs:range xsd:string ;
+            rdfs:label "vehicleRef"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/mobility/trias/journey#ContinuousService
+:ContinuousService rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasAttribute ;
+                                     owl:someValuesFrom :ServiceAttribute
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasServiceSection ;
+                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :ServiceSection
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :originText ;
+                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <https://w3id.org/mobility/trias/utility#InternationalText>
+                                   ] ;
+                   rdfs:comment "Represent a  passenger movement on a continuous service."@en ;
+                   rdfs:label "ContinuousService"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#DatedJourney
+:DatedJourney rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasAttribute ;
+                                owl:someValuesFrom :ServiceAttribute
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :destinationText ;
+                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass <https://w3id.org/mobility/trias/utility#InternationalText>
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasServiceSection ;
+                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :ServiceSection
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :originText ;
+                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass <https://w3id.org/mobility/trias/utility#InternationalText>
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :journeyRef ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :operatingDayRef ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :cancelled ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :destinationStopPointRef ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :deviation ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :originStopPointRef ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :unplanned ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :vehicleRef ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ;
+              rdfs:comment "Structure for a vehicle journey at a specific date."@en ;
+              rdfs:label "DatedJourney"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#ParallelService
+:ParallelService rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :service ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :DatedJourney
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :fromStopSeqNumber ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:positiveInteger
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :toStopSeqNumber ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:positiveInteger
+                                 ] ;
+                 rdfs:comment "Structure combining a parallel running service with a stop sequence interval."@en ;
+                 rdfs:label "ParallelService"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#ServiceAttribute
+:ServiceAttribute rdf:type owl:Class ;
+                  rdfs:subClassOf <https://w3id.org/mobility/trias/common#GeneralAttribute> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :destinationText ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass <https://w3id.org/mobility/trias/utility#InternationalText>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :fromStopSeqNumber ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :scope ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :toStopSeqNumber ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:string
+                                  ] ;
+                  rdfs:label "ServiceAttribute"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#ServiceCall
+:ServiceCall rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :timetabledTime ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:dateTime
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :estimatedTime ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:dateTime
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :estimatedTimeHigh ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:dateTime
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :estimatedTimeLow ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:dateTime
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :recordedAtTime ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:dateTime
+                             ] ;
+             rdfs:comment "Contains information on an arrival or departure of a service, e.g. time."@en ;
+             rdfs:label "ServiceCall"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#ServiceSection
+:ServiceSection rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasVia ;
+                                  owl:someValuesFrom :ServiceViaPoint
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :routeDescription ;
+                                  owl:someValuesFrom <https://w3id.org/mobility/trias/utility#InternationalText>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :publishedLineName ;
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass <https://w3id.org/mobility/trias/utility#InternationalText>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasMode ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass <https://w3id.org/mobility/trias/utility#Mode>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :directionRef ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :lineRef ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :fromStopSeqNumber ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:positiveInteger
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :operatorRef ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :toStopSeqNumber ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:positiveInteger
+                                ] ;
+                rdfs:comment "Class from a service combined with a stop sequence interval."@en ;
+                rdfs:label "ServiceSection"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#ServiceViaPoint
+:ServiceViaPoint rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/mobility/trias/common#hasEstimatedBay> ;
+                                   owl:someValuesFrom <https://w3id.org/mobility/trias/utility#InternationalText>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/mobility/trias/common#hasNameSuffix> ;
+                                   owl:someValuesFrom <https://w3id.org/mobility/trias/utility#InternationalText>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/mobility/trias/common#hasPlannedBay> ;
+                                   owl:someValuesFrom <https://w3id.org/mobility/trias/utility#InternationalText>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/mobility/trias/common#hasStopPointName> ;
+                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass <https://w3id.org/mobility/trias/utility#InternationalText>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/mobility/trias/common#stopPointRef> ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ;
+                 rdfs:comment "Stop place or stop point as a via point (in service pattern)."@en ;
+                 rdfs:label "ServiceViaPoint"@en .
+
+
+###  https://w3id.org/mobility/trias/journey#TrackSection
+:TrackSection rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :projection ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass <https://w3id.org/mobility/trias/utility#GeoPosition>
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :duration ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:float
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :length ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:float
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :roadName ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ;
+              rdfs:comment "A piece of a trip. A trip leg.may consist of multiple TrackSections. Describes the geographic embedding."@en ;
+              rdfs:label "TrackSection"@en .
+
+
+###  https://w3id.org/mobility/trias/trips#InterchangeLeg
+<https://w3id.org/mobility/trias/trips#InterchangeLeg> rdf:type owl:Class .
+
+
+###  https://w3id.org/mobility/trias/utility#InternationalText
+<https://w3id.org/mobility/trias/utility#InternationalText> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

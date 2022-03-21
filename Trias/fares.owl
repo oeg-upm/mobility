@@ -1,0 +1,145 @@
+@prefix : <https://w3id.org/mobility/trias/fares#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/mobility/trias/fares#> .
+
+<https://w3id.org/mobility/trias/fares#> rdf:type owl:Ontology ;
+                                          owl:versionIRI <https://w3id.org/mobility/trias/fares/0.1> ;
+                                          owl:imports <https://w3id.org/mobility/trias/common/0.1> ;
+                                          <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> ,
+                                                                                  "2021-11-8"@en ;
+                                          <http://purl.org/dc/elements/1.1/creator> "Jhon Toledo (Ontology Engienering Group - Universidad Politécnica de Madrid)"@en ,
+                                                                                    "Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid"@en ,
+                                                                                    "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"@en ;
+                                          <http://purl.org/dc/elements/1.1/description> "//TODO"@en ;
+                                          <http://purl.org/dc/elements/1.1/identifier> "https://w3id.org/mobility/trias/fares"@en ;
+                                          <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)"@en ;
+                                          <http://purl.org/dc/elements/1.1/title> "Trias - Travellor Realtime Information and Advisory Standard"@en ;
+                                          rdfs:comment "//TODO"@en ;
+                                          rdfs:label "Trias - Travellor Realtime Information and Advisory Standard"@en ;
+                                          rdfs:seeAlso "//TODO"@en ;
+                                          owl:versionInfo "//TODO"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/mobility/trias/fares#hasErrorMessage
+:hasErrorMessage rdf:type owl:ObjectProperty ;
+                 rdfs:domain :TripFaresResult ;
+                 rdfs:range <https://w3id.org/mobility/trias/common#ErrorMessage> ;
+                 rdfs:label "hasErrorMessage"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/mobility/trias/fares#faresAuthorityText
+:faresAuthorityText rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :FareZoneListInArea ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Textual description or name of fares authority."@en ;
+                    rdfs:label "faresAuthorityText"@en .
+
+
+###  https://w3id.org/mobility/trias/fares#fromTripLegIdRef
+:fromTripLegIdRef rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TripFaresResult ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Identifies the \"valid from\" trip leg."@en ;
+                  rdfs:label "fromTripLegIdRef"@en .
+
+
+###  https://w3id.org/mobility/trias/fares#toTripLegIdRef
+:toTripLegIdRef rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TripFaresResult ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Identifies the \"valid to\" trip leg."@en ;
+                rdfs:label "toTripLegIdRef"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/mobility/trias/fares#BookingInfo
+:BookingInfo rdf:type owl:Class ;
+             rdfs:comment "Information of a booking opportunity."@en ;
+             rdfs:label "BookingInfo"@en .
+
+
+###  https://w3id.org/mobility/trias/fares#FareZone
+:FareZone rdf:type owl:Class ;
+          rdfs:comment "Model of a fare zone."@en ;
+          rdfs:label "FareZone"@en .
+
+
+###  https://w3id.org/mobility/trias/fares#FareZoneListInArea
+:FareZoneListInArea rdf:type owl:Class ;
+                    rdfs:comment "List of fare zones within the area of a Fares Authority."@en ;
+                    rdfs:label "FareZoneListInArea"@en .
+
+
+###  https://w3id.org/mobility/trias/fares#Ticket
+:Ticket rdf:type owl:Class ;
+        rdfs:comment "Model of a ticket and related information."@en ;
+        rdfs:label "Ticket"@en .
+
+
+###  https://w3id.org/mobility/trias/fares#TripFaresResult
+:TripFaresResult rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasErrorMessage ;
+                                   owl:someValuesFrom <https://w3id.org/mobility/trias/common#ErrorMessage>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :fromTripLegIdRef ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :toTripLegIdRef ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ;
+                 rdfs:comment "Structure of a Single Trip Fare Request result."@en ;
+                 rdfs:label "TripFaresResult"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
