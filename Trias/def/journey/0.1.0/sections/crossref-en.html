@@ -1,0 +1,1241 @@
+<h2 id="crossreference" class="list">Cross-reference for Trias - Travellor Realtime Information and Advisory Standard classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Trias - Travellor Realtime Information and Advisory Standard.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#ContinuousService"
+            title="https://w3id.org/mobility/trias/journey#ContinuousService">ContinuousService</a>
+      </li>
+      <li>
+         <a href="#DatedJourney"
+            title="https://w3id.org/mobility/trias/journey#DatedJourney">DatedJourney</a>
+      </li>
+      <li>
+         <a href="#ParallelService"
+            title="https://w3id.org/mobility/trias/journey#ParallelService">ParallelService</a>
+      </li>
+      <li>
+         <a href="#ServiceAttribute"
+            title="https://w3id.org/mobility/trias/journey#ServiceAttribute">ServiceAttribute</a>
+      </li>
+      <li>
+         <a href="#ServiceCall"
+            title="https://w3id.org/mobility/trias/journey#ServiceCall">ServiceCall</a>
+      </li>
+      <li>
+         <a href="#ServiceSection"
+            title="https://w3id.org/mobility/trias/journey#ServiceSection">ServiceSection</a>
+      </li>
+      <li>
+         <a href="#ServiceViaPoint"
+            title="https://w3id.org/mobility/trias/journey#ServiceViaPoint">ServiceViaPoint</a>
+      </li>
+      <li>
+         <a href="#TrackSection"
+            title="https://w3id.org/mobility/trias/journey#TrackSection">TrackSection</a>
+      </li>
+   </ul>
+   <div class="entity" id="ContinuousService">
+      <h3>ContinuousService<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#ContinuousService</p>
+      <div class="comment">
+         <span class="markdown">Represent a  passenger movement on a continuous service.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#sharingService"
+               title="https://w3id.org/mobility/trias/journey#sharingService">sharingService</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DatedJourney">
+      <h3>DatedJourney<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#DatedJourney</p>
+      <div class="comment">
+         <span class="markdown">Structure for a vehicle journey at a specific date.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#cancelled"
+               title="https://w3id.org/mobility/trias/journey#cancelled">cancelled</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#destinationStopPointRef"
+               title="https://w3id.org/mobility/trias/journey#destinationStopPointRef">destinationStopPointRef</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#destinationText"
+               title="https://w3id.org/mobility/trias/journey#destinationText">destinationText</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#deviation"
+               title="https://w3id.org/mobility/trias/journey#deviation">deviation</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#journeyRef"
+               title="https://w3id.org/mobility/trias/journey#journeyRef">journeyRef</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#operatingDayRef"
+               title="https://w3id.org/mobility/trias/journey#operatingDayRef">operatingDayRef</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#unplanned"
+               title="https://w3id.org/mobility/trias/journey#unplanned">unplanned</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#vehicleRef"
+               title="https://w3id.org/mobility/trias/journey#vehicleRef">vehicleRef</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#service" title="https://w3id.org/mobility/trias/journey#service">service</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ParallelService">
+      <h3>ParallelService<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#ParallelService</p>
+      <div class="comment">
+         <span class="markdown">Structure combining a parallel running service with a stop sequence interval.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#service" title="https://w3id.org/mobility/trias/journey#service">service</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ServiceAttribute">
+      <h3>ServiceAttribute<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#ServiceAttribute</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="https://w3id.org/mobility/trias/common#GeneralAttribute"
+               target="_blank"
+               title="https://w3id.org/mobility/trias/common#GeneralAttribute">general attribute</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#scope" title="https://w3id.org/mobility/trias/journey#scope">scope</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasAttribute"
+               title="https://w3id.org/mobility/trias/journey#hasAttribute">hasAttribute</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ServiceCall">
+      <h3>ServiceCall<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#ServiceCall</p>
+      <div class="comment">
+         <span class="markdown">Contains information on an arrival or departure of a service, e.g. time.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#estimatedTime"
+               title="https://w3id.org/mobility/trias/journey#estimatedTime">estimatedTime</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#estimatedTimeHigh"
+               title="https://w3id.org/mobility/trias/journey#estimatedTimeHigh">estimatedTimeHigh</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#estimatedTimeLow"
+               title="https://w3id.org/mobility/trias/journey#estimatedTimeLow">estimatedTimeLow</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#recordedAtTime"
+               title="https://w3id.org/mobility/trias/journey#recordedAtTime">recordedAtTime</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#timetabledTime"
+               title="https://w3id.org/mobility/trias/journey#timetabledTime">timetabledTime</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ServiceSection">
+      <h3>ServiceSection<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#ServiceSection</p>
+      <div class="comment">
+         <span class="markdown">Class from a service combined with a stop sequence interval.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#directionRef"
+               title="https://w3id.org/mobility/trias/journey#directionRef">directionRef</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMode" title="https://w3id.org/mobility/trias/journey#hasMode">hasMode</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#lineRef" title="https://w3id.org/mobility/trias/journey#lineRef">lineRef</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#operatorRef"
+               title="https://w3id.org/mobility/trias/journey#operatorRef">operatorRef</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#publishedLineName"
+               title="https://w3id.org/mobility/trias/journey#publishedLineName">publishedLineName</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#routeDescription"
+               title="https://w3id.org/mobility/trias/journey#routeDescription">routeDescription</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasServiceSection"
+               title="https://w3id.org/mobility/trias/journey#hasServiceSection">hasServiceSection</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ServiceViaPoint">
+      <h3>ServiceViaPoint<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#ServiceViaPoint</p>
+      <div class="comment">
+         <span class="markdown">Stop place or stop point as a via point (in service pattern).</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://org.semanticweb.owlapi/error#Error1"
+               target="_blank"
+               title="http://org.semanticweb.owlapi/error#Error1">error1</a>
+            <sup class="type-c" title="class">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error2"
+               target="_blank"
+               title="http://org.semanticweb.owlapi/error#Error2">error2</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TrackSection">
+      <h3>TrackSection<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#TrackSection</p>
+      <div class="comment">
+         <span class="markdown">A piece of a trip. A trip leg.may consist of multiple TrackSections. Describes the geographic embedding.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#duration" title="https://w3id.org/mobility/trias/journey#duration">duration</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#projection"
+               title="https://w3id.org/mobility/trias/journey#projection">projection</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#roadName" title="https://w3id.org/mobility/trias/journey#roadName">roadName</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#destinationText"
+            title="https://w3id.org/mobility/trias/journey#destinationText">destinationText</a>
+      </li>
+      <li>
+         <a href="#hasAttribute"
+            title="https://w3id.org/mobility/trias/journey#hasAttribute">hasAttribute</a>
+      </li>
+      <li>
+         <a href="#hasMode" title="https://w3id.org/mobility/trias/journey#hasMode">hasMode</a>
+      </li>
+      <li>
+         <a href="#hasServiceSection"
+            title="https://w3id.org/mobility/trias/journey#hasServiceSection">hasServiceSection</a>
+      </li>
+      <li>
+         <a href="#hasVia" title="https://w3id.org/mobility/trias/journey#hasVia">hasVia</a>
+      </li>
+      <li>
+         <a href="#originText"
+            title="https://w3id.org/mobility/trias/journey#originText">originText</a>
+      </li>
+      <li>
+         <a href="#projection"
+            title="https://w3id.org/mobility/trias/journey#projection">projection</a>
+      </li>
+      <li>
+         <a href="#publishedLineName"
+            title="https://w3id.org/mobility/trias/journey#publishedLineName">publishedLineName</a>
+      </li>
+      <li>
+         <a href="#routeDescription"
+            title="https://w3id.org/mobility/trias/journey#routeDescription">routeDescription</a>
+      </li>
+      <li>
+         <a href="#service" title="https://w3id.org/mobility/trias/journey#service">service</a>
+      </li>
+      <li>
+         <a href="#sharingService"
+            title="https://w3id.org/mobility/trias/journey#sharingService">sharingService</a>
+      </li>
+   </ul>
+   <div class="entity" id="destinationText">
+      <h3>destinationText<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#destinationText</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DatedJourney"
+                  title="https://w3id.org/mobility/trias/journey#DatedJourney">DatedJourney</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/trias/utility#InternationalText"
+                  target="_blank"
+                  title="https://w3id.org/mobility/trias/utility#InternationalText">international text</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasAttribute">
+      <h3>hasAttribute<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#hasAttribute</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ContinuousService"
+                  title="https://w3id.org/mobility/trias/journey#ContinuousService">ContinuousService</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#DatedJourney"
+                  title="https://w3id.org/mobility/trias/journey#DatedJourney">DatedJourney</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="https://w3id.org/mobility/trias/trips#InterchangeLeg"
+                  target="_blank"
+                  title="https://w3id.org/mobility/trias/trips#InterchangeLeg">interchange leg</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ServiceAttribute"
+                  title="https://w3id.org/mobility/trias/journey#ServiceAttribute">ServiceAttribute</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMode">
+      <h3>hasMode<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#hasMode</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ServiceSection"
+                  title="https://w3id.org/mobility/trias/journey#ServiceSection">ServiceSection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/trias/utility#Mode"
+                  target="_blank"
+                  title="https://w3id.org/mobility/trias/utility#Mode">mode</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasServiceSection">
+      <h3>hasServiceSection<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#hasServiceSection</p>
+      <div class="comment">
+         <span class="markdown">Sequence of stop sequence intervals with respective service properties.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ContinuousService"
+                  title="https://w3id.org/mobility/trias/journey#ContinuousService">ContinuousService</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#DatedJourney"
+                  title="https://w3id.org/mobility/trias/journey#DatedJourney">DatedJourney</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ServiceSection"
+                  title="https://w3id.org/mobility/trias/journey#ServiceSection">ServiceSection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasVia">
+      <h3>hasVia<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#hasVia</p>
+   </div>
+   <div class="entity" id="originText">
+      <h3>originText<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#originText</p>
+      <div class="comment">
+         <span class="markdown">Label for first stop.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ContinuousService"
+                  title="https://w3id.org/mobility/trias/journey#ContinuousService">ContinuousService</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#DatedJourney"
+                  title="https://w3id.org/mobility/trias/journey#DatedJourney">DatedJourney</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/trias/utility#InternationalText"
+                  target="_blank"
+                  title="https://w3id.org/mobility/trias/utility#InternationalText">international text</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="projection">
+      <h3>projection<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#projection</p>
+      <div class="comment">
+         <span class="markdown">Geographic projection as polyline.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrackSection"
+                  title="https://w3id.org/mobility/trias/journey#TrackSection">TrackSection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/trias/utility#GeoPosition"
+                  target="_blank"
+                  title="https://w3id.org/mobility/trias/utility#GeoPosition">geo position</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="publishedLineName">
+      <h3>publishedLineName<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#publishedLineName</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ServiceSection"
+                  title="https://w3id.org/mobility/trias/journey#ServiceSection">ServiceSection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/trias/utility#InternationalText"
+                  target="_blank"
+                  title="https://w3id.org/mobility/trias/utility#InternationalText">international text</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="routeDescription">
+      <h3>routeDescription<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#routeDescription</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ServiceSection"
+                  title="https://w3id.org/mobility/trias/journey#ServiceSection">ServiceSection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/trias/utility#InternationalText"
+                  target="_blank"
+                  title="https://w3id.org/mobility/trias/utility#InternationalText">international text</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="service">
+      <h3>service<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#service</p>
+      <div class="comment">
+         <span class="markdown">Relation from the parallel service.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ParallelService"
+                  title="https://w3id.org/mobility/trias/journey#ParallelService">ParallelService</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#DatedJourney"
+                  title="https://w3id.org/mobility/trias/journey#DatedJourney">DatedJourney</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="sharingService">
+      <h3>sharingService<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#sharingService</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ContinuousService"
+                  title="https://w3id.org/mobility/trias/journey#ContinuousService">ContinuousService</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/trias/common#SharingService"
+                  target="_blank"
+                  title="https://w3id.org/mobility/trias/common#SharingService">sharing service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#cancelled"
+            title="https://w3id.org/mobility/trias/journey#cancelled">cancelled</a>
+      </li>
+      <li>
+         <a href="#destinationStopPointRef"
+            title="https://w3id.org/mobility/trias/journey#destinationStopPointRef">destinationStopPointRef</a>
+      </li>
+      <li>
+         <a href="#deviation"
+            title="https://w3id.org/mobility/trias/journey#deviation">deviation</a>
+      </li>
+      <li>
+         <a href="#directionRef"
+            title="https://w3id.org/mobility/trias/journey#directionRef">directionRef</a>
+      </li>
+      <li>
+         <a href="#duration" title="https://w3id.org/mobility/trias/journey#duration">duration</a>
+      </li>
+      <li>
+         <a href="#estimatedTime"
+            title="https://w3id.org/mobility/trias/journey#estimatedTime">estimatedTime</a>
+      </li>
+      <li>
+         <a href="#estimatedTimeHigh"
+            title="https://w3id.org/mobility/trias/journey#estimatedTimeHigh">estimatedTimeHigh</a>
+      </li>
+      <li>
+         <a href="#estimatedTimeLow"
+            title="https://w3id.org/mobility/trias/journey#estimatedTimeLow">estimatedTimeLow</a>
+      </li>
+      <li>
+         <a href="#fromStopSeqNumber"
+            title="https://w3id.org/mobility/trias/journey#fromStopSeqNumber">fromStopSeqNumber</a>
+      </li>
+      <li>
+         <a href="#journeyRef"
+            title="https://w3id.org/mobility/trias/journey#journeyRef">journeyRef</a>
+      </li>
+      <li>
+         <a href="#length" title="https://w3id.org/mobility/trias/journey#length">length</a>
+      </li>
+      <li>
+         <a href="#lineRef" title="https://w3id.org/mobility/trias/journey#lineRef">lineRef</a>
+      </li>
+      <li>
+         <a href="#operatingDayRef"
+            title="https://w3id.org/mobility/trias/journey#operatingDayRef">operatingDayRef</a>
+      </li>
+      <li>
+         <a href="#operatorRef"
+            title="https://w3id.org/mobility/trias/journey#operatorRef">operatorRef</a>
+      </li>
+      <li>
+         <a href="#originStopPointRef"
+            title="https://w3id.org/mobility/trias/journey#originStopPointRef">originStopPointRef</a>
+      </li>
+      <li>
+         <a href="#recordedAtTime"
+            title="https://w3id.org/mobility/trias/journey#recordedAtTime">recordedAtTime</a>
+      </li>
+      <li>
+         <a href="#roadName" title="https://w3id.org/mobility/trias/journey#roadName">roadName</a>
+      </li>
+      <li>
+         <a href="#scope" title="https://w3id.org/mobility/trias/journey#scope">scope</a>
+      </li>
+      <li>
+         <a href="#timetabledTime"
+            title="https://w3id.org/mobility/trias/journey#timetabledTime">timetabledTime</a>
+      </li>
+      <li>
+         <a href="#toStopSeqNumber"
+            title="https://w3id.org/mobility/trias/journey#toStopSeqNumber">toStopSeqNumber</a>
+      </li>
+      <li>
+         <a href="#unplanned"
+            title="https://w3id.org/mobility/trias/journey#unplanned">unplanned</a>
+      </li>
+      <li>
+         <a href="#vehicleRef"
+            title="https://w3id.org/mobility/trias/journey#vehicleRef">vehicleRef</a>
+      </li>
+   </ul>
+   <div class="entity" id="cancelled">
+      <h3>cancelled<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#cancelled</p>
+      <div class="comment">
+         <span class="markdown">Whether this trip is cancelled and will not be run. Default is false.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DatedJourney"
+                  title="https://w3id.org/mobility/trias/journey#DatedJourney">DatedJourney</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="destinationStopPointRef">
+      <h3>destinationStopPointRef<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#destinationStopPointRef</p>
+      <div class="comment">
+         <span class="markdown">Last stop of vehicle journey.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DatedJourney"
+                  title="https://w3id.org/mobility/trias/journey#DatedJourney">DatedJourney</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="deviation">
+      <h3>deviation<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#deviation</p>
+      <div class="comment">
+         <span class="markdown">Whether this trip deviates from the planned service pattern. Default is false.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DatedJourney"
+                  title="https://w3id.org/mobility/trias/journey#DatedJourney">DatedJourney</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="directionRef">
+      <h3>directionRef<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#directionRef</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ServiceSection"
+                  title="https://w3id.org/mobility/trias/journey#ServiceSection">ServiceSection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="duration">
+      <h3>duration<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#duration</p>
+      <div class="comment">
+         <span class="markdown">Duration the passenger needs to travel through this track section.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrackSection"
+                  title="https://w3id.org/mobility/trias/journey#TrackSection">TrackSection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="estimatedTime">
+      <h3>estimatedTime<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#estimatedTime</p>
+      <div class="comment">
+         <span class="markdown">estimated time (for prognosis)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ServiceCall"
+                  title="https://w3id.org/mobility/trias/journey#ServiceCall">ServiceCall</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="estimatedTimeHigh">
+      <h3>estimatedTimeHigh<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#estimatedTimeHigh</p>
+      <div class="comment">
+         <span class="markdown">Estimated upper limit for time.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ServiceCall"
+                  title="https://w3id.org/mobility/trias/journey#ServiceCall">ServiceCall</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="estimatedTimeLow">
+      <h3>estimatedTimeLow<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#estimatedTimeLow</p>
+      <div class="comment">
+         <span class="markdown">Estimated lower limit for time.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ServiceCall"
+                  title="https://w3id.org/mobility/trias/journey#ServiceCall">ServiceCall</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="fromStopSeqNumber">
+      <h3>fromStopSeqNumber<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#fromStopSeqNumber</p>
+      <div class="comment">
+         <span class="markdown">Stop sequence number, where the interval ends (inclusive). If missing, the interval ends at the end of the leg (or at the end of the journey for uses in StopEvents and TripInfo).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#positiveInteger"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#positiveInteger">positive integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="journeyRef">
+      <h3>journeyRef<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#journeyRef</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DatedJourney"
+                  title="https://w3id.org/mobility/trias/journey#DatedJourney">DatedJourney</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="length">
+      <h3>length<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#length</p>
+      <div class="comment">
+         <span class="markdown">Length of this track section or interchange path</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrackSection"
+                  title="https://w3id.org/mobility/trias/journey#TrackSection">TrackSection</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="https://w3id.org/mobility/trias/trips#InterchangeLeg"
+                  target="_blank"
+                  title="https://w3id.org/mobility/trias/trips#InterchangeLeg">interchange leg</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="lineRef">
+      <h3>lineRef<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#lineRef</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ServiceSection"
+                  title="https://w3id.org/mobility/trias/journey#ServiceSection">ServiceSection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="operatingDayRef">
+      <h3>operatingDayRef<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#operatingDayRef</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DatedJourney"
+                  title="https://w3id.org/mobility/trias/journey#DatedJourney">DatedJourney</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="operatorRef">
+      <h3>operatorRef<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#operatorRef</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ServiceSection"
+                  title="https://w3id.org/mobility/trias/journey#ServiceSection">ServiceSection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="originStopPointRef">
+      <h3>originStopPointRef<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#originStopPointRef</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="recordedAtTime">
+      <h3>recordedAtTime<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#recordedAtTime</p>
+      <div class="comment">
+         <span class="markdown">Time as it was recorded.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ServiceCall"
+                  title="https://w3id.org/mobility/trias/journey#ServiceCall">ServiceCall</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="roadName">
+      <h3>roadName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#roadName</p>
+      <div class="comment">
+         <span class="markdown">Name of the road this track section is attached to.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TrackSection"
+                  title="https://w3id.org/mobility/trias/journey#TrackSection">TrackSection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="scope">
+      <h3>scope<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#scope</p>
+      <div class="comment">
+         <span class="markdown">Scope of the attribute. Defines where the attribute references to (on track, at stops, at boarding, at alighting).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ServiceAttribute"
+                  title="https://w3id.org/mobility/trias/journey#ServiceAttribute">ServiceAttribute</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="timetabledTime">
+      <h3>timetabledTime<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#timetabledTime</p>
+      <div class="comment">
+         <span class="markdown">Time at point as it is published</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ServiceCall"
+                  title="https://w3id.org/mobility/trias/journey#ServiceCall">ServiceCall</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="toStopSeqNumber">
+      <h3>toStopSeqNumber<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#toStopSeqNumber</p>
+      <div class="comment">
+         <span class="markdown">Stop sequence number, where the interval begins (inclusive). If missing, the interval begins at the beginning of the leg (or at the beginning of the journey for uses in StopEvents and TripInfo).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#positiveInteger"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#positiveInteger">positive integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="unplanned">
+      <h3>unplanned<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#unplanned</p>
+      <div class="comment">
+         <span class="markdown">Whether this trip is an additional one that has not been planned. Default is false.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DatedJourney"
+                  title="https://w3id.org/mobility/trias/journey#DatedJourney">DatedJourney</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="vehicleRef">
+      <h3>vehicleRef<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#vehicleRef</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DatedJourney"
+                  title="https://w3id.org/mobility/trias/journey#DatedJourney">DatedJourney</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

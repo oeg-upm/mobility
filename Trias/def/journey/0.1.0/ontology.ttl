@@ -4,9 +4,6 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix trcommon: <https://w3id.org/mobility/trias/common#> .
-@prefix trutility: <https://w3id.org/mobility/trias/utility> .
 @base <https://w3id.org/mobility/trias/journey#> .
 
 <https://w3id.org/mobility/trias/journey#> rdf:type owl:Ontology ;
@@ -57,9 +54,33 @@
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#minQualifiedCardinality
+owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
+
+###  https://w3id.org/mobility/trias/common#hasEstimatedBay
+<https://w3id.org/mobility/trias/common#hasEstimatedBay> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/mobility/trias/common#hasNameSuffix
+<https://w3id.org/mobility/trias/common#hasNameSuffix> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/mobility/trias/common#hasPlannedBay
+<https://w3id.org/mobility/trias/common#hasPlannedBay> rdf:type owl:ObjectProperty .
+
 
 ###  https://w3id.org/mobility/trias/journey#destinationText
 :destinationText rdf:type owl:ObjectProperty ;
@@ -149,7 +170,7 @@
 ###  https://w3id.org/mobility/trias/journey#sharingService
 :sharingService rdf:type owl:ObjectProperty ;
                 rdfs:domain :ContinuousService ;
-                rdfs:range trcommon:SharingService ;
+                rdfs:range <https://w3id.org/mobility/trias/common#SharingService> ;
                 rdfs:label "sharingService"@en .
 
 
@@ -331,6 +352,22 @@
 #    Classes
 #################################################################
 
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
+
+
+###  https://w3id.org/mobility/trias/common#GeneralAttribute
+<https://w3id.org/mobility/trias/common#GeneralAttribute> rdf:type owl:Class .
+
+
+###  https://w3id.org/mobility/trias/common#SharingService
+<https://w3id.org/mobility/trias/common#SharingService> rdf:type owl:Class .
+
+
 ###  https://w3id.org/mobility/trias/journey#ContinuousService
 :ContinuousService rdf:type owl:Class ;
                    rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -439,7 +476,7 @@
 
 ###  https://w3id.org/mobility/trias/journey#ServiceAttribute
 :ServiceAttribute rdf:type owl:Class ;
-                  rdfs:subClassOf trcommon:GeneralAttribute ,
+                  rdfs:subClassOf <https://w3id.org/mobility/trias/common#GeneralAttribute> ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty :destinationText ;
                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -545,27 +582,19 @@
 
 ###  https://w3id.org/mobility/trias/journey#ServiceViaPoint
 :ServiceViaPoint rdf:type owl:Class ;
-                 rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                   owl:onProperty trcommon:hasEstimatedBay ;
+                 rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
+                                 <http://org.semanticweb.owlapi/error#Error2> ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <https://w3id.org/mobility/trias/common#hasEstimatedBay> ;
                                    owl:someValuesFrom <https://w3id.org/mobility/trias/utility#InternationalText>
                                  ] ,
                                  [ rdf:type owl:Restriction ;
-                                   owl:onProperty trcommon:hasNameSuffix ;
+                                   owl:onProperty <https://w3id.org/mobility/trias/common#hasNameSuffix> ;
                                    owl:someValuesFrom <https://w3id.org/mobility/trias/utility#InternationalText>
                                  ] ,
                                  [ rdf:type owl:Restriction ;
-                                   owl:onProperty trcommon:hasPlannedBay ;
+                                   owl:onProperty <https://w3id.org/mobility/trias/common#hasPlannedBay> ;
                                    owl:someValuesFrom <https://w3id.org/mobility/trias/utility#InternationalText>
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty trcommon:hasStopPointName ;
-                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass <https://w3id.org/mobility/trias/utility#InternationalText>
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty trcommon:stopPointRef ;
-                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onDataRange xsd:string
                                  ] ;
                  rdfs:comment "Stop place or stop point as a via point (in service pattern)."@en ;
                  rdfs:label "ServiceViaPoint"@en .
@@ -601,8 +630,22 @@
 <https://w3id.org/mobility/trias/trips#InterchangeLeg> rdf:type owl:Class .
 
 
+###  https://w3id.org/mobility/trias/utility#GeoPosition
+<https://w3id.org/mobility/trias/utility#GeoPosition> rdf:type owl:Class .
+
+
 ###  https://w3id.org/mobility/trias/utility#InternationalText
 <https://w3id.org/mobility/trias/utility#InternationalText> rdf:type owl:Class .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  https://w3id.org/mobility/trias/utility#Mode
+<https://w3id.org/mobility/trias/utility#Mode> rdf:type owl:Class .
+
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

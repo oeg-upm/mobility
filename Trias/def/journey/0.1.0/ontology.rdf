@@ -1,0 +1,1017 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/mobility/trias/journey#"
+     xml:base="https://w3id.org/mobility/trias/journey"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/mobility/trias/journey#">
+        <owl:versionIRI rdf:resource="https://w3id.org/mobility/trias/journey/0.1"/>
+        <owl:imports rdf:resource="https://w3id.org/mobility/trias/common/0.1"/>
+        <owl:imports rdf:resource="https://w3id.org/mobility/trias/mode/0.1"/>
+        <owl:imports rdf:resource="https://w3id.org/mobility/trias/utility/0.1"/>
+        <ns:license xml:lang="en">2022-03-22</ns:license>
+        <dc:creator xml:lang="en">Jhon Toledo (Ontology Engienering Group - Universidad Politécnica de Madrid)</dc:creator>
+        <dc:creator xml:lang="en">Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid</dc:creator>
+        <dc:creator xml:lang="en">Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
+        <dc:description xml:lang="en">Trias - Journey Travellor Realtime Information and Advisory Standard</dc:description>
+        <dc:identifier xml:lang="en">https://w3id.org/mobility/trias/journey</dc:identifier>
+        <dc:rights xml:lang="en">Creative Commons Attribution 4.0 International (CC BY 4.0)</dc:rights>
+        <dc:title xml:lang="en">Ontology for the representation of journey elements in the Trias ontology</dc:title>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <rdfs:label xml:lang="en">Trias - Travellor Realtime Information and Advisory Standard</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#minQualifiedCardinality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minQualifiedCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/mobility/trias/common#hasEstimatedBay -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/common#hasEstimatedBay"/>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/common#hasNameSuffix -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/common#hasNameSuffix"/>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/common#hasPlannedBay -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/common#hasPlannedBay"/>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#destinationText -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/journey#destinationText">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#DatedJourney"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+        <rdfs:label xml:lang="en">destinationText</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#hasAttribute -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/journey#hasAttribute">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/mobility/trias/journey#ContinuousService"/>
+                    <rdf:Description rdf:about="https://w3id.org/mobility/trias/journey#DatedJourney"/>
+                    <rdf:Description rdf:about="https://w3id.org/mobility/trias/trips#InterchangeLeg"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/journey#ServiceAttribute"/>
+        <rdfs:label xml:lang="en">hasAttribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#hasMode -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/journey#hasMode">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#ServiceSection"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/utility#Mode"/>
+        <rdfs:label xml:lang="en">hasMode</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#hasServiceSection -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/journey#hasServiceSection">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/mobility/trias/journey#ContinuousService"/>
+                    <rdf:Description rdf:about="https://w3id.org/mobility/trias/journey#DatedJourney"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/journey#ServiceSection"/>
+        <rdfs:comment xml:lang="en">Sequence of stop sequence intervals with respective service properties.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasServiceSection</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#hasVia -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/journey#hasVia">
+        <rdfs:label xml:lang="en">hasVia</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#originText -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/journey#originText">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/mobility/trias/journey#ContinuousService"/>
+                    <rdf:Description rdf:about="https://w3id.org/mobility/trias/journey#DatedJourney"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+        <rdfs:comment xml:lang="en">Label for first stop.</rdfs:comment>
+        <rdfs:label xml:lang="en">originText</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#projection -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/journey#projection">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#TrackSection"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/utility#GeoPosition"/>
+        <rdfs:comment xml:lang="en">Geographic projection as polyline.</rdfs:comment>
+        <rdfs:label xml:lang="en">projection</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#publishedLineName -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/journey#publishedLineName">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#ServiceSection"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+        <rdfs:label xml:lang="en">publishedLineName</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#routeDescription -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/journey#routeDescription">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#ServiceSection"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+        <rdfs:label xml:lang="en">routeDescription</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#service -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/journey#service">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#ParallelService"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/journey#DatedJourney"/>
+        <rdfs:comment xml:lang="en">Relation from the parallel service.</rdfs:comment>
+        <rdfs:label xml:lang="en">service</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#sharingService -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/journey#sharingService">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#ContinuousService"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/common#SharingService"/>
+        <rdfs:label xml:lang="en">sharingService</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#cancelled -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#cancelled">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#DatedJourney"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Whether this trip is cancelled and will not be run. Default is false.</rdfs:comment>
+        <rdfs:label xml:lang="en">cancelled</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#destinationStopPointRef -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#destinationStopPointRef">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#DatedJourney"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Last stop of vehicle journey.</rdfs:comment>
+        <rdfs:label xml:lang="en">destinationStopPointRef</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#deviation -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#deviation">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#DatedJourney"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Whether this trip deviates from the planned service pattern. Default is false.</rdfs:comment>
+        <rdfs:label xml:lang="en">deviation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#directionRef -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#directionRef">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#ServiceSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">directionRef</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#duration -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#duration">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#TrackSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Duration the passenger needs to travel through this track section.</rdfs:comment>
+        <rdfs:label xml:lang="en">duration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#estimatedTime -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#estimatedTime">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#ServiceCall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">estimated time (for prognosis)</rdfs:comment>
+        <rdfs:label xml:lang="en">estimatedTime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#estimatedTimeHigh -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#estimatedTimeHigh">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#ServiceCall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">Estimated upper limit for time.</rdfs:comment>
+        <rdfs:label xml:lang="en">estimatedTimeHigh</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#estimatedTimeLow -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#estimatedTimeLow">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#ServiceCall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">Estimated lower limit for time.</rdfs:comment>
+        <rdfs:label xml:lang="en">estimatedTimeLow</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#fromStopSeqNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#fromStopSeqNumber">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment xml:lang="en">Stop sequence number, where the interval ends (inclusive). If missing, the interval ends at the end of the leg (or at the end of the journey for uses in StopEvents and TripInfo).</rdfs:comment>
+        <rdfs:label xml:lang="en">fromStopSeqNumber</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#journeyRef -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#journeyRef">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#DatedJourney"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">journeyRef</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#length -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#length">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/mobility/trias/journey#TrackSection"/>
+                    <rdf:Description rdf:about="https://w3id.org/mobility/trias/trips#InterchangeLeg"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Length of this track section or interchange path</rdfs:comment>
+        <rdfs:label xml:lang="en">length</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#lineRef -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#lineRef">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#ServiceSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">lineRef</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#operatingDayRef -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#operatingDayRef">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#DatedJourney"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">operatingDayRef</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#operatorRef -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#operatorRef">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#ServiceSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">operatorRef</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#originStopPointRef -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#originStopPointRef">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">originStopPointRef</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#recordedAtTime -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#recordedAtTime">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#ServiceCall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">Time as it was recorded.</rdfs:comment>
+        <rdfs:label xml:lang="en">recordedAtTime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#roadName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#roadName">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#TrackSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Name of the road this track section is attached to.</rdfs:comment>
+        <rdfs:label xml:lang="en">roadName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#scope -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#scope">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#ServiceAttribute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Scope of the attribute. Defines where the attribute references to (on track, at stops, at boarding, at alighting).</rdfs:comment>
+        <rdfs:label xml:lang="en">scope</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#timetabledTime -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#timetabledTime">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#ServiceCall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">Time at point as it is published</rdfs:comment>
+        <rdfs:label xml:lang="en">timetabledTime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#toStopSeqNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#toStopSeqNumber">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment xml:lang="en">Stop sequence number, where the interval begins (inclusive). If missing, the interval begins at the beginning of the leg (or at the beginning of the journey for uses in StopEvents and TripInfo).</rdfs:comment>
+        <rdfs:label xml:lang="en">toStopSeqNumber</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#unplanned -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#unplanned">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#DatedJourney"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Whether this trip is an additional one that has not been planned. Default is false.</rdfs:comment>
+        <rdfs:label xml:lang="en">unplanned</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#vehicleRef -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/journey#vehicleRef">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/journey#DatedJourney"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">vehicleRef</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error1 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error2 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/common#GeneralAttribute -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/common#GeneralAttribute"/>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/common#SharingService -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/common#SharingService"/>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#ContinuousService -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/journey#ContinuousService">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#hasAttribute"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/journey#ServiceAttribute"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#hasServiceSection"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/journey#ServiceSection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#originText"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represent a  passenger movement on a continuous service.</rdfs:comment>
+        <rdfs:label xml:lang="en">ContinuousService</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#DatedJourney -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/journey#DatedJourney">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#hasAttribute"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/journey#ServiceAttribute"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#destinationText"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#hasServiceSection"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/journey#ServiceSection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#originText"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#journeyRef"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#operatingDayRef"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#cancelled"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#destinationStopPointRef"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#deviation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#originStopPointRef"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#unplanned"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#vehicleRef"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Structure for a vehicle journey at a specific date.</rdfs:comment>
+        <rdfs:label xml:lang="en">DatedJourney</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#ParallelService -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/journey#ParallelService">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#service"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/journey#DatedJourney"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#fromStopSeqNumber"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#toStopSeqNumber"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Structure combining a parallel running service with a stop sequence interval.</rdfs:comment>
+        <rdfs:label xml:lang="en">ParallelService</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#ServiceAttribute -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/journey#ServiceAttribute">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/trias/common#GeneralAttribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#destinationText"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#fromStopSeqNumber"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#scope"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#toStopSeqNumber"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">ServiceAttribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#ServiceCall -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/journey#ServiceCall">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#timetabledTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#estimatedTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#estimatedTimeHigh"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#estimatedTimeLow"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#recordedAtTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Contains information on an arrival or departure of a service, e.g. time.</rdfs:comment>
+        <rdfs:label xml:lang="en">ServiceCall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#ServiceSection -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/journey#ServiceSection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#hasVia"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/journey#ServiceViaPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#routeDescription"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#publishedLineName"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#hasMode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/utility#Mode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#directionRef"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#lineRef"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#fromStopSeqNumber"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#operatorRef"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#toStopSeqNumber"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Class from a service combined with a stop sequence interval.</rdfs:comment>
+        <rdfs:label xml:lang="en">ServiceSection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#ServiceViaPoint -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/journey#ServiceViaPoint">
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/common#hasEstimatedBay"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/common#hasNameSuffix"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/common#hasPlannedBay"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Stop place or stop point as a via point (in service pattern).</rdfs:comment>
+        <rdfs:label xml:lang="en">ServiceViaPoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/journey#TrackSection -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/journey#TrackSection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#projection"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/utility#GeoPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#duration"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#length"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/journey#roadName"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A piece of a trip. A trip leg.may consist of multiple TrackSections. Describes the geographic embedding.</rdfs:comment>
+        <rdfs:label xml:lang="en">TrackSection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/trips#InterchangeLeg -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/trips#InterchangeLeg"/>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/utility#GeoPosition -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/utility#GeoPosition"/>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/utility#InternationalText -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/utility#InternationalText"/>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/utility#Mode -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/utility#Mode"/>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
