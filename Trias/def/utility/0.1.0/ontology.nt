@@ -1,0 +1,182 @@
+<https://w3id.org/mobility/trias/utility#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/mobility/trias/utility#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/mobility/trias/utility/0.1> .
+<https://w3id.org/mobility/trias/utility#> <http://purl.org/dc/elements/1.1/creator> "Jhon Toledo (Ontology Engienering Group - Universidad Politécnica de Madrid)"@en .
+<https://w3id.org/mobility/trias/utility#> <http://purl.org/dc/elements/1.1/creator> "Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid"@en .
+<https://w3id.org/mobility/trias/utility#> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"@en .
+<https://w3id.org/mobility/trias/utility#> <http://purl.org/dc/elements/1.1/identifier> "https://w3id.org/mobility/trias/utility"@en .
+<https://w3id.org/mobility/trias/utility#> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)"@en .
+<https://w3id.org/mobility/trias/utility#> <http://purl.org/dc/elements/1.1/title> "Ontology for the representation of utility elements in the Trias ontology"@en .
+<https://w3id.org/mobility/trias/utility#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/mobility/trias/utility#> <http://www.w3.org/2000/01/rdf-schema#label> "Ontology for the representation of utility elements in the Trias ontology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mobility/trias/utility#urlLabe
+<https://w3id.org/mobility/trias/utility#urlLabe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/trias/utility#urlLabe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/utility#WebLink> .
+<https://w3id.org/mobility/trias/utility#urlLabe> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/trias/utility#InternationalText> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An unambiguous reference to the resource within a given context."@en .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
+# 
+# https://w3id.org/mobility/trias/utility#altitude
+<https://w3id.org/mobility/trias/utility#altitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/utility#altitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/utility#GeoPosition> .
+<https://w3id.org/mobility/trias/utility#altitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/trias/utility#altitude> <http://www.w3.org/2000/01/rdf-schema#comment> "Altitude metres from sea level."@en .
+<https://w3id.org/mobility/trias/utility#altitude> <http://www.w3.org/2000/01/rdf-schema#label> "altitude"@en .
+# 
+# https://w3id.org/mobility/trias/utility#language
+<https://w3id.org/mobility/trias/utility#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/utility#language> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/utility#InternationalText> .
+<https://w3id.org/mobility/trias/utility#language> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/trias/utility#language> <http://www.w3.org/2000/01/rdf-schema#comment> "language"@en .
+<https://w3id.org/mobility/trias/utility#language> <http://www.w3.org/2000/01/rdf-schema#label> "language"@en .
+# 
+# https://w3id.org/mobility/trias/utility#latitude
+<https://w3id.org/mobility/trias/utility#latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/utility#latitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/utility#GeoPosition> .
+<https://w3id.org/mobility/trias/utility#latitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/trias/utility#latitude> <http://www.w3.org/2000/01/rdf-schema#comment> "Latitude from equator. -90 (South) to +90 (North)."@en .
+<https://w3id.org/mobility/trias/utility#latitude> <http://www.w3.org/2000/01/rdf-schema#label> "latitude"@en .
+# 
+# https://w3id.org/mobility/trias/utility#longitude
+<https://w3id.org/mobility/trias/utility#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/utility#longitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/utility#GeoPosition> .
+<https://w3id.org/mobility/trias/utility#longitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/trias/utility#longitude> <http://www.w3.org/2000/01/rdf-schema#comment> "Longitude from Greenwich Meridian. -180 (West) to +180 (East)."@en .
+<https://w3id.org/mobility/trias/utility#longitude> <http://www.w3.org/2000/01/rdf-schema#label> "longitude"@en .
+# 
+# https://w3id.org/mobility/trias/utility#text
+<https://w3id.org/mobility/trias/utility#text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/utility#text> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/utility#InternationalText> .
+<https://w3id.org/mobility/trias/utility#text> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/trias/utility#text> <http://www.w3.org/2000/01/rdf-schema#comment> "Text content."@en .
+<https://w3id.org/mobility/trias/utility#text> <http://www.w3.org/2000/01/rdf-schema#label> "text"@en .
+# 
+# https://w3id.org/mobility/trias/utility#textId
+<https://w3id.org/mobility/trias/utility#textId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/utility#textId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/utility#InternationalText> .
+<https://w3id.org/mobility/trias/utility#textId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/trias/utility#textId> <http://www.w3.org/2000/01/rdf-schema#comment> "ID of text"@en .
+<https://w3id.org/mobility/trias/utility#textId> <http://www.w3.org/2000/01/rdf-schema#label> "textId"@en .
+# 
+# https://w3id.org/mobility/trias/utility#url
+<https://w3id.org/mobility/trias/utility#url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/utility#url> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/utility#WebLink> .
+<https://w3id.org/mobility/trias/utility#url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/trias/utility#url> <http://www.w3.org/2000/01/rdf-schema#label> "url"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mobility/trias/utility#GeoPosition
+<https://w3id.org/mobility/trias/utility#GeoPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/utility#GeoPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/utility#latitude> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/utility#GeoPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/utility#longitude> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/utility#GeoPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid3 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/utility#altitude> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/utility#GeoPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Expressed as WGS84."@en .
+<https://w3id.org/mobility/trias/utility#GeoPosition> <http://www.w3.org/2000/01/rdf-schema#label> "GeoPosition"@en .
+# 
+# https://w3id.org/mobility/trias/utility#InternationalText
+<https://w3id.org/mobility/trias/utility#InternationalText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/utility#InternationalText> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/utility#text> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/utility#InternationalText> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid5 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/utility#language> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/utility#InternationalText> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid6 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/utility#textId> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/utility#InternationalText> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes texts with a text-ID and specification of language in which it is written."@en .
+<https://w3id.org/mobility/trias/utility#InternationalText> <http://www.w3.org/2000/01/rdf-schema#label> "InternationalText"@en .
+# 
+# https://w3id.org/mobility/trias/utility#WebLink
+<https://w3id.org/mobility/trias/utility#WebLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/utility#WebLink> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/utility#InternationalText> .
+_:genid7 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/utility#urlLabe> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/utility#WebLink> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/utility#url> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/utility#WebLink> <http://www.w3.org/2000/01/rdf-schema#comment> "URL with label."@en .
+<https://w3id.org/mobility/trias/utility#WebLink> <http://www.w3.org/2000/01/rdf-schema#label> "WebLink"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

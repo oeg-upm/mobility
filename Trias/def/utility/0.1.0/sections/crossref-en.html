@@ -1,0 +1,359 @@
+<h2 id="crossreference" class="list">Cross-reference for Ontology for the representation of utility elements in the Trias ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Ontology for the representation of utility elements in the Trias ontology.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#GeoPosition"
+            title="https://w3id.org/mobility/trias/utility#GeoPosition">GeoPosition</a>
+      </li>
+      <li>
+         <a href="#InternationalText"
+            title="https://w3id.org/mobility/trias/utility#InternationalText">InternationalText</a>
+      </li>
+      <li>
+         <a href="#WebLink" title="https://w3id.org/mobility/trias/utility#WebLink">WebLink</a>
+      </li>
+   </ul>
+   <div class="entity" id="GeoPosition">
+      <h3>GeoPosition<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/utility#GeoPosition</p>
+      <div class="comment">
+         <span class="markdown">Expressed as WGS84.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#altitude" title="https://w3id.org/mobility/trias/utility#altitude">altitude</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#latitude" title="https://w3id.org/mobility/trias/utility#latitude">latitude</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#longitude"
+               title="https://w3id.org/mobility/trias/utility#longitude">longitude</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InternationalText">
+      <h3>InternationalText<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/utility#InternationalText</p>
+      <div class="comment">
+         <span class="markdown">Class that describes texts with a text-ID and specification of language in which it is written.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#language" title="https://w3id.org/mobility/trias/utility#language">language</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#text" title="https://w3id.org/mobility/trias/utility#text">text</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#textId" title="https://w3id.org/mobility/trias/utility#textId">textId</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#urlLabe" title="https://w3id.org/mobility/trias/utility#urlLabe">url labe</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="WebLink">
+      <h3>WebLink<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/utility#WebLink</p>
+      <div class="comment">
+         <span class="markdown">URL with label.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#url" title="https://w3id.org/mobility/trias/utility#url">url</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#urlLabe" title="https://w3id.org/mobility/trias/utility#urlLabe">url labe</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#urlLabe" title="https://w3id.org/mobility/trias/utility#urlLabe">
+            <span>url labe</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="urlLabe">
+      <h3>url labe<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/utility#urlLabe</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#WebLink" title="https://w3id.org/mobility/trias/utility#WebLink">WebLink</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InternationalText"
+                  title="https://w3id.org/mobility/trias/utility#InternationalText">InternationalText</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#altitude" title="https://w3id.org/mobility/trias/utility#altitude">altitude</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a>
+      </li>
+      <li>
+         <a href="#language" title="https://w3id.org/mobility/trias/utility#language">language</a>
+      </li>
+      <li>
+         <a href="#latitude" title="https://w3id.org/mobility/trias/utility#latitude">latitude</a>
+      </li>
+      <li>
+         <a href="#longitude"
+            title="https://w3id.org/mobility/trias/utility#longitude">longitude</a>
+      </li>
+      <li>
+         <a href="#text" title="https://w3id.org/mobility/trias/utility#text">text</a>
+      </li>
+      <li>
+         <a href="#textId" title="https://w3id.org/mobility/trias/utility#textId">textId</a>
+      </li>
+      <li>
+         <a href="#url" title="https://w3id.org/mobility/trias/utility#url">url</a>
+      </li>
+   </ul>
+   <div class="entity" id="altitude">
+      <h3>altitude<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/utility#altitude</p>
+      <div class="comment">
+         <span class="markdown">Altitude metres from sea level.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GeoPosition"
+                  title="https://w3id.org/mobility/trias/utility#GeoPosition">GeoPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/identifier">
+      <h3>identifier<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/identifier</p>
+      <div class="comment">
+         <span class="markdown">An unambiguous reference to the resource within a given context.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms">http://purl.org/dc/terms</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="language">
+      <h3>language<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/utility#language</p>
+      <div class="comment">
+         <span class="markdown">language</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InternationalText"
+                  title="https://w3id.org/mobility/trias/utility#InternationalText">InternationalText</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="latitude">
+      <h3>latitude<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/utility#latitude</p>
+      <div class="comment">
+         <span class="markdown">Latitude from equator. -90 (South) to +90 (North).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GeoPosition"
+                  title="https://w3id.org/mobility/trias/utility#GeoPosition">GeoPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="longitude">
+      <h3>longitude<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/utility#longitude</p>
+      <div class="comment">
+         <span class="markdown">Longitude from Greenwich Meridian. -180 (West) to +180 (East).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GeoPosition"
+                  title="https://w3id.org/mobility/trias/utility#GeoPosition">GeoPosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="text">
+      <h3>text<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/utility#text</p>
+      <div class="comment">
+         <span class="markdown">Text content.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InternationalText"
+                  title="https://w3id.org/mobility/trias/utility#InternationalText">InternationalText</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="textId">
+      <h3>textId<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/utility#textId</p>
+      <div class="comment">
+         <span class="markdown">ID of text</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InternationalText"
+                  title="https://w3id.org/mobility/trias/utility#InternationalText">InternationalText</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="url">
+      <h3>url<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/utility#url</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#WebLink" title="https://w3id.org/mobility/trias/utility#WebLink">WebLink</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>
