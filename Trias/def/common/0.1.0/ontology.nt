@@ -1,0 +1,227 @@
+<https://w3id.org/mobility/trias/common#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/mobility/trias/common#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/mobility/trias/common/0.1> .
+<https://w3id.org/mobility/trias/common#> <http://purl.org/dc/elements/1.1/creator> "Jhon Toledo (Ontology Engienering Group - Universidad Politécnica de Madrid)"@en .
+<https://w3id.org/mobility/trias/common#> <http://purl.org/dc/elements/1.1/creator> "Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid"@en .
+<https://w3id.org/mobility/trias/common#> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"@en .
+<https://w3id.org/mobility/trias/common#> <http://purl.org/dc/elements/1.1/description> "Common module represent concepts and properties that are general enough to be used across all modules."@en .
+<https://w3id.org/mobility/trias/common#> <http://purl.org/dc/elements/1.1/identifier> "https://w3id.org/mobility/trias/common"@en .
+<https://w3id.org/mobility/trias/common#> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)"@en .
+<https://w3id.org/mobility/trias/common#> <http://purl.org/dc/elements/1.1/title> "Ontology for the representation of commons elements in the Trias ontology"@en .
+<https://w3id.org/mobility/trias/common#> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0"@en .
+<https://w3id.org/mobility/trias/common#> <http://www.w3.org/2000/01/rdf-schema#comment> "Common module represent concepts and properties that are general enough to be used across all modules."@en .
+<https://w3id.org/mobility/trias/common#> <http://www.w3.org/2000/01/rdf-schema#label> "Ontology for the representation of commons elements in the Trias ontology"@en .
+<https://w3id.org/mobility/trias/common#> <http://www.w3.org/2002/07/owl#versionInfo> "Common module represent concepts and properties that are general enough to be used across all modules."@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mobility/trias/common#InfoUrl
+<https://w3id.org/mobility/trias/common#InfoUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/trias/common#InfoUrl> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/common#SharingService> .
+<https://w3id.org/mobility/trias/common#InfoUrl> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/trias/utility#WebLink> .
+<https://w3id.org/mobility/trias/common#InfoUrl> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to web page providing more details on service."@en .
+<https://w3id.org/mobility/trias/common#InfoUrl> <http://www.w3.org/2000/01/rdf-schema#label> "InfoUrl"@en .
+# 
+# https://w3id.org/mobility/trias/common#hasEstimatedBay
+<https://w3id.org/mobility/trias/common#hasEstimatedBay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/trias/common#hasEstimatedBay> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/mobility/trias/common#stopPointGroup> .
+<https://w3id.org/mobility/trias/common#hasEstimatedBay> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/trias/utility#InternationalText> .
+<https://w3id.org/mobility/trias/common#hasEstimatedBay> <http://www.w3.org/2000/01/rdf-schema#label> "hasEstimatedBay"@en .
+# 
+# https://w3id.org/mobility/trias/common#hasNameSuffix
+<https://w3id.org/mobility/trias/common#hasNameSuffix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/trias/common#hasNameSuffix> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/mobility/trias/common#stopPointGroup> .
+<https://w3id.org/mobility/trias/common#hasNameSuffix> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/trias/utility#InternationalText> .
+<https://w3id.org/mobility/trias/common#hasNameSuffix> <http://www.w3.org/2000/01/rdf-schema#label> "hasNameSuffix"@en .
+# 
+# https://w3id.org/mobility/trias/common#hasPlannedBay
+<https://w3id.org/mobility/trias/common#hasPlannedBay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/trias/common#hasPlannedBay> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/mobility/trias/common#stopPointGroup> .
+<https://w3id.org/mobility/trias/common#hasPlannedBay> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/trias/utility#InternationalText> .
+<https://w3id.org/mobility/trias/common#hasPlannedBay> <http://www.w3.org/2000/01/rdf-schema#label> "hasPlannedBay"@en .
+# 
+# https://w3id.org/mobility/trias/common#hasStopPointName
+<https://w3id.org/mobility/trias/common#hasStopPointName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/trias/common#hasStopPointName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/mobility/trias/common#stopPointGroup> .
+<https://w3id.org/mobility/trias/common#hasStopPointName> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/trias/utility#InternationalText> .
+<https://w3id.org/mobility/trias/common#hasStopPointName> <http://www.w3.org/2000/01/rdf-schema#label> "hasStopPointName"@en .
+# 
+# https://w3id.org/mobility/trias/common#hasText
+<https://w3id.org/mobility/trias/common#hasText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/trias/common#hasText> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/common#ErrorMessage> .
+<https://w3id.org/mobility/trias/common#hasText> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/trias/utility#InternationalText> .
+<https://w3id.org/mobility/trias/common#hasText> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of error state."@en .
+<https://w3id.org/mobility/trias/common#hasText> <http://www.w3.org/2000/01/rdf-schema#label> "hasText"@en .
+# 
+# https://w3id.org/mobility/trias/common#stopPointGroup
+<https://w3id.org/mobility/trias/common#stopPointGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mobility/trias/common#code
+<https://w3id.org/mobility/trias/common#code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/common#code> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/common#ErrorMessage> .
+<https://w3id.org/mobility/trias/common#code> <http://www.w3.org/2000/01/rdf-schema#comment> "Code of error state."@en .
+<https://w3id.org/mobility/trias/common#code> <http://www.w3.org/2000/01/rdf-schema#label> "code"@en .
+# 
+# https://w3id.org/mobility/trias/common#from
+<https://w3id.org/mobility/trias/common#from> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/common#from> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/common#OperatingDay> .
+<https://w3id.org/mobility/trias/common#from> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/mobility/trias/common#from> <http://www.w3.org/2000/01/rdf-schema#comment> "Start date of duration."@en .
+<https://w3id.org/mobility/trias/common#from> <http://www.w3.org/2000/01/rdf-schema#label> "from"@en .
+# 
+# https://w3id.org/mobility/trias/common#pattern
+<https://w3id.org/mobility/trias/common#pattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/common#pattern> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/common#OperatingDay> .
+<https://w3id.org/mobility/trias/common#pattern> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/trias/common#pattern> <http://www.w3.org/2000/01/rdf-schema#comment> "Bit pattern for operating days in the period from the start date (From) to end date (To). The length of the bit pattern in Pattern corresponds to the number of days from From to To. “1” means that the event in question takes place on the day which corresponds to the position in the bit pattern."@en .
+<https://w3id.org/mobility/trias/common#pattern> <http://www.w3.org/2000/01/rdf-schema#label> "pattern"@en .
+# 
+# https://w3id.org/mobility/trias/common#sharingServiceName
+<https://w3id.org/mobility/trias/common#sharingServiceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/common#sharingServiceName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/common#SharingService> .
+<https://w3id.org/mobility/trias/common#sharingServiceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/trias/common#sharingServiceName> <http://www.w3.org/2000/01/rdf-schema#comment> "Public name of the service."@en .
+<https://w3id.org/mobility/trias/common#sharingServiceName> <http://www.w3.org/2000/01/rdf-schema#label> "sharingServiceName"@en .
+# 
+# https://w3id.org/mobility/trias/common#stopPointRef
+<https://w3id.org/mobility/trias/common#stopPointRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/common#stopPointRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/mobility/trias/common#timeBufferAfter
+<https://w3id.org/mobility/trias/common#timeBufferAfter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/common#timeBufferAfter> <http://www.w3.org/2000/01/rdf-schema#comment> "Typical time a user will need to lock the vehicle and check out."@en .
+<https://w3id.org/mobility/trias/common#timeBufferAfter> <http://www.w3.org/2000/01/rdf-schema#label> "timeBufferAfter"@en .
+# 
+# https://w3id.org/mobility/trias/common#timeBufferBefore
+<https://w3id.org/mobility/trias/common#timeBufferBefore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/common#timeBufferBefore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/common#SharingService> .
+<https://w3id.org/mobility/trias/common#timeBufferBefore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/trias/common#timeBufferBefore> <http://www.w3.org/2000/01/rdf-schema#comment> "Typical time a user will need to check in and unlock the vehicle."@en .
+<https://w3id.org/mobility/trias/common#timeBufferBefore> <http://www.w3.org/2000/01/rdf-schema#label> "timeBufferBefore"@en .
+# 
+# https://w3id.org/mobility/trias/common#to
+<https://w3id.org/mobility/trias/common#to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/common#to> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/common#OperatingDay> .
+<https://w3id.org/mobility/trias/common#to> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/mobility/trias/common#to> <http://www.w3.org/2000/01/rdf-schema#comment> "End date of duration."@en .
+<https://w3id.org/mobility/trias/common#to> <http://www.w3.org/2000/01/rdf-schema#label> "to"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mobility/trias/common#ErrorMessage
+<https://w3id.org/mobility/trias/common#ErrorMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/common#ErrorMessage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/common#hasText> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/common#ErrorMessage> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes error messages based on the overall response of the request"@en .
+<https://w3id.org/mobility/trias/common#ErrorMessage> <http://www.w3.org/2000/01/rdf-schema#label> "ErrorMessage"@en .
+# 
+# https://w3id.org/mobility/trias/common#GeneralAttribute
+<https://w3id.org/mobility/trias/common#GeneralAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/common#GeneralAttribute> <http://www.w3.org/2000/01/rdf-schema#comment> "Structured attribute classification with associated text."@en .
+<https://w3id.org/mobility/trias/common#GeneralAttribute> <http://www.w3.org/2000/01/rdf-schema#label> "GeneralAttribute"@en .
+# 
+# https://w3id.org/mobility/trias/common#OperatingDay
+<https://w3id.org/mobility/trias/common#OperatingDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/common#OperatingDay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/common#from> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/common#OperatingDay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/common#pattern> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/common#OperatingDay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/common#to> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/common#OperatingDay> <http://www.w3.org/2000/01/rdf-schema#comment> "Structure for defining operating days using bit-chain."@en .
+<https://w3id.org/mobility/trias/common#OperatingDay> <http://www.w3.org/2000/01/rdf-schema#label> "OperatingDays"@en .
+# 
+# https://w3id.org/mobility/trias/common#SharingService
+<https://w3id.org/mobility/trias/common#SharingService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/common#SharingService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/utility#WebLink> .
+_:genid5 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/common#InfoUrl> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/common#SharingService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid6 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/common#sharingServiceName> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/common#SharingService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid7 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/common#timeBufferAfter> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/common#SharingService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid8 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/common#timeBufferBefore> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/common#SharingService> <http://www.w3.org/2000/01/rdf-schema#comment> "Service that provides shared vehicles."@en .
+<https://w3id.org/mobility/trias/common#SharingService> <http://www.w3.org/2000/01/rdf-schema#label> "SharingService"@en .
+# 
+# https://w3id.org/mobility/trias/utility#InternationalText
+<https://w3id.org/mobility/trias/utility#InternationalText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/mobility/trias/utility#WebLink
+<https://w3id.org/mobility/trias/utility#WebLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
