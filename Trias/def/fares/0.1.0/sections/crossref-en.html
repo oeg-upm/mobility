@@ -1,0 +1,239 @@
+<h2 id="crossreference" class="list">Cross-reference for Ontology for the representation of fares elements in the Trias ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Ontology for the representation of fares elements in the Trias ontology.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#BookingInfo"
+            title="https://w3id.org/mobility/trias/fares#BookingInfo">BookingInfo</a>
+      </li>
+      <li>
+         <a href="#FareZone" title="https://w3id.org/mobility/trias/fares#FareZone">FareZone</a>
+      </li>
+      <li>
+         <a href="#FareZoneListInArea"
+            title="https://w3id.org/mobility/trias/fares#FareZoneListInArea">FareZoneListInArea</a>
+      </li>
+      <li>
+         <a href="#Ticket" title="https://w3id.org/mobility/trias/fares#Ticket">Ticket</a>
+      </li>
+      <li>
+         <a href="#TripFaresResult"
+            title="https://w3id.org/mobility/trias/fares#TripFaresResult">TripFaresResult</a>
+      </li>
+   </ul>
+   <div class="entity" id="BookingInfo">
+      <h3>BookingInfo<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/fares#BookingInfo</p>
+      <div class="comment">
+         <span class="markdown">Information of a booking opportunity.</span>
+      </div>
+   </div>
+   <div class="entity" id="FareZone">
+      <h3>FareZone<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/fares#FareZone</p>
+      <div class="comment">
+         <span class="markdown">Model of a fare zone.</span>
+      </div>
+   </div>
+   <div class="entity" id="FareZoneListInArea">
+      <h3>FareZoneListInArea<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/fares#FareZoneListInArea</p>
+      <div class="comment">
+         <span class="markdown">List of fare zones within the area of a Fares Authority.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#faresAuthorityText"
+               title="https://w3id.org/mobility/trias/fares#faresAuthorityText">faresAuthorityText</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Ticket">
+      <h3>Ticket<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/fares#Ticket</p>
+      <div class="comment">
+         <span class="markdown">Model of a ticket and related information.</span>
+      </div>
+   </div>
+   <div class="entity" id="TripFaresResult">
+      <h3>TripFaresResult<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/fares#TripFaresResult</p>
+      <div class="comment">
+         <span class="markdown">Structure of a Single Trip Fare Request result.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#fromTripLegIdRef"
+               title="https://w3id.org/mobility/trias/fares#fromTripLegIdRef">fromTripLegIdRef</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasErrorMessage"
+               title="https://w3id.org/mobility/trias/fares#hasErrorMessage">hasErrorMessage</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#toTripLegIdRef"
+               title="https://w3id.org/mobility/trias/fares#toTripLegIdRef">toTripLegIdRef</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasErrorMessage"
+            title="https://w3id.org/mobility/trias/fares#hasErrorMessage">hasErrorMessage</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasErrorMessage">
+      <h3>hasErrorMessage<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/fares#hasErrorMessage</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TripFaresResult"
+                  title="https://w3id.org/mobility/trias/fares#TripFaresResult">TripFaresResult</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/trias/common#ErrorMessage"
+                  target="_blank"
+                  title="https://w3id.org/mobility/trias/common#ErrorMessage">error message</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#faresAuthorityText"
+            title="https://w3id.org/mobility/trias/fares#faresAuthorityText">faresAuthorityText</a>
+      </li>
+      <li>
+         <a href="#fromTripLegIdRef"
+            title="https://w3id.org/mobility/trias/fares#fromTripLegIdRef">fromTripLegIdRef</a>
+      </li>
+      <li>
+         <a href="#toTripLegIdRef"
+            title="https://w3id.org/mobility/trias/fares#toTripLegIdRef">toTripLegIdRef</a>
+      </li>
+   </ul>
+   <div class="entity" id="faresAuthorityText">
+      <h3>faresAuthorityText<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/fares#faresAuthorityText</p>
+      <div class="comment">
+         <span class="markdown">Textual description or name of fares authority.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#FareZoneListInArea"
+                  title="https://w3id.org/mobility/trias/fares#FareZoneListInArea">FareZoneListInArea</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="fromTripLegIdRef">
+      <h3>fromTripLegIdRef<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/fares#fromTripLegIdRef</p>
+      <div class="comment">
+         <span class="markdown">Identifies the "valid from" trip leg.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TripFaresResult"
+                  title="https://w3id.org/mobility/trias/fares#TripFaresResult">TripFaresResult</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="toTripLegIdRef">
+      <h3>toTripLegIdRef<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/fares#toTripLegIdRef</p>
+      <div class="comment">
+         <span class="markdown">Identifies the "valid to" trip leg.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TripFaresResult"
+                  title="https://w3id.org/mobility/trias/fares#TripFaresResult">TripFaresResult</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

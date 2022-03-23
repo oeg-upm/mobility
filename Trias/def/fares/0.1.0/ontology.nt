@@ -1,0 +1,143 @@
+<https://w3id.org/mobility/trias/fares#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/mobility/trias/fares#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/mobility/trias/fares/0.1> .
+<https://w3id.org/mobility/trias/fares#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/mobility/trias/common/0.1> .
+<https://w3id.org/mobility/trias/fares#> <http://creativecommons.org/ns#license> "2022-03-22"@en .
+<https://w3id.org/mobility/trias/fares#> <http://purl.org/dc/elements/1.1/creator> "Jhon Toledo (Ontology Engienering Group - Universidad Politécnica de Madrid)"@en .
+<https://w3id.org/mobility/trias/fares#> <http://purl.org/dc/elements/1.1/creator> "Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid"@en .
+<https://w3id.org/mobility/trias/fares#> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"@en .
+<https://w3id.org/mobility/trias/fares#> <http://purl.org/dc/elements/1.1/description> "Trias - Travellor Realtime Information and Advisory Standard"@en .
+<https://w3id.org/mobility/trias/fares#> <http://purl.org/dc/elements/1.1/identifier> "https://w3id.org/mobility/trias/fares"@en .
+<https://w3id.org/mobility/trias/fares#> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)"@en .
+<https://w3id.org/mobility/trias/fares#> <http://purl.org/dc/elements/1.1/title> "Ontology for the representation of fares elements in the Trias ontology"@en .
+<https://w3id.org/mobility/trias/fares#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/mobility/trias/fares#> <http://www.w3.org/2000/01/rdf-schema#label> "Ontology for the representation of fares elements in the Trias ontology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mobility/trias/fares#hasErrorMessage
+<https://w3id.org/mobility/trias/fares#hasErrorMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/trias/fares#hasErrorMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/fares#TripFaresResult> .
+<https://w3id.org/mobility/trias/fares#hasErrorMessage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/trias/common#ErrorMessage> .
+<https://w3id.org/mobility/trias/common#ErrorMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/fares#hasErrorMessage> <http://www.w3.org/2000/01/rdf-schema#label> "hasErrorMessage"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mobility/trias/fares#faresAuthorityText
+<https://w3id.org/mobility/trias/fares#faresAuthorityText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/fares#faresAuthorityText> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/fares#FareZoneListInArea> .
+<https://w3id.org/mobility/trias/fares#faresAuthorityText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/trias/fares#faresAuthorityText> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual description or name of fares authority."@en .
+<https://w3id.org/mobility/trias/fares#faresAuthorityText> <http://www.w3.org/2000/01/rdf-schema#label> "faresAuthorityText"@en .
+# 
+# https://w3id.org/mobility/trias/fares#fromTripLegIdRef
+<https://w3id.org/mobility/trias/fares#fromTripLegIdRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/fares#fromTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/fares#TripFaresResult> .
+<https://w3id.org/mobility/trias/fares#fromTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/trias/fares#fromTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the \"valid from\" trip leg."@en .
+<https://w3id.org/mobility/trias/fares#fromTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#label> "fromTripLegIdRef"@en .
+# 
+# https://w3id.org/mobility/trias/fares#toTripLegIdRef
+<https://w3id.org/mobility/trias/fares#toTripLegIdRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/fares#toTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/fares#TripFaresResult> .
+<https://w3id.org/mobility/trias/fares#toTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/trias/fares#toTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the \"valid to\" trip leg."@en .
+<https://w3id.org/mobility/trias/fares#toTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#label> "toTripLegIdRef"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mobility/trias/common#ErrorMessage
+# 
+# https://w3id.org/mobility/trias/fares#BookingInfo
+<https://w3id.org/mobility/trias/fares#BookingInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/fares#BookingInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Information of a booking opportunity."@en .
+<https://w3id.org/mobility/trias/fares#BookingInfo> <http://www.w3.org/2000/01/rdf-schema#label> "BookingInfo"@en .
+# 
+# https://w3id.org/mobility/trias/fares#FareZone
+<https://w3id.org/mobility/trias/fares#FareZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/fares#FareZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Model of a fare zone."@en .
+<https://w3id.org/mobility/trias/fares#FareZone> <http://www.w3.org/2000/01/rdf-schema#label> "FareZone"@en .
+# 
+# https://w3id.org/mobility/trias/fares#FareZoneListInArea
+<https://w3id.org/mobility/trias/fares#FareZoneListInArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/fares#FareZoneListInArea> <http://www.w3.org/2000/01/rdf-schema#comment> "List of fare zones within the area of a Fares Authority."@en .
+<https://w3id.org/mobility/trias/fares#FareZoneListInArea> <http://www.w3.org/2000/01/rdf-schema#label> "FareZoneListInArea"@en .
+# 
+# https://w3id.org/mobility/trias/fares#Ticket
+<https://w3id.org/mobility/trias/fares#Ticket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/fares#Ticket> <http://www.w3.org/2000/01/rdf-schema#comment> "Model of a ticket and related information."@en .
+<https://w3id.org/mobility/trias/fares#Ticket> <http://www.w3.org/2000/01/rdf-schema#label> "Ticket"@en .
+# 
+# https://w3id.org/mobility/trias/fares#TripFaresResult
+<https://w3id.org/mobility/trias/fares#TripFaresResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/fares#TripFaresResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/common#ErrorMessage> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/fares#hasErrorMessage> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/fares#TripFaresResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/fares#fromTripLegIdRef> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/fares#TripFaresResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/fares#toTripLegIdRef> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/fares#TripFaresResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Structure of a Single Trip Fare Request result."@en .
+<https://w3id.org/mobility/trias/fares#TripFaresResult> <http://www.w3.org/2000/01/rdf-schema#label> "TripFaresResult"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
