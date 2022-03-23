@@ -55,9 +55,41 @@
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxQualifiedCardinality
+owl:maxQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#minQualifiedCardinality
+owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
+
+###  https://w3id.org/mobility/trias/common#hasEstimatedBay
+<https://w3id.org/mobility/trias/common#hasEstimatedBay> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/mobility/trias/common#hasNameSuffix
+<https://w3id.org/mobility/trias/common#hasNameSuffix> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/mobility/trias/common#hasPlannedBay
+<https://w3id.org/mobility/trias/common#hasPlannedBay> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/mobility/trias/journey#hasAttribute
+<https://w3id.org/mobility/trias/journey#hasAttribute> rdf:type owl:ObjectProperty .
+
 
 ###  https://w3id.org/mobility/trias/trips#OperatingDaysDescription
 :OperatingDaysDescription rdf:type owl:ObjectProperty ;
@@ -349,10 +381,6 @@
                                       rdfs:comment "An unambiguous reference to the resource within a given context."@en ;
                                       rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                       rdfs:label "identifier"@en .
-
-
-###  https://w3id.org/mobility/trias/common#stopPointRef
-<https://w3id.org/mobility/trias/common#stopPointRef> rdfs:label "stopPointRef"@en .
 
 
 ###  https://w3id.org/mobility/trias/trips#altitude
@@ -896,21 +924,54 @@ system"""@en ;
 #    Classes
 #################################################################
 
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error3
+<http://org.semanticweb.owlapi/error#Error3> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error4
+<http://org.semanticweb.owlapi/error#Error4> rdf:type owl:Class .
+
+
+###  http://org.semanticweb.owlapi/error#Error5
+<http://org.semanticweb.owlapi/error#Error5> rdf:type owl:Class .
+
+
 ###  https://w3id.org/mobility/trias/common#ErrorMessage
 <https://w3id.org/mobility/trias/common#ErrorMessage> rdf:type owl:Class .
 
 
+###  https://w3id.org/mobility/trias/common#GeneralAttribute
+<https://w3id.org/mobility/trias/common#GeneralAttribute> rdf:type owl:Class .
+
+
+###  https://w3id.org/mobility/trias/common#OperatingDay
+<https://w3id.org/mobility/trias/common#OperatingDay> rdf:type owl:Class .
+
+
 ###  https://w3id.org/mobility/trias/journey#DatedJourney
-<https://w3id.org/mobility/trias/journey#DatedJourney> rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty <https://w3id.org/mobility/trias/journey#destinationText> ;
-                                                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                         owl:onClass <https://w3id.org/mobility/trias/utility#InternationalText>
-                                                                       ] ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty <https://w3id.org/mobility/trias/journey#originText> ;
-                                                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                         owl:onClass <https://w3id.org/mobility/trias/utility#InternationalText>
-                                                                       ] .
+<https://w3id.org/mobility/trias/journey#DatedJourney> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
+                                                                       <http://org.semanticweb.owlapi/error#Error2> .
+
+
+###  https://w3id.org/mobility/trias/journey#ServiceCall
+<https://w3id.org/mobility/trias/journey#ServiceCall> rdf:type owl:Class .
+
+
+###  https://w3id.org/mobility/trias/journey#TrackSection
+<https://w3id.org/mobility/trias/journey#TrackSection> rdf:type owl:Class .
+
+
+###  https://w3id.org/mobility/trias/location#LocationRef
+<https://w3id.org/mobility/trias/location#LocationRef> rdf:type owl:Class .
 
 
 ###  https://w3id.org/mobility/trias/trips#AccessPath
@@ -1007,7 +1068,8 @@ system"""@en ;
 
 ###  https://w3id.org/mobility/trias/trips#InterchangeLeg
 :InterchangeLeg rdf:type owl:Class ;
-                rdfs:subClassOf :TripLeg ,
+                rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error3> ,
+                                :TripLeg ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <https://w3id.org/mobility/trias/journey#hasAttribute> ;
                                   owl:someValuesFrom <https://w3id.org/mobility/trias/common#GeneralAttribute>
@@ -1037,11 +1099,6 @@ system"""@en ;
                                   owl:onDataRange xsd:string
                                 ] ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty <https://w3id.org/mobility/trias/journey#length> ;
-                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onDataRange xsd:float
-                                ] ,
-                                [ rdf:type owl:Restriction ;
                                   owl:onProperty :bufferTime ;
                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                   owl:onDataRange xsd:string
@@ -1057,7 +1114,9 @@ system"""@en ;
 
 ###  https://w3id.org/mobility/trias/trips#Leg
 :Leg rdf:type owl:Class ;
-     rdfs:subClassOf [ rdf:type owl:Restriction ;
+     rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error4> ,
+                     <http://org.semanticweb.owlapi/error#Error5> ,
+                     [ rdf:type owl:Restriction ;
                        owl:onProperty <https://w3id.org/mobility/trias/common#hasEstimatedBay> ;
                        owl:someValuesFrom <https://w3id.org/mobility/trias/utility#InternationalText>
                      ] ,
@@ -1070,18 +1129,8 @@ system"""@en ;
                        owl:someValuesFrom <https://w3id.org/mobility/trias/utility#InternationalText>
                      ] ,
                      [ rdf:type owl:Restriction ;
-                       owl:onProperty <https://w3id.org/mobility/trias/common#hasStopPointName> ;
-                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                       owl:onClass <https://w3id.org/mobility/trias/utility#InternationalText>
-                     ] ,
-                     [ rdf:type owl:Restriction ;
                        owl:onProperty :stopSeqNumber ;
                        owl:someValuesFrom xsd:integer
-                     ] ,
-                     [ rdf:type owl:Restriction ;
-                       owl:onProperty <https://w3id.org/mobility/trias/common#stopPointRef> ;
-                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                       owl:onDataRange xsd:string
                      ] ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :demandStop ;
@@ -1649,4 +1698,30 @@ system"""@en ;
      rdfs:label "Via"@en .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  https://w3id.org/mobility/trias/utility#InternationalText
+<https://w3id.org/mobility/trias/utility#InternationalText> rdf:type owl:Class .
+
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://w3id.org/mobility/trias/common#stopPointRef> rdfs:label "stopPointRef"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
