@@ -1,0 +1,164 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/mobility/trias/location#locationName"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/mobility/trias/location#AddressRef"
+    }, {
+      "@id" : "https://w3id.org/mobility/trias/location#GeoPosition"
+    }, {
+      "@id" : "https://w3id.org/mobility/trias/location#LocalityRef"
+    }, {
+      "@id" : "https://w3id.org/mobility/trias/location#PointOfInterestRef"
+    }, {
+      "@id" : "https://w3id.org/mobility/trias/location#StopPlaceRef"
+    }, {
+      "@id" : "https://w3id.org/mobility/trias/location#StopPointRef"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/mobility/trias/location#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@language" : "en",
+    "@value" : "Jhon Toledo (Ontology Engienering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@language" : "en",
+    "@value" : "Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid"
+  }, {
+    "@language" : "en",
+    "@value" : "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for the representation of location elements in the Trias ontology"
+  } ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@language" : "en",
+    "@value" : "https://w3id.org/mobility/trias/location"
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@language" : "en",
+    "@value" : "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for the representation of location elements in the Trias ontology"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for the representation of location elements in the Trias ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/mobility/trias/location/0.1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mobility/trias/location#AddressRef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/mobility/trias/location#LocationRef"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reference to a Stop Point."
+  } ]
+}, {
+  "@id" : "https://w3id.org/mobility/trias/location#GeoPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/mobility/trias/location#LocationRef"
+  }, {
+    "@id" : "https://w3id.org/mobility/trias/utility#GeoPosition"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mobility/trias/location#LocalityRef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/mobility/trias/location#LocationRef"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mobility/trias/location#LocationRef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reference to a stop, address, POI, locality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LocationRef"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mobility/trias/location#PointOfInterestRef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/mobility/trias/location#LocationRef"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mobility/trias/location#StopPlaceRef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/mobility/trias/location#LocationRef"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mobility/trias/location#StopPointRef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/mobility/trias/location#LocationRef"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mobility/trias/location#locationName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/mobility/trias/location#LocationRef"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "locationName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mobility/trias/utility#GeoPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]
