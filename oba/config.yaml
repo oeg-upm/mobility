@@ -1,0 +1,30 @@
+ontologies:
+  - https://oeg-upm.github.io/mobility/OSDM/def/core/0.1.0/ontology.ttl
+name: p-plan
+output_dir: outputs
+
+openapi:
+  openapi: 3.0.1
+  info:
+    description: Ontology for the representation of core elements from Open Sales and Distribution Model (OSDM)
+    title: Core elements from Open Sales and Distribution Model
+    version: v1.0.0
+  externalDocs:
+    description: Core elements from Open Sales and Distribution Model
+    url: https://w3id.org/mobility/osdm/core
+
+firebase:
+  key: 
+
+#endpoint not used for this example.
+endpoint:
+  url: http://endpoint.mint.isi.edu/example
+  prefix: https://w3id.org/mobility/osdm/core
+  graph_base: http://endpoint.mint.isi.edu/example
+
+enable_get_paths: true
+enable_post_paths: false
+enable_delete_paths: false
+enable_put_paths: false
+
+follow_references: true
