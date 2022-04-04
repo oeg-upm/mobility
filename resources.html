@@ -2,41 +2,137 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>resources</title>
-    <link rel="stylesheet" href="resources/css/custom.css" type="text/css" media="print, projection, screen" />
+    <title>Mobility Ontology Catalogue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This catalogue contains ontologies generated in the context of the collaboration between the Ontology Engineering Group at Universidad Politécnica de Madrid and Huawei Research Ireland for the representation of the domain of DevOps infrastructure.">
+    <meta name="language" content="English">
+    <meta name="author" content="Oscar Corcho">
+
+    <link rel="stylesheet" href="resources/themes/blue/style.css" type="text/css" media="print, projection, screen" />
+    <script src="vocab/js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="resources/js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="resources/js/jquery.stickytableheaders.js"></script>
+    <script type="text/javascript" src="resources/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="resources/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="resources/css/jquery-ui.css"/>
+    <script type="text/javascript" id="js">
+	    $(document).ready(function()
+		    {
+		    	$("#tablesorter-demo").tablesorter();
+		    	$("#tablesorter-demo").stickyTableHeaders();
+		    	$('[data-toggle="tooltip"]').tooltip();
+		    }
+	    );
+    </script>
+
+    <!-- Le styles -->
+    <link href="resources/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="vocab/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="stylesheet" href="resources/css/custom.css" type="text/css" media="print, projection, screen" />-->
 </head>
+
 <body>
-<div class="resource-block">
-  <h3>Transmodel, Public Transport Reference Data Model</h3>
-  <ul class="resources">
-    <li><a href="https://www.transmodel-cen.eu/">https://www.transmodel-cen.eu/</a></li>
-    <li>Transmodel v6  data model  diagrams,<span> <a href="https://www.transmodel-cen.eu/model/index.htm">https://www.transmodel-cen.eu/model/index.htm</a></span></li>
-  </ul>
-</div>
 
-<!--DUPLICATES-->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="index.html">Ontologies</a></li>
+                <li  ><a href="skos.html">SKOS Codelists</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li class="active"><a href="resources.html">Resources</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+<div class="container">
 
-<div class="resource-block">
-  <h3>Open Sales and Distribution Model (OSDM) V1.2 </h3>
-  <ul class="resources">
-    <li><a href="https://unioninternationalcheminsdefer.github.io/OSDM/">https://unioninternationalcheminsdefer.github.io/OSDM/</a></li>
-    <li>Functional Requirements,<span> <a href="https://unioninternationalcheminsdefer.github.io/OSDM/spec/requirements/">link</a></span></li>
-    <li>OSDM Online API specification, <span><a href="https://app.swaggerhub.com/apis-docs/schlpbch/uic-90918_10_osdm/1.4.0">link</a></span></li>
-  </ul>
-</div>
-<div class="resource-block">
-  <h3>Trias,Travellors Realtime Information Advisory Standard</h3>
-  <ul class="resources">
-    <li><a href="https://www.vdv.de/ip-kom-oev.aspx">https://www.vdv.de/ip-kom-oev.aspx</a></li>
-    <li>XML Schema,<span> <a href="https://github.com/VDVde/TRIAS">link</a></span></li>
-  </ul>
-</div>
-<div class="resource-block">
-  <h3>Descripción general de GTFS Realtime</h3>
-  <ul class="resources">
-    <li>Resource: <span> In Progress</span></li>
-  </ul>
-</div>
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>Mobility Ontology Resources</h1>
+        <p class="lead">This page contains the list of resources that have been used in association with the Mobility Ontology</p>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="ui-widget">
+            <!--<div class="col-md-3" >
+            <p class="text-right"><label for="tags">Filter by title or domain: </label></p>
+            </div>
 
+            <div class="col-md-8" >
+            <input class="form-control" id="tags" >
+            <button id="remButt" class="label label-default" onclick="showRows();" style="font-size: 75%; font-weight: bold; line-height: 1; display: none;"><span class="submit glyphicon glyphicon-remove"></span>  Remove filter</button>
+            </div>
+            -->
+        </div>
+    </div>
+    <br>
+    <div class="resource-block">
+        <h3>Transmodel, Public Transport Reference Data Model</h3>
+        <ul class="resources">
+            <li><a href="https://www.transmodel-cen.eu/">https://www.transmodel-cen.eu/</a></li>
+            <li>Transmodel v6  data model  diagrams,<span> <a href="https://www.transmodel-cen.eu/model/index.htm">https://www.transmodel-cen.eu/model/index.htm</a></span></li>
+        </ul>
+    </div>
+    <div class="resource-block">
+        <h3>Open Sales and Distribution Model (OSDM) V1.2 </h3>
+        <ul class="resources">
+            <li><a href="https://unioninternationalcheminsdefer.github.io/OSDM/">https://unioninternationalcheminsdefer.github.io/OSDM/</a></li>
+            <li>Functional Requirements,<span> <a href="https://unioninternationalcheminsdefer.github.io/OSDM/spec/requirements/">link</a></span></li>
+            <li>OSDM Online API specification, <span><a href="https://app.swaggerhub.com/apis-docs/schlpbch/uic-90918_10_osdm/1.4.0">link</a></span></li>
+        </ul>
+    </div>
+
+    <div class="resource-block">
+        <h3>Trias,Travellors Realtime Information Advisory Standard</h3>
+        <ul class="resources">
+            <li><a href="https://www.vdv.de/ip-kom-oev.aspx">https://www.vdv.de/ip-kom-oev.aspx</a></li>
+            <li>XML Schema,<span> <a href="https://github.com/VDVde/TRIAS">link</a></span></li>
+        </ul>
+    </div>
+    <div class="resource-block">
+        <h3>Descripción general de GTFS Realtime</h3>
+        <ul class="resources">
+            <li>Resource: <span> In Progress</span></li>
+        </ul>
+    </div>
+
+    <hr>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-md-9">
+                Catalogue developed by 	        <a href = "https://oeg.fi.upm.es" target="_blank">Ontology Engineering Group</a>
+                <br>
+                Built with <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>
+                Icons from <a target="_blank" href="http://glyphicons.com/">Glyphicons</a>
+                <br>
+                Latest revision March, 2022
+            </div>
+            <div class="col-md-3">
+                <a href="https://oeg.fi.upm.es/" target="_blank"><img src="resources/img/logo-oeg.gif" alt="OEG logo" class="img-rounded" class="img-responsive" /></a>
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
