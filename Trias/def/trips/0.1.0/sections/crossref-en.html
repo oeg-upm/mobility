@@ -15,12 +15,6 @@ This section provides details for each class and property defined by Ontology fo
             title="https://w3id.org/mobility/trias/trips#ContinuousLeg">ContinuousLeg</a>
       </li>
       <li>
-         <a href="#https://w3id.org/mobility/trias/journey#DatedJourney"
-            title="https://w3id.org/mobility/trias/journey#DatedJourney">
-            <span>dated journey</span>
-         </a>
-      </li>
-      <li>
          <a href="#GeoPosition"
             title="https://w3id.org/mobility/trias/trips#GeoPosition">GeoPosition</a>
       </li>
@@ -69,9 +63,6 @@ This section provides details for each class and property defined by Ontology fo
          <a href="#StopPoint" title="https://w3id.org/mobility/trias/trips#StopPoint">StopPoint</a>
       </li>
       <li>
-         <a href="#Ticket" title="https://w3id.org/mobility/trias/trips#Ticket">Ticket</a>
-      </li>
-      <li>
          <a href="#TimedLeg" title="https://w3id.org/mobility/trias/trips#TimedLeg">TimedLeg</a>
       </li>
       <li>
@@ -80,9 +71,6 @@ This section provides details for each class and property defined by Ontology fo
       </li>
       <li>
          <a href="#Trip" title="https://w3id.org/mobility/trias/trips#Trip">Trip</a>
-      </li>
-      <li>
-         <a href="#TripFares" title="https://w3id.org/mobility/trias/trips#TripFares">TripFares</a>
       </li>
       <li>
          <a href="#TripLeg" title="https://w3id.org/mobility/trias/trips#TripLeg">TripLeg</a>
@@ -176,26 +164,6 @@ This section provides details for each class and property defined by Ontology fo
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://w3id.org/mobility/trias/journey#DatedJourney">
-      <h3>dated journey<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#DatedJourney</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="http://org.semanticweb.owlapi/error#Error1"
-               target="_blank"
-               title="http://org.semanticweb.owlapi/error#Error1">error1</a>
-            <sup class="type-c" title="class">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error2"
-               target="_blank"
-               title="http://org.semanticweb.owlapi/error#Error2">error2</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="GeoPosition">
       <h3>GeoPosition<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -235,20 +203,17 @@ This section provides details for each class and property defined by Ontology fo
          <dt>has super-classes</dt>
          <dd>
             <a href="#TripLeg" title="https://w3id.org/mobility/trias/trips#TripLeg">TripLeg</a>
-            <sup class="type-c" title="class">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error3"
-               target="_blank"
-               title="http://org.semanticweb.owlapi/error#Error3">error3</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#navigationPath"
-               title="https://w3id.org/mobility/trias/trips#navigationPath">Structured model further describing this interchange, its geographic embedding and accessibility.</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#bufferTime" title="https://w3id.org/mobility/trias/trips#bufferTime">bufferTime</a>
+            <a href="#bufferTime" title="https://w3id.org/mobility/trias/trips#bufferTime">bufferTime</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#legDescription"
                title="https://w3id.org/mobility/trias/trips#legDescription">legDescription</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#legEnd" title="https://w3id.org/mobility/trias/trips#legEnd">legEnd</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#legStart" title="https://w3id.org/mobility/trias/trips#legStart">legStart</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#navigationPath"
+               title="https://w3id.org/mobility/trias/trips#navigationPath">navigationPath</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#walkDuration"
                title="https://w3id.org/mobility/trias/trips#walkDuration">walkDuration</a>
             <sup class="type-dp" title="data property">dp</sup>
@@ -264,15 +229,7 @@ This section provides details for each class and property defined by Ontology fo
          <strong>IRI:</strong> https://w3id.org/mobility/trias/trips#Leg</p>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd>
-            <a href="http://org.semanticweb.owlapi/error#Error4"
-               target="_blank"
-               title="http://org.semanticweb.owlapi/error#Error4">error4</a>
-            <sup class="type-c" title="class">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error5"
-               target="_blank"
-               title="http://org.semanticweb.owlapi/error#Error5">error5</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
+         <dd/>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#LegAlight" title="https://w3id.org/mobility/trias/trips#LegAlight">LegAlight</a>
@@ -491,7 +448,7 @@ This section provides details for each class and property defined by Ontology fo
          <dt>is in range of</dt>
          <dd>
             <a href="#navigationPath"
-               title="https://w3id.org/mobility/trias/trips#navigationPath">Structured model further describing this interchange, its geographic embedding and accessibility.</a>
+               title="https://w3id.org/mobility/trias/trips#navigationPath">navigationPath</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -552,41 +509,6 @@ This section provides details for each class and property defined by Ontology fo
          <dd>
             <a href="#privateCode"
                title="https://w3id.org/mobility/trias/trips#privateCode">privateCode</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Ticket">
-      <h3>Ticket<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/mobility/trias/trips#Ticket</p>
-      <div class="comment">
-         <span class="markdown">Ticket and associated information.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd/>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#infoUrl" title="https://w3id.org/mobility/trias/trips#infoUrl">InfoUrl</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#currency" title="https://w3id.org/mobility/trias/trips#currency">currency</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#faresAuthorityRef"
-               title="https://w3id.org/mobility/trias/trips#faresAuthorityRef">faresAuthorityRef</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#faresAuthorityText"
-               title="https://w3id.org/mobility/trias/trips#faresAuthorityText">faresAuthorityText</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#price" title="https://w3id.org/mobility/trias/trips#price">price</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#saleUrl" title="https://w3id.org/mobility/trias/trips#saleUrl">saleUrl</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#tariffLevel"
-               title="https://w3id.org/mobility/trias/trips#tariffLevel">tariffLevel</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#tariffLevelLabel"
-               title="https://w3id.org/mobility/trias/trips#tariffLevelLabel">tariffLevelLabel</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#validityDuration"
-               title="https://w3id.org/mobility/trias/trips#validityDuration">validityDuration</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#validityDurationText"
-               title="https://w3id.org/mobility/trias/trips#validityDurationText">validityDurationText</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -679,35 +601,6 @@ This section provides details for each class and property defined by Ontology fo
          <dt>is in range of</dt>
          <dd>
             <a href="#hasTrip" title="https://w3id.org/mobility/trias/trips#hasTrip">hasTrip</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="TripFares">
-      <h3>TripFares<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/mobility/trias/trips#TripFares</p>
-      <div class="comment">
-         <span class="markdown">Class that describes fare information about the trip.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd/>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#fromTripLegIdRef"
-               title="https://w3id.org/mobility/trias/trips#fromTripLegIdRef">FromTripLegIdRef</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#toTripLegIdRef"
-               title="https://w3id.org/mobility/trias/trips#toTripLegIdRef">toTripLegIdRef</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasTripFares"
-               title="https://w3id.org/mobility/trias/trips#hasTripFares">hasTripFares</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -968,6 +861,10 @@ This section provides details for each class and property defined by Ontology fo
             title="https://w3id.org/mobility/trias/trips#modeShortName">modeShortName</a>
       </li>
       <li>
+         <a href="#navigationPath"
+            title="https://w3id.org/mobility/trias/trips#navigationPath">navigationPath</a>
+      </li>
+      <li>
          <a href="#noChangeAt" title="https://w3id.org/mobility/trias/trips#noChangeAt">noChangeAt</a>
       </li>
       <li>
@@ -995,10 +892,6 @@ This section provides details for each class and property defined by Ontology fo
       <li>
          <a href="#serviceDeparture"
             title="https://w3id.org/mobility/trias/trips#serviceDeparture">serviceDeparture</a>
-      </li>
-      <li>
-         <a href="#navigationPath"
-            title="https://w3id.org/mobility/trias/trips#navigationPath">Structured model further describing this interchange, its geographic embedding and accessibility.</a>
       </li>
       <li>
          <a href="#hasTripResult"
@@ -1349,7 +1242,9 @@ This section provides details for each class and property defined by Ontology fo
          <dl>
             <dt>has range</dt>
             <dd>
-               <a href="#TripFares" title="https://w3id.org/mobility/trias/trips#TripFares">TripFares</a>
+               <a href="https://w3id.org/mobility/trias/fares#TripFaresResult"
+                  target="_blank"
+                  title="https://w3id.org/mobility/trias/fares#TripFaresResult">trip fares result</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1577,6 +1472,33 @@ This section provides details for each class and property defined by Ontology fo
       <p>
          <strong>IRI:</strong> https://w3id.org/mobility/trias/trips#modeShortName</p>
    </div>
+   <div class="entity" id="navigationPath">
+      <h3>navigationPath<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/trips#navigationPath</p>
+      <div class="comment">
+         <span class="markdown">Structured model further describing this interchange, its geographic embedding and accessibility.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InterchangeLeg"
+                  title="https://w3id.org/mobility/trias/trips#InterchangeLeg">InterchangeLeg</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#NavigationSection"
+                  title="https://w3id.org/mobility/trias/trips#NavigationSection">NavigationSection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="noChangeAt">
       <h3>noChangeAt<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1744,30 +1666,6 @@ This section provides details for each class and property defined by Ontology fo
          </dl>
       </div>
    </div>
-   <div class="entity" id="navigationPath">
-      <h3>Structured model further describing this interchange, its geographic embedding and accessibility.<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/mobility/trias/trips#navigationPath</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#InterchangeLeg"
-                  title="https://w3id.org/mobility/trias/trips#InterchangeLeg">InterchangeLeg</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#NavigationSection"
-                  title="https://w3id.org/mobility/trias/trips#NavigationSection">NavigationSection</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="hasTripResult">
       <h3>TripResult<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1847,9 +1745,6 @@ This section provides details for each class and property defined by Ontology fo
             title="https://w3id.org/mobility/trias/trips#crossingStreet">crossingStreet</a>
       </li>
       <li>
-         <a href="#currency" title="https://w3id.org/mobility/trias/trips#currency">currency</a>
-      </li>
-      <li>
          <a href="#demandStop" title="https://w3id.org/mobility/trias/trips#demandStop">demandStop</a>
       </li>
       <li>
@@ -1879,10 +1774,6 @@ This section provides details for each class and property defined by Ontology fo
          <a href="#endTime" title="https://w3id.org/mobility/trias/trips#endTime">endTime</a>
       </li>
       <li>
-         <a href="#faresAuthorityRef"
-            title="https://w3id.org/mobility/trias/trips#faresAuthorityRef">faresAuthorityRef</a>
-      </li>
-      <li>
          <a href="#faresAuthorityText"
             title="https://w3id.org/mobility/trias/trips#faresAuthorityText">faresAuthorityText</a>
       </li>
@@ -1905,9 +1796,6 @@ This section provides details for each class and property defined by Ontology fo
          <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a>
       </li>
       <li>
-         <a href="#infoUrl" title="https://w3id.org/mobility/trias/trips#infoUrl">InfoUrl</a>
-      </li>
-      <li>
          <a href="#interchanges"
             title="https://w3id.org/mobility/trias/trips#interchanges">interchanges</a>
       </li>
@@ -1917,6 +1805,9 @@ This section provides details for each class and property defined by Ontology fo
       </li>
       <li>
          <a href="#latitude" title="https://w3id.org/mobility/trias/trips#latitude">latitude</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/mobility/trias/journey#lenght" title="https://w3id.org/mobility/trias/journey#lenght">length</a>
       </li>
       <li>
          <a href="#lighting" title="https://w3id.org/mobility/trias/trips#lighting">lighting</a>
@@ -2056,14 +1947,6 @@ This section provides details for each class and property defined by Ontology fo
       <li>
          <a href="#unplannedStop"
             title="https://w3id.org/mobility/trias/trips#unplannedStop">unplannedStop</a>
-      </li>
-      <li>
-         <a href="#validityDuration"
-            title="https://w3id.org/mobility/trias/trips#validityDuration">validityDuration</a>
-      </li>
-      <li>
-         <a href="#validityDurationText"
-            title="https://w3id.org/mobility/trias/trips#validityDurationText">validityDurationText</a>
       </li>
       <li>
          <a href="#vehicleRef"
@@ -2223,32 +2106,6 @@ This section provides details for each class and property defined by Ontology fo
             <dt>has domain</dt>
             <dd>
                <a href="#Address" title="https://w3id.org/mobility/trias/trips#Address">Address</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="currency">
-      <h3>currency<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/mobility/trias/trips#currency</p>
-      <div class="comment">
-         <span class="markdown">Currency code as per ISO 4217, e.g. “EUR” or “GBP”.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Ticket" title="https://w3id.org/mobility/trias/trips#Ticket">Ticket</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2483,32 +2340,6 @@ This section provides details for each class and property defined by Ontology fo
          </dl>
       </div>
    </div>
-   <div class="entity" id="faresAuthorityRef">
-      <h3>faresAuthorityRef<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/mobility/trias/trips#faresAuthorityRef</p>
-      <div class="comment">
-         <span class="markdown">Code for a fare authority or a company fare</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Ticket" title="https://w3id.org/mobility/trias/trips#Ticket">Ticket</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="faresAuthorityText">
       <h3>faresAuthorityText<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -2521,11 +2352,6 @@ This section provides details for each class and property defined by Ontology fo
       </div>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Ticket" title="https://w3id.org/mobility/trias/trips#Ticket">Ticket</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
@@ -2589,11 +2415,6 @@ This section provides details for each class and property defined by Ontology fo
       </div>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#TripFares" title="https://w3id.org/mobility/trias/trips#TripFares">TripFares</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
@@ -2647,32 +2468,6 @@ This section provides details for each class and property defined by Ontology fo
       </dl>
       <div class="description">
          <dl>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="infoUrl">
-      <h3>InfoUrl<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/mobility/trias/trips#infoUrl</p>
-      <div class="comment">
-         <span class="markdown">URL for information pages for this ticket.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Ticket" title="https://w3id.org/mobility/trias/trips#Ticket">Ticket</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
@@ -2752,6 +2547,38 @@ This section provides details for each class and property defined by Ontology fo
                <a href="http://www.w3.org/2001/XMLSchema#string"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/mobility/trias/journey#lenght">
+      <h3>length<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/trias/journey#lenght</p>
+      <div class="comment">
+         <span class="markdown">Length of this track section or interchange path</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/trias/journey#TrackSection"
+                  target="_blank"
+                  title="https://w3id.org/mobility/trias/journey#TrackSection">track section</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> 
+               <a href="#InterchangeLeg"
+                  title="https://w3id.org/mobility/trias/trips#InterchangeLeg">InterchangeLeg</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
          </dl>
       </div>
@@ -3226,11 +3053,6 @@ This section provides details for each class and property defined by Ontology fo
       </div>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Ticket" title="https://w3id.org/mobility/trias/trips#Ticket">Ticket</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#float"
@@ -3279,11 +3101,6 @@ system</span>
       </div>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Ticket" title="https://w3id.org/mobility/trias/trips#Ticket">Ticket</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
@@ -3407,11 +3224,6 @@ system</span>
       </div>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Ticket" title="https://w3id.org/mobility/trias/trips#Ticket">Ticket</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
@@ -3433,11 +3245,6 @@ system</span>
       </div>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Ticket" title="https://w3id.org/mobility/trias/trips#Ticket">Ticket</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
@@ -3617,11 +3424,6 @@ system</span>
       </div>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#TripFares" title="https://w3id.org/mobility/trias/trips#TripFares">TripFares</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
@@ -3671,58 +3473,6 @@ system</span>
                <a href="http://www.w3.org/2001/XMLSchema#boolean"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="validityDuration">
-      <h3>validityDuration<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/mobility/trias/trips#validityDuration</p>
-      <div class="comment">
-         <span class="markdown">Maximum validity duration of the ticket after purchase or validation.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Ticket" title="https://w3id.org/mobility/trias/trips#Ticket">Ticket</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="validityDurationText">
-      <h3>validityDurationText<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/mobility/trias/trips#validityDurationText</p>
-      <div class="comment">
-         <span class="markdown">Description of validity duration.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Ticket" title="https://w3id.org/mobility/trias/trips#Ticket">Ticket</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>

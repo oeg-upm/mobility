@@ -1,9 +1,8 @@
 <https://w3id.org/mobility/trias/trips#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/mobility/trias/trips#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/mobility/trias/trips/0.1> .
-<https://w3id.org/mobility/trias/trips#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/mobility/trias/common/0.1> .
+<https://w3id.org/mobility/trias/trips#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/mobility/trias/fares/0.1> .
 <https://w3id.org/mobility/trias/trips#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/mobility/trias/journey/0.1> .
 <https://w3id.org/mobility/trias/trips#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/mobility/trias/location/0.1> .
-<https://w3id.org/mobility/trias/trips#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/mobility/trias/utility/0.1> .
 <https://w3id.org/mobility/trias/trips#> <http://creativecommons.org/ns#license> "2021-11-8"@en .
 <https://w3id.org/mobility/trias/trips#> <http://purl.org/dc/elements/1.1/creator> "Jhon Toledo (Ontology Engienering Group - Universidad Politécnica de Madrid)"@en .
 <https://w3id.org/mobility/trias/trips#> <http://purl.org/dc/elements/1.1/creator> "Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid"@en .
@@ -46,9 +45,6 @@
 # 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/2002/07/owl#maxQualifiedCardinality
-<http://www.w3.org/2002/07/owl#maxQualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2002/07/owl#minQualifiedCardinality
 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -182,7 +178,8 @@
 # 
 # https://w3id.org/mobility/trias/trips#hasTripFares
 <https://w3id.org/mobility/trias/trips#hasTripFares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/mobility/trias/trips#hasTripFares> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/trias/trips#TripFares> .
+<https://w3id.org/mobility/trias/trips#hasTripFares> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/trias/fares#TripFaresResult> .
+<https://w3id.org/mobility/trias/fares#TripFaresResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#hasTripFares> <http://www.w3.org/2000/01/rdf-schema#label> "hasTripFares"@en .
 # 
 # https://w3id.org/mobility/trias/trips#hasTripLeg
@@ -263,7 +260,7 @@
 <https://w3id.org/mobility/trias/trips#navigationPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/mobility/trias/trips#navigationPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/trips#InterchangeLeg> .
 <https://w3id.org/mobility/trias/trips#navigationPath> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/trias/trips#NavigationSection> .
-<https://w3id.org/mobility/trias/trips#navigationPath> <http://www.w3.org/2000/01/rdf-schema#label> "Structured model further describing this interchange, its geographic embedding and accessibility."@en .
+<https://w3id.org/mobility/trias/trips#navigationPath> <http://www.w3.org/2000/01/rdf-schema#comment> "Structured model further describing this interchange, its geographic embedding and accessibility."@en .
 <https://w3id.org/mobility/trias/trips#navigationPath> <http://www.w3.org/2000/01/rdf-schema#label> "navigationPath"@en .
 # 
 # https://w3id.org/mobility/trias/trips#noChangeAt
@@ -347,6 +344,21 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
 # 
+# https://w3id.org/mobility/trias/journey#lenght
+<https://w3id.org/mobility/trias/journey#lenght> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/trias/journey#lenght> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#InterchangeLeg> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/journey#TrackSection> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/mobility/trias/journey#lenght> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/mobility/trias/journey#lenght> <http://www.w3.org/2000/01/rdf-schema#comment> "Length of this track section or interchange path"@en .
+<https://w3id.org/mobility/trias/journey#lenght> <http://www.w3.org/2000/01/rdf-schema#label> "length"@en .
+# 
 # https://w3id.org/mobility/trias/trips#altitude
 <https://w3id.org/mobility/trias/trips#altitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/mobility/trias/trips#altitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/trips#GeoPosition> .
@@ -376,15 +388,15 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/mobility/trias/trips#covered
 <https://w3id.org/mobility/trias/trips#covered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#covered> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
-_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPoint> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPlace> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/trips#covered> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPoint> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPlace> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#covered> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://w3id.org/mobility/trias/trips#covered> <http://www.w3.org/2000/01/rdf-schema#comment> "Specification whether this stopping point offers weather protection"@en .
 <https://w3id.org/mobility/trias/trips#covered> <http://www.w3.org/2000/01/rdf-schema#label> "covered"@en .
@@ -395,13 +407,6 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/mobility/trias/trips#crossingStreet> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/mobility/trias/trips#crossingStreet> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the crossing street."@en .
 <https://w3id.org/mobility/trias/trips#crossingStreet> <http://www.w3.org/2000/01/rdf-schema#label> "crossingStreet"@en .
-# 
-# https://w3id.org/mobility/trias/trips#currency
-<https://w3id.org/mobility/trias/trips#currency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#currency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/trips#Ticket> .
-<https://w3id.org/mobility/trias/trips#currency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/mobility/trias/trips#currency> <http://www.w3.org/2000/01/rdf-schema#comment> "Currency code as per ISO 4217, e.g. “EUR” or “GBP”."@en .
-<https://w3id.org/mobility/trias/trips#currency> <http://www.w3.org/2000/01/rdf-schema#label> "currency"@en .
 # 
 # https://w3id.org/mobility/trias/trips#demandStop
 <https://w3id.org/mobility/trias/trips#demandStop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -463,16 +468,8 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/mobility/trias/trips#endTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Arrival time at destination."@en .
 <https://w3id.org/mobility/trias/trips#endTime> <http://www.w3.org/2000/01/rdf-schema#label> "endTime"@en .
 # 
-# https://w3id.org/mobility/trias/trips#faresAuthorityRef
-<https://w3id.org/mobility/trias/trips#faresAuthorityRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#faresAuthorityRef> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/trips#Ticket> .
-<https://w3id.org/mobility/trias/trips#faresAuthorityRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/mobility/trias/trips#faresAuthorityRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Code for a fare authority or a company fare"@en .
-<https://w3id.org/mobility/trias/trips#faresAuthorityRef> <http://www.w3.org/2000/01/rdf-schema#label> "faresAuthorityRef"@en .
-# 
 # https://w3id.org/mobility/trias/trips#faresAuthorityText
 <https://w3id.org/mobility/trias/trips#faresAuthorityText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#faresAuthorityText> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/trips#Ticket> .
 <https://w3id.org/mobility/trias/trips#faresAuthorityText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/mobility/trias/trips#faresAuthorityText> <http://www.w3.org/2000/01/rdf-schema#comment> "Description or name of fare authority."@en .
 <https://w3id.org/mobility/trias/trips#faresAuthorityText> <http://www.w3.org/2000/01/rdf-schema#label> "faresAuthorityText"@en .
@@ -491,7 +488,6 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/mobility/trias/trips#fromTripLegIdRef
 <https://w3id.org/mobility/trias/trips#fromTripLegIdRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#fromTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/trips#TripFares> .
 <https://w3id.org/mobility/trias/trips#fromTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/mobility/trias/trips#fromTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference to a leg of the trip as beginning of validity of this tariff information."@en .
 <https://w3id.org/mobility/trias/trips#fromTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#label> "FromTripLegIdRef"@en .
@@ -502,13 +498,6 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/mobility/trias/trips#houseNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/mobility/trias/trips#houseNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "House number including addition."@en .
 <https://w3id.org/mobility/trias/trips#houseNumber> <http://www.w3.org/2000/01/rdf-schema#label> "houseNumber"@en .
-# 
-# https://w3id.org/mobility/trias/trips#infoUrl
-<https://w3id.org/mobility/trias/trips#infoUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#infoUrl> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/trips#Ticket> .
-<https://w3id.org/mobility/trias/trips#infoUrl> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/mobility/trias/trips#infoUrl> <http://www.w3.org/2000/01/rdf-schema#comment> "URL for information pages for this ticket."@en .
-<https://w3id.org/mobility/trias/trips#infoUrl> <http://www.w3.org/2000/01/rdf-schema#label> "InfoUrl"@en .
 # 
 # https://w3id.org/mobility/trias/trips#interchanges
 <https://w3id.org/mobility/trias/trips#interchanges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -532,15 +521,15 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/mobility/trias/trips#lighting
 <https://w3id.org/mobility/trias/trips#lighting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#lighting> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
-_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPoint> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPlace> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/trips#lighting> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPoint> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPlace> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#lighting> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://w3id.org/mobility/trias/trips#lighting> <http://www.w3.org/2000/01/rdf-schema#comment> "Specification for lighting this stopping point"@en .
 <https://w3id.org/mobility/trias/trips#lighting> <http://www.w3.org/2000/01/rdf-schema#label> "lighting"@en .
@@ -602,24 +591,24 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/mobility/trias/trips#name
 <https://w3id.org/mobility/trias/trips#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#name> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
-_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
+<https://w3id.org/mobility/trias/trips#name> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPoint> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPlace> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#PointOfInterest> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#Locality> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPoint> .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#Address> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPlace> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#PointOfInterest> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#Locality> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#Address> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/mobility/trias/trips#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of location for passenger information. it can be POI, StopPoint, StopPlace,etc"@en .
 <https://w3id.org/mobility/trias/trips#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
@@ -674,7 +663,6 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/mobility/trias/trips#price
 <https://w3id.org/mobility/trias/trips#price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#price> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/trips#Ticket> .
 <https://w3id.org/mobility/trias/trips#price> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <https://w3id.org/mobility/trias/trips#price> <http://www.w3.org/2000/01/rdf-schema#comment> "Net ticket price as decimal number for calculation purposes."@en .
 <https://w3id.org/mobility/trias/trips#price> <http://www.w3.org/2000/01/rdf-schema#label> "price"@en .
@@ -688,7 +676,6 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/mobility/trias/trips#saleUrl
 <https://w3id.org/mobility/trias/trips#saleUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#saleUrl> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/trips#Ticket> .
 <https://w3id.org/mobility/trias/trips#saleUrl> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/mobility/trias/trips#saleUrl> <http://www.w3.org/2000/01/rdf-schema#comment> "URL for online purchase options in order to purchase this ticket ."@en .
 <https://w3id.org/mobility/trias/trips#saleUrl> <http://www.w3.org/2000/01/rdf-schema#label> "saleUrl"@en .
@@ -722,14 +709,12 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/mobility/trias/trips#tariffLevel
 <https://w3id.org/mobility/trias/trips#tariffLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#tariffLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/trips#Ticket> .
 <https://w3id.org/mobility/trias/trips#tariffLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/mobility/trias/trips#tariffLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Tariff level (example from Nürnberg “10” or “10+T”)."@en .
 <https://w3id.org/mobility/trias/trips#tariffLevel> <http://www.w3.org/2000/01/rdf-schema#label> "tariffLevel"@en .
 # 
 # https://w3id.org/mobility/trias/trips#tariffLevelLabel
 <https://w3id.org/mobility/trias/trips#tariffLevelLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#tariffLevelLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/trips#Ticket> .
 <https://w3id.org/mobility/trias/trips#tariffLevelLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/mobility/trias/trips#tariffLevelLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "Name for tariff levels in this context (example from Nürnberg “price level”, “tariff level”)"@en .
 <https://w3id.org/mobility/trias/trips#tariffLevelLabel> <http://www.w3.org/2000/01/rdf-schema#label> "tariffLevelLabel"@en .
@@ -778,7 +763,6 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/mobility/trias/trips#toTripLegIdRef
 <https://w3id.org/mobility/trias/trips#toTripLegIdRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#toTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/trips#TripFares> .
 <https://w3id.org/mobility/trias/trips#toTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/mobility/trias/trips#toTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference to a leg of the trip as end of validity of this tariff informatio."@en .
 <https://w3id.org/mobility/trias/trips#toTripLegIdRef> <http://www.w3.org/2000/01/rdf-schema#label> "toTripLegIdRef"@en .
@@ -795,20 +779,6 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/mobility/trias/trips#unplannedStop> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://w3id.org/mobility/trias/trips#unplannedStop> <http://www.w3.org/2000/01/rdf-schema#label> "unplannedStop"@en .
 # 
-# https://w3id.org/mobility/trias/trips#validityDuration
-<https://w3id.org/mobility/trias/trips#validityDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#validityDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/trips#Ticket> .
-<https://w3id.org/mobility/trias/trips#validityDuration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/mobility/trias/trips#validityDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum validity duration of the ticket after purchase or validation."@en .
-<https://w3id.org/mobility/trias/trips#validityDuration> <http://www.w3.org/2000/01/rdf-schema#label> "validityDuration"@en .
-# 
-# https://w3id.org/mobility/trias/trips#validityDurationText
-<https://w3id.org/mobility/trias/trips#validityDurationText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#validityDurationText> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/trias/trips#Ticket> .
-<https://w3id.org/mobility/trias/trips#validityDurationText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/mobility/trias/trips#validityDurationText> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of validity duration."@en .
-<https://w3id.org/mobility/trias/trips#validityDurationText> <http://www.w3.org/2000/01/rdf-schema#label> "validityDurationText"@en .
-# 
 # https://w3id.org/mobility/trias/trips#vehicleRef
 <https://w3id.org/mobility/trias/trips#vehicleRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/mobility/trias/trips#vehicleRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
@@ -824,15 +794,15 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/mobility/trias/trips#wheelchairAccessible
 <https://w3id.org/mobility/trias/trips#wheelchairAccessible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/mobility/trias/trips#wheelchairAccessible> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid19 .
-_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPoint> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPlace> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/trips#wheelchairAccessible> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#unionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPoint> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPlace> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#wheelchairAccessible> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://w3id.org/mobility/trias/trips#wheelchairAccessible> <http://www.w3.org/2000/01/rdf-schema#comment> "Wheelchair accessibility of this stopping point"@en .
 <https://w3id.org/mobility/trias/trips#wheelchairAccessible> <http://www.w3.org/2000/01/rdf-schema#label> "wheelchairAccessible"@en .
@@ -846,21 +816,6 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
-# http://org.semanticweb.owlapi/error#Error1
-<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error2
-<http://org.semanticweb.owlapi/error#Error2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error3
-<http://org.semanticweb.owlapi/error#Error3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error4
-<http://org.semanticweb.owlapi/error#Error4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error5
-<http://org.semanticweb.owlapi/error#Error5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # https://w3id.org/mobility/trias/common#ErrorMessage
 <https://w3id.org/mobility/trias/common#ErrorMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -869,10 +824,10 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/mobility/trias/common#OperatingDay
 # 
+# https://w3id.org/mobility/trias/fares#TripFaresResult
+# 
 # https://w3id.org/mobility/trias/journey#DatedJourney
 <https://w3id.org/mobility/trias/journey#DatedJourney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/journey#DatedJourney> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error1> .
-<https://w3id.org/mobility/trias/journey#DatedJourney> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error2> .
 # 
 # https://w3id.org/mobility/trias/journey#ServiceCall
 <https://w3id.org/mobility/trias/journey#ServiceCall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -889,226 +844,228 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/mobility/trias/trips#Address
 <https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/trias/trips#Location> .
-<https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
-_:genid22 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid22 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#name> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
-_:genid23 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid23 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
-_:genid24 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid24 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#countryName> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
 _:genid25 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid25 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#crossingStreet> .
+_:genid25 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#name> .
 _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
 _:genid26 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid26 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#houseNumber> .
+_:genid26 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
 _:genid27 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid27 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#locationName> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#countryName> .
 _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
 _:genid28 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid28 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#postalCode> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#crossingStreet> .
 _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
 _:genid29 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid29 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#streetName> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#houseNumber> .
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid30 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#locationName> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid31 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#postalCode> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid32 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#streetName> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes a address in public transport."@en .
 <https://w3id.org/mobility/trias/trips#Address> <http://www.w3.org/2000/01/rdf-schema#label> "Address"@en .
 # 
 # https://w3id.org/mobility/trias/trips#ContinuousLeg
 <https://w3id.org/mobility/trias/trips#ContinuousLeg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#ContinuousLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/trias/trips#TripLeg> .
-<https://w3id.org/mobility/trias/trips#ContinuousLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-_:genid30 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/location#LocationRef> .
-_:genid30 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#legEnd> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#ContinuousLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
-_:genid31 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/location#LocationRef> .
-_:genid31 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#legStart> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#ContinuousLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/location#LocationRef> .
+_:genid33 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#legEnd> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#ContinuousLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/location#LocationRef> .
+_:genid34 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#legStart> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#ContinuousLeg> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes trip leg as movement with a continuously available mode."@en .
 <https://w3id.org/mobility/trias/trips#ContinuousLeg> <http://www.w3.org/2000/01/rdf-schema#label> "ContinuousLeg"@en .
 # 
 # https://w3id.org/mobility/trias/trips#GeoPosition
 <https://w3id.org/mobility/trias/trips#GeoPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#GeoPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/trias/trips#Location> .
-<https://w3id.org/mobility/trias/trips#GeoPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
-_:genid32 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid32 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#latitude> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#GeoPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
-_:genid33 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid33 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#longitude> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#GeoPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
-_:genid34 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid34 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#altitude> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#GeoPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid35 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#latitude> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#GeoPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#longitude> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#GeoPosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid37 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#altitude> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#GeoPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes a geo position in public transport."@en .
 <https://w3id.org/mobility/trias/trips#GeoPosition> <http://www.w3.org/2000/01/rdf-schema#label> "GeoPosition"@en .
 # 
 # https://w3id.org/mobility/trias/trips#InterchangeLeg
 <https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error3> .
 <https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/trias/trips#TripLeg> .
-<https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
-_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/common#GeneralAttribute> .
-_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/journey#hasAttribute> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
-_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
-_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#legDescription> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
-_:genid37 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/location#LocationRef> .
-_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#legEnd> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
-_:genid38 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/location#LocationRef> .
-_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#legStart> .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/common#GeneralAttribute> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/journey#hasAttribute> .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
-_:genid39 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#NavigationSection> .
-_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#navigationPath> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#legDescription> .
 _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
-_:genid40 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid40 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/location#LocationRef> .
 _:genid40 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#duration> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#legEnd> .
 _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
-_:genid41 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid41 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#bufferTime> .
+_:genid41 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/location#LocationRef> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#legStart> .
 _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
-_:genid42 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid42 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#walkDuration> .
+_:genid42 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#NavigationSection> .
+_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#navigationPath> .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid43 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#duration> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid44 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/journey#lenght> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid45 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#bufferTime> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid46 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#walkDuration> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describestrip leg as interchange between modes of transport."@en .
 <https://w3id.org/mobility/trias/trips#InterchangeLeg> <http://www.w3.org/2000/01/rdf-schema#label> "InterchangeLeg"@en .
 # 
 # https://w3id.org/mobility/trias/trips#Leg
 <https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error4> .
-<https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error5> .
-<https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
-_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
-_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/common#hasEstimatedBay> .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
-_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/common#hasNameSuffix> .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
-_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
-_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/common#hasPlannedBay> .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
-_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
-_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#stopSeqNumber> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
-_:genid47 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid47 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#demandStop> .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/common#hasEstimatedBay> .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
-_:genid48 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid48 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#meetsViaRequest> .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/common#hasNameSuffix> .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
-_:genid49 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid49 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#noAlightingAtStop> .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/common#hasPlannedBay> .
 _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
-_:genid50 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid50 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#noBoardingAtStop> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#stopSeqNumber> .
 _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
 _:genid51 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid51 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#notServicedStop> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#demandStop> .
 _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
 _:genid52 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid52 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#unplannedStop> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#meetsViaRequest> .
 _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid53 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#noAlightingAtStop> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid54 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#noBoardingAtStop> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid55 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#notServicedStop> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid56 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#unplannedStop> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Leg> <http://www.w3.org/2000/01/rdf-schema#label> "Leg"@en .
 # 
 # https://w3id.org/mobility/trias/trips#LegAlight
 <https://w3id.org/mobility/trias/trips#LegAlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#LegAlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/trias/trips#Leg> .
-<https://w3id.org/mobility/trias/trips#LegAlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
-_:genid53 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#ServiceCall> .
-_:genid53 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#serviceArrival> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#LegAlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
-_:genid54 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#ServiceCall> .
-_:genid54 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#serviceDeparture> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#LegAlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#ServiceCall> .
+_:genid57 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#serviceArrival> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#LegAlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#ServiceCall> .
+_:genid58 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#serviceDeparture> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#LegAlight> <http://www.w3.org/2000/01/rdf-schema#label> "LegAlight"@en .
 # 
 # https://w3id.org/mobility/trias/trips#LegBoard
 <https://w3id.org/mobility/trias/trips#LegBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#LegBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/trias/trips#Leg> .
-<https://w3id.org/mobility/trias/trips#LegBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
-_:genid55 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#ServiceCall> .
-_:genid55 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#serviceDeparture> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#LegBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
-_:genid56 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#ServiceCall> .
-_:genid56 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#serviceArrival> .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#LegBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#ServiceCall> .
+_:genid59 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#serviceDeparture> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#LegBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#ServiceCall> .
+_:genid60 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#serviceArrival> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#LegBoard> <http://www.w3.org/2000/01/rdf-schema#label> "LegBoard"@en .
 # 
 # https://w3id.org/mobility/trias/trips#LegIntermediates
 <https://w3id.org/mobility/trias/trips#LegIntermediates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#LegIntermediates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/trias/trips#Leg> .
-<https://w3id.org/mobility/trias/trips#LegIntermediates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
-_:genid57 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#ServiceCall> .
-_:genid57 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#serviceArrival> .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#LegIntermediates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
-_:genid58 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#ServiceCall> .
-_:genid58 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#serviceDeparture> .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#LegIntermediates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#ServiceCall> .
+_:genid61 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#serviceArrival> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#LegIntermediates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#ServiceCall> .
+_:genid62 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#serviceDeparture> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#LegIntermediates> <http://www.w3.org/2000/01/rdf-schema#label> "LegIntermediates"@en .
 # 
 # https://w3id.org/mobility/trias/trips#Line
@@ -1118,480 +1075,397 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/mobility/trias/trips#Locality
 <https://w3id.org/mobility/trias/trips#Locality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#Locality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/trias/trips#Location> .
-<https://w3id.org/mobility/trias/trips#Locality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
-_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#name> .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Locality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
-_:genid60 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid60 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Locality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#name> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Locality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid64 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Locality> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes a locality in public transport."@en .
 <https://w3id.org/mobility/trias/trips#Locality> <http://www.w3.org/2000/01/rdf-schema#label> "Locality"@en .
 # 
 # https://w3id.org/mobility/trias/trips#Location
 <https://w3id.org/mobility/trias/trips#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/trips#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
-_:genid61 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid61 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#locationName> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid65 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#locationName> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A location and access to it by individual transport. This Class is used to describe the start and end location within the journey planning service."@en .
 <https://w3id.org/mobility/trias/trips#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
 # 
 # https://w3id.org/mobility/trias/trips#LocationContext
 <https://w3id.org/mobility/trias/trips#LocationContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/trips#LocationContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
-_:genid62 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/trips#TransportOption> .
-_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTransportOption> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#LocationContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
-_:genid63 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#Location> .
-_:genid63 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasLocation> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#LocationContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
-_:genid64 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#TripLocation> .
-_:genid64 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTripLocation> .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#LocationContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
-_:genid65 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid65 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#depArrTime> .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#LocationContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
-_:genid66 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid66 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#timeAllowance> .
+_:genid66 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/trips#TransportOption> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTransportOption> .
 _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#LocationContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#Location> .
+_:genid67 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasLocation> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#LocationContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#TripLocation> .
+_:genid68 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTripLocation> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#LocationContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid69 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#depArrTime> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#LocationContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid70 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#timeAllowance> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#LocationContext> <http://www.w3.org/2000/01/rdf-schema#comment> "A location and access to it by individual transport.."@en .
 <https://w3id.org/mobility/trias/trips#LocationContext> <http://www.w3.org/2000/01/rdf-schema#comment> "Specification of a location and accessibility options for a user via individual routes."@en .
 <https://w3id.org/mobility/trias/trips#LocationContext> <http://www.w3.org/2000/01/rdf-schema#label> "LocationContext"@en .
 # 
 # https://w3id.org/mobility/trias/trips#NavigationSection
 <https://w3id.org/mobility/trias/trips#NavigationSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/trips#NavigationSection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
-_:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
-_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#turnDescription> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#NavigationSection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
-_:genid68 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#AccessPath> .
-_:genid68 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasAccessPath> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#NavigationSection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
-_:genid69 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#TrackSection> .
-_:genid69 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTrackSection> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#NavigationSection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#turnDescription> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#NavigationSection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#AccessPath> .
+_:genid72 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasAccessPath> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#NavigationSection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#TrackSection> .
+_:genid73 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTrackSection> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#NavigationSection> <http://www.w3.org/2000/01/rdf-schema#comment> "Building block of a NavigationPath."@en .
 <https://w3id.org/mobility/trias/trips#NavigationSection> <http://www.w3.org/2000/01/rdf-schema#label> "NavigationSection"@en .
 # 
 # https://w3id.org/mobility/trias/trips#PointOfInterest
 <https://w3id.org/mobility/trias/trips#PointOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#PointOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/trias/trips#Location> .
-<https://w3id.org/mobility/trias/trips#PointOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
-_:genid70 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid70 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#name> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#PointOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
-_:genid71 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid71 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#PointOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid74 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#name> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#PointOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid75 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#PointOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes a POI in public transport."@en .
 <https://w3id.org/mobility/trias/trips#PointOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "PointOfInterest"@en .
 # 
 # https://w3id.org/mobility/trias/trips#StopPlace
 <https://w3id.org/mobility/trias/trips#StopPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#StopPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/trias/trips#Location> .
-<https://w3id.org/mobility/trias/trips#StopPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
-_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#name> .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#StopPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
-_:genid73 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid73 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#StopPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
-_:genid74 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid74 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#covered> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#StopPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
-_:genid75 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid75 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#lighting> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#StopPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
-_:genid76 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid76 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#wheelchairAccessible> .
+_:genid76 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#name> .
 _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#StopPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid77 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#StopPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid78 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#covered> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#StopPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid79 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#lighting> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#StopPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid80 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#wheelchairAccessible> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#StopPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes a StopPlace in public transport."@en .
 <https://w3id.org/mobility/trias/trips#StopPlace> <http://www.w3.org/2000/01/rdf-schema#label> "StopPlace"@en .
 # 
 # https://w3id.org/mobility/trias/trips#StopPoint
 <https://w3id.org/mobility/trias/trips#StopPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#StopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/trias/trips#Location> .
-<https://w3id.org/mobility/trias/trips#StopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
-_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#name> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#StopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
-_:genid78 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid78 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#StopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
-_:genid79 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid79 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#covered> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#StopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
-_:genid80 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid80 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#lighting> .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#StopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
-_:genid81 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid81 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#wheelchairAccessible> .
+_:genid81 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#name> .
 _:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#StopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid82 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#StopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid83 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#covered> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#StopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+_:genid84 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid84 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#lighting> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#StopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
+_:genid85 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid85 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#wheelchairAccessible> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#StopPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes a StopPoint in public transport."@en .
 <https://w3id.org/mobility/trias/trips#StopPoint> <http://www.w3.org/2000/01/rdf-schema#label> "StopPoint"@en .
-# 
-# https://w3id.org/mobility/trias/trips#Ticket
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
-_:genid82 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#infoUrl> .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
-_:genid83 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#saleUrl> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
-_:genid84 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#tariffLevelLabel> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
-_:genid85 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#validityDurationText> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
-_:genid86 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid86 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
-_:genid87 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid87 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#faresAuthorityRef> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid88 .
-_:genid88 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid88 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#faresAuthorityText> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
-_:genid89 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid89 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#ticketName> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
-_:genid90 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid90 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#currency> .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
-_:genid91 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid91 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#price> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
-_:genid92 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid92 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#tariffLevel> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
-_:genid93 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid93 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#validityDuration> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/2000/01/rdf-schema#comment> "Ticket and associated information."@en .
-<https://w3id.org/mobility/trias/trips#Ticket> <http://www.w3.org/2000/01/rdf-schema#label> "Ticket"@en .
 # 
 # https://w3id.org/mobility/trias/trips#TimedLeg
 <https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/trias/trips#TripLeg> .
-<https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid94 .
-_:genid94 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
-_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#OperatingDaysDescription> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
-_:genid95 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/trips#LegIntermediates> .
-_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasLegIntermediates> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid96 .
-_:genid96 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#LegAlight> .
-_:genid96 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasLegAlight> .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid97 .
-_:genid97 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#LegBoard> .
-_:genid97 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasLegBoard> .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
-_:genid98 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#DatedJourney> .
-_:genid98 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#service> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
-_:genid99 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/common#OperatingDay> .
-_:genid99 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasOperatingDays> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
+_:genid86 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#OperatingDaysDescription> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
+_:genid87 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/trips#LegIntermediates> .
+_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasLegIntermediates> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid88 .
+_:genid88 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#LegAlight> .
+_:genid88 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasLegAlight> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
+_:genid89 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#LegBoard> .
+_:genid89 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasLegBoard> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
+_:genid90 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/journey#DatedJourney> .
+_:genid90 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#service> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
+_:genid91 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/common#OperatingDay> .
+_:genid91 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasOperatingDays> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes trip leg as timetabled trip leg."@en .
 <https://w3id.org/mobility/trias/trips#TimedLeg> <http://www.w3.org/2000/01/rdf-schema#label> "TimedLeg"@en .
 # 
 # https://w3id.org/mobility/trias/trips#TransportOption
 <https://w3id.org/mobility/trias/trips#TransportOption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/trips#TransportOption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
-_:genid100 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
-_:genid100 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#maxDistance> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TransportOption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
-_:genid101 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid101 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#maxDuration> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TransportOption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
-_:genid102 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
-_:genid102 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#minDistance> .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TransportOption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
-_:genid103 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid103 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#minDuration> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TransportOption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
-_:genid104 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid104 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#speed> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TransportOption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
+_:genid92 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid92 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#maxDistance> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TransportOption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
+_:genid93 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid93 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#maxDuration> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TransportOption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid94 .
+_:genid94 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid94 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#minDistance> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TransportOption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
+_:genid95 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid95 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#minDuration> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TransportOption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid96 .
+_:genid96 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid96 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#speed> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#TransportOption> <http://www.w3.org/2000/01/rdf-schema#comment> "Options how to access/leave the location by transport."@en .
 <https://w3id.org/mobility/trias/trips#TransportOption> <http://www.w3.org/2000/01/rdf-schema#label> "TransportOption"@en .
 # 
 # https://w3id.org/mobility/trias/trips#Trip
 <https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid97 .
+_:genid97 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
+_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#OperatingDaysDescription> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
+_:genid98 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#TripLeg> .
+_:genid98 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTripLeg> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
+_:genid99 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/common#OperatingDay> .
+_:genid99 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasOperatingDays> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
+_:genid100 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid100 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#duration> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
+_:genid101 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid101 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#endTime> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
+_:genid102 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid102 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#interchanges> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
+_:genid103 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid103 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#startTime> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
+_:genid104 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid104 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid105 .
-_:genid105 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/utility#InternationalText> .
-_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#OperatingDaysDescription> .
+_:genid105 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid105 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#distance> .
 _:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid106 .
-_:genid106 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#TripLeg> .
-_:genid106 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTripLeg> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid107 .
-_:genid107 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/common#OperatingDay> .
-_:genid107 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid107 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasOperatingDays> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
-_:genid108 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid108 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#duration> .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
-_:genid109 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid109 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#endTime> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid110 .
-_:genid110 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
-_:genid110 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#interchanges> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid111 .
-_:genid111 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid111 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#startTime> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid112 .
-_:genid112 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid112 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid112 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid113 .
-_:genid113 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
-_:genid113 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid113 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#distance> .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes a trip in public transport(TripStructure)."@en .
 <https://w3id.org/mobility/trias/trips#Trip> <http://www.w3.org/2000/01/rdf-schema#label> "Trip"@en .
 # 
-# https://w3id.org/mobility/trias/trips#TripFares
-<https://w3id.org/mobility/trias/trips#TripFares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/trips#TripFares> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid114 .
-_:genid114 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/trips#Ticket> .
-_:genid114 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTicket> .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TripFares> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid115 .
-_:genid115 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid115 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#fromTripLegIdRef> .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TripFares> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid116 .
-_:genid116 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid116 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid116 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#toTripLegIdRef> .
-_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TripFares> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes fare information about the trip."@en .
-<https://w3id.org/mobility/trias/trips#TripFares> <http://www.w3.org/2000/01/rdf-schema#label> "TripFares"@en .
-# 
 # https://w3id.org/mobility/trias/trips#TripLeg
 <https://w3id.org/mobility/trias/trips#TripLeg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/trips#TripLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid117 .
-_:genid117 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid117 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid117 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid106 .
+_:genid106 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid106 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#TripLeg> <http://www.w3.org/2000/01/rdf-schema#comment> "Leg or legs of the trip."@en .
 <https://w3id.org/mobility/trias/trips#TripLeg> <http://www.w3.org/2000/01/rdf-schema#label> "TripLeg"@en .
 # 
 # https://w3id.org/mobility/trias/trips#TripLocation
 <https://w3id.org/mobility/trias/trips#TripLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/trips#TripLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid118 .
-_:genid118 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid118 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid118 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#directionRef> .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TripLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid119 .
-_:genid119 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid119 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid119 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#journeyRef> .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TripLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid120 .
-_:genid120 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid120 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#lineRef> .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TripLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid121 .
-_:genid121 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid121 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#operatingDayRef> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid107 .
+_:genid107 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid107 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid107 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#directionRef> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
+_:genid108 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid108 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#journeyRef> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
+_:genid109 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid109 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#lineRef> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid110 .
+_:genid110 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid110 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#operatingDayRef> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#TripLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Define that Journey as the current trip location of a passenger"@en .
 <https://w3id.org/mobility/trias/trips#TripLocation> <http://www.w3.org/2000/01/rdf-schema#label> "TripLocation"@en .
 # 
 # https://w3id.org/mobility/trias/trips#TripRequest
 <https://w3id.org/mobility/trias/trips#TripRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/trips#TripRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid122 .
-_:genid122 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid123 .
-_:genid123 <http://www.w3.org/2002/07/owl#unionOf> _:genid125 .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid124 .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPoint> .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPlace> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#noChangeAt> .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TripRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid126 .
-_:genid126 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid127 .
-_:genid127 <http://www.w3.org/2002/07/owl#unionOf> _:genid129 .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid128 .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPoint> .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPlace> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid126 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#notVia> .
-_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TripRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid130 .
-_:genid130 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/mobility/trias/trips#Via> .
-_:genid130 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasVia> .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TripRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid131 .
-_:genid131 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#LocationContext> .
-_:genid131 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid131 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasDestination> .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TripRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid132 .
-_:genid132 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#LocationContext> .
-_:genid132 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid132 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasOrigin> .
-_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid111 .
+_:genid111 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid112 .
+_:genid112 <http://www.w3.org/2002/07/owl#unionOf> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPoint> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPlace> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#noChangeAt> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid115 .
+_:genid115 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid116 .
+_:genid116 <http://www.w3.org/2002/07/owl#unionOf> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPoint> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/mobility/trias/trips#StopPlace> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#notVia> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid119 .
+_:genid119 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/mobility/trias/trips#Via> .
+_:genid119 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasVia> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid120 .
+_:genid120 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#LocationContext> .
+_:genid120 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasDestination> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid121 .
+_:genid121 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#LocationContext> .
+_:genid121 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasOrigin> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#TripRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "An intermodal trip information is requested via an element  of the class TripRequest."@en .
 <https://w3id.org/mobility/trias/trips#TripRequest> <http://www.w3.org/2000/01/rdf-schema#label> "TripRequest"@en .
 # 
 # https://w3id.org/mobility/trias/trips#TripResponse
 <https://w3id.org/mobility/trias/trips#TripResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/trips#TripResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid133 .
-_:genid133 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/common#ErrorMessage> .
-_:genid133 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasErrorMessage> .
-_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TripResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid134 .
-_:genid134 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/trips#TripResult> .
-_:genid134 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTripResult> .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid122 .
+_:genid122 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/common#ErrorMessage> .
+_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasErrorMessage> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid123 .
+_:genid123 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/trips#TripResult> .
+_:genid123 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTripResult> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#TripResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Result data for a trip information."@en .
 <https://w3id.org/mobility/trias/trips#TripResponse> <http://www.w3.org/2000/01/rdf-schema#label> "TripResponse"@en .
 # 
 # https://w3id.org/mobility/trias/trips#TripResult
 <https://w3id.org/mobility/trias/trips#TripResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/trips#TripResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid135 .
-_:genid135 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/common#ErrorMessage> .
-_:genid135 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasErrorMessage> .
-_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TripResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid136 .
-_:genid136 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/trips#TripFares> .
-_:genid136 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTripFares> .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TripResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid137 .
-_:genid137 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/mobility/trias/trips#Trip> .
-_:genid137 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTrip> .
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#TripResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid138 .
-_:genid138 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid138 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid138 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
-_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid124 .
+_:genid124 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/common#ErrorMessage> .
+_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasErrorMessage> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid125 .
+_:genid125 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/trias/fares#TripFaresResult> .
+_:genid125 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTripFares> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid126 .
+_:genid126 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/mobility/trias/trips#Trip> .
+_:genid126 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasTrip> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#TripResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid127 .
+_:genid127 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid127 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid127 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#TripResult> <http://www.w3.org/2000/01/rdf-schema#label> "TripResult"@en .
 # 
 # https://w3id.org/mobility/trias/trips#Via
 <https://w3id.org/mobility/trias/trips#Via> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/mobility/trias/trips#Via> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid139 .
-_:genid139 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#Location> .
-_:genid139 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid139 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasViaPoint> .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/mobility/trias/trips#Via> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid140 .
-_:genid140 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid140 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid140 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#dwellTime> .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Via> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid128 .
+_:genid128 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/trias/trips#Location> .
+_:genid128 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid128 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#hasViaPoint> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/trias/trips#Via> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid129 .
+_:genid129 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid129 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid129 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/trias/trips#dwellTime> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/mobility/trias/trips#Via> <http://www.w3.org/2000/01/rdf-schema#comment> "One or more via-locations"@en .
 <https://w3id.org/mobility/trias/trips#Via> <http://www.w3.org/2000/01/rdf-schema#label> "Via"@en .
 # 
 # https://w3id.org/mobility/trias/utility#InternationalText
 # 
-_:genid141 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid142 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid143 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid144 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid145 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid130 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid131 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # 
 # 
 # #################################################################
