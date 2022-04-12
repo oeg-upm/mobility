@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/mobility/trias/trips#">
-        <owl:versionIRI rdf:resource="https://w3id.org/mobility/trias/trips/0.1"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/mobility/trias/trips/0.1.0"/>
         <owl:imports rdf:resource="https://w3id.org/mobility/trias/fares/0.1"/>
         <owl:imports rdf:resource="https://w3id.org/mobility/trias/journey/0.1"/>
         <owl:imports rdf:resource="https://w3id.org/mobility/trias/location/0.1"/>
@@ -2410,10 +2410,10 @@ system</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/mobility/trias/utility#InternationalText"/>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     
 

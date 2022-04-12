@@ -1,5 +1,5 @@
 <https://w3id.org/mobility/trias/trips#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/mobility/trias/trips#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/mobility/trias/trips/0.1> .
+<https://w3id.org/mobility/trias/trips#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/mobility/trias/trips/0.1.0> .
 <https://w3id.org/mobility/trias/trips#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/mobility/trias/fares/0.1> .
 <https://w3id.org/mobility/trias/trips#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/mobility/trias/journey/0.1> .
 <https://w3id.org/mobility/trias/trips#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/mobility/trias/location/0.1> .
@@ -1464,8 +1464,8 @@ _:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/mobility/trias/utility#InternationalText
 # 
-_:genid130 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid131 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid130 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid131 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # 
 # 
 # #################################################################

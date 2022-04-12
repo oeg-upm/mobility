@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<https://w3id.org/mobility/trias/trips/0.1> a prov:Entity;
+<https://w3id.org/mobility/trias/trips/0.1.0> a prov:Entity;
 	 dc:title "Ontology for the representation of trips elements in the Trias ontology";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;

@@ -330,13 +330,13 @@
   } ]
 }, {
   "@id" : "_:genid130",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid131",
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -1459,7 +1459,7 @@
     "@id" : "https://w3id.org/mobility/trias/location/0.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/mobility/trias/trips/0.1"
+    "@id" : "https://w3id.org/mobility/trias/trips/0.1.0"
   } ]
 }, {
   "@id" : "https://w3id.org/mobility/trias/trips#AccessPath",
