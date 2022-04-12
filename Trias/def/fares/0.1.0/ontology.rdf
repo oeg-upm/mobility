@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/mobility/trias/fares#">
-        <owl:versionIRI rdf:resource="https://w3id.org/mobility/trias/fares/0.1"/>
-        <owl:imports rdf:resource="https://w3id.org/mobility/trias/common/0.1"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/mobility/trias/fares/0.1.0"/>
+        <owl:imports rdf:resource="https://w3id.org/mobility/trias/utility/0.1"/>
         <ns:license xml:lang="en">2022-03-22</ns:license>
         <dc:creator xml:lang="en">Jhon Toledo (Ontology Engienering Group - Universidad Politécnica de Madrid)</dc:creator>
         <dc:creator xml:lang="en">Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid</dc:creator>
@@ -97,6 +97,25 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/mobility/trias/utility#WebLink -->
+
+
+    <rdfs:Datatype rdf:about="https://w3id.org/mobility/trias/utility#WebLink"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -106,13 +125,253 @@
     
 
 
+    <!-- https://w3id.org/mobility/trias/fares#bookingAgencyName -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#bookingAgencyName">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#BookingInfo"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+        <rdfs:comment xml:lang="en">Property related to the name of a booking agency.</rdfs:comment>
+        <rdfs:label xml:lang="en">bookingAgencyName</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasBookingInfo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasBookingInfo">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/fares#BookingInfo"/>
+        <rdfs:comment xml:lang="en">Description of booking options.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasBookingInfo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/mobility/trias/fares#hasErrorMessage -->
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasErrorMessage">
-        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#TripFaresResult"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/mobility/trias/fares#FaresResponse"/>
+                    <rdf:Description rdf:about="https://w3id.org/mobility/trias/fares#TripFaresResult"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/mobility/trias/common#ErrorMessage"/>
         <rdfs:label xml:lang="en">hasErrorMessage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasFareZone -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasFareZone">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#FareZoneListInArea"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/fares#FareZone"/>
+        <rdfs:comment xml:lang="en">This property represent one or more tariff zones.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasFareZone</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasFareZoneListInArea -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasFareZoneListInArea">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#StopFaresResult"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/fares#FareZoneListInArea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasFaresResult -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasFaresResult">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#FaresResponse"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/fares#TripFaresResult"/>
+        <rdfs:label xml:lang="en">hasFaresResult</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasMultiTripFaresResult -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasMultiTripFaresResult">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#MultiTripFares"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/fares#MultiTripFaresResult"/>
+        <rdfs:label xml:lang="en">hasMultiTripFaresResult</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasParams -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasParams">
+        <rdfs:comment xml:lang="en">Parameter to filter the response contents.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasParams</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasStaticFaresResult -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasStaticFaresResult">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#StaticFares"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/fares#StaticFaresResult"/>
+        <rdfs:label xml:lang="en">hasStaticFaresResult</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasStaticInfoUrl -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasStaticInfoUrl">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#TripFaresResult"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasStopFaresResult -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasStopFaresResult">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#StopFares"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/fares#StopFaresResult"/>
+        <rdfs:label xml:lang="en">hasStopFaresResult</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasTariffLevelLabel -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasTariffLevelLabel">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+        <rdfs:comment xml:lang="en">Name for tariff levels in this context (example from Nürnberg “price level”, “tariff level”)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTariffLevelLabel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasTicket -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasTicket">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#TripFaresResult"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+        <rdfs:comment xml:lang="en">Reference to tickets which are valid on this section of the trip.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTicket</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasTraveller -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasTraveller">
+        <rdfs:label xml:lang="en">hasTraveller</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasTrip -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasTrip">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#TripFaresRequest"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/trips#Trip"/>
+        <rdfs:comment xml:lang="en">A complete trip from origin to destination</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTrip</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasTripFaresResult -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasTripFaresResult">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#TripFares"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/fares#TripFaresResult"/>
+        <rdfs:label xml:lang="en">hasTripFaresResult</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#hasValidityFareZones -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#hasValidityFareZones">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/fares#FareZoneListInArea"/>
+        <rdfs:comment xml:lang="en">Geographic validity of the ticket stated with the help of a list of tariff zones, for which the ticket is valid.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasValidityFareZones</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#infoUrl -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#infoUrl">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#BookingInfo"/>
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#passedZones -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#passedZones">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#TripFaresResult"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/fares#FareZoneListInArea"/>
+        <rdfs:label xml:lang="en">This property shows if there are traversed tariff zones on this section of the trip.</rdfs:label>
+        <rdfs:label xml:lang="en">passedZones</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#saleUrl -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#saleUrl">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#validityAreaText -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#validityAreaText">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+        <rdfs:comment xml:lang="en">Description of validity zone.</rdfs:comment>
+        <rdfs:label xml:lang="en">validityAreaText</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#validityDurationText -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mobility/trias/fares#validityDurationText">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+        <rdfs:comment xml:lang="en">Description of validity duration.</rdfs:comment>
+        <rdfs:label xml:lang="en">validityDurationText</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -129,14 +388,152 @@
     
 
 
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#age -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#age">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#FaresPassenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#bookingDeadline -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#bookingDeadline">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#BookingInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">Minimum waiting time for booking before the journey begins.</rdfs:comment>
+        <rdfs:label xml:lang="en">bookingDeadline</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#bookingUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#bookingUrl">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#BookingInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">URL for online-booking.</rdfs:comment>
+        <rdfs:label xml:lang="en">bookingUrl</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#currency -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#currency">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Currency code as per ISO 4217, e.g. “EUR” or “GBP”.</rdfs:comment>
+        <rdfs:label xml:lang="en">currency</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#date -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#date">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#StopFaresRequest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">Date for which to retrieve fares information.</rdfs:comment>
+        <rdfs:label xml:lang="en">date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#fareAuthorityFilter -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#fareAuthorityFilter">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/mobility/trias/fares#fareParam"/>
+        <rdfs:comment xml:lang="en">Fare authority for which to retrieve fares information.</rdfs:comment>
+        <rdfs:label xml:lang="en">fareAuthorityFilter</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#fareParam -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#fareParam"/>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#fareZoneRef -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#fareZoneRef">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#FareZone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Code for a tariff zone.</rdfs:comment>
+        <rdfs:label xml:lang="en">fareZoneRef</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#fareZoneText -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#fareZoneText">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#FareZone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">Name of tariff zone for passengers.</rdfs:label>
+        <rdfs:label xml:lang="en">fareZoneText</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#faresAuthorityRef -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#faresAuthorityRef">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#FareZoneListInArea"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Code for a fare authority or a company fare.</rdfs:comment>
+        <rdfs:label xml:lang="en">faresAuthorityRef</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/mobility/trias/fares#faresAuthorityText -->
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#faresAuthorityText">
         <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#FareZoneListInArea"/>
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Description or name of fare authority.</rdfs:comment>
         <rdfs:comment xml:lang="en">Textual description or name of fares authority.</rdfs:comment>
         <rdfs:label xml:lang="en">faresAuthorityText</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#fromTripIdRef -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#fromTripIdRef">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#TripTicketReference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Identifies the &quot;valid from&quot; trip.</rdfs:comment>
+        <rdfs:label xml:lang="en">fromTripIdRef</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -153,6 +550,136 @@
     
 
 
+    <!-- https://w3id.org/mobility/trias/fares#hasStaticInfoUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#hasStaticInfoUrl">
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/utility#WebLink"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#infoUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#infoUrl">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/utility#WebLink"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#netPrice -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#netPrice">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Net ticket price as decimal number for calculation purposes.</rdfs:comment>
+        <rdfs:label xml:lang="en">netPrice</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#passengerCategory -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#passengerCategory">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/mobility/trias/fares#fareParam"/>
+        <rdfs:comment xml:lang="en">Passenger categories for which to retrieve fares information.</rdfs:comment>
+        <rdfs:label xml:lang="en">passengerCategory</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#phoneNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#phoneNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#BookingInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Telephone number for booking.</rdfs:comment>
+        <rdfs:label xml:lang="en">phoneNumber</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#price -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#price">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Net ticket price as decimal number for calculation purposes.</rdfs:comment>
+        <rdfs:label xml:lang="en">price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#saleUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#saleUrl">
+        <rdfs:range rdf:resource="https://w3id.org/mobility/trias/utility#WebLink"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#stopPointRef -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#stopPointRef">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#StopFaresRequest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">stopPointRef</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#tariffLevel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#tariffLevel">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Tariff level (example from Nürnberg “10” or “10+T”).</rdfs:comment>
+        <rdfs:label xml:lang="en">tariffLevel</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#ticketName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#ticketName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Name of ticket.</rdfs:comment>
+        <rdfs:label xml:lang="en">ticketName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#ticketRef -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#ticketRef">
+        <rdfs:label xml:lang="en">ticketRef</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#toTripIdRef -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#toTripIdRef">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#TripTicketReference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Identifies the &quot;valid to&quot; trip.</rdfs:comment>
+        <rdfs:label xml:lang="en">toTripIdRef</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/mobility/trias/fares#toTripLegIdRef -->
 
 
@@ -161,6 +688,41 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Identifies the &quot;valid to&quot; trip leg.</rdfs:comment>
         <rdfs:label xml:lang="en">toTripLegIdRef</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#travelClass -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#travelClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/mobility/trias/fares#fareParam"/>
+        <rdfs:comment xml:lang="en">Travel class for which to retrieve tickets.</rdfs:comment>
+        <rdfs:label xml:lang="en">travelClass</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#travellerCard -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#travellerCard">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#FaresPassenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Traveller card that the passenger can make use of.</rdfs:comment>
+        <rdfs:label xml:lang="en">travellerCard</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#validityDuration -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mobility/trias/fares#validityDuration">
+        <rdfs:domain rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Maximum validity duration of the ticket after purchase or validation.</rdfs:comment>
+        <rdfs:label xml:lang="en">validityDuration</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -188,6 +750,40 @@
 
 
     <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#BookingInfo">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#bookingAgencyName"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#bookingDeadline"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#bookingUrl"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#infoUrl"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#phoneNumber"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Information of a booking opportunity.</rdfs:comment>
         <rdfs:label xml:lang="en">BookingInfo</rdfs:label>
     </owl:Class>
@@ -198,6 +794,20 @@
 
 
     <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#FareZone">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#fareZoneRef"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#fareZoneText"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Model of a fare zone.</rdfs:comment>
         <rdfs:label xml:lang="en">FareZone</rdfs:label>
     </owl:Class>
@@ -208,8 +818,339 @@
 
 
     <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#FareZoneListInArea">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasFareZone"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/fares#FareZone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#faresAuthorityRef"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#faresAuthorityText"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">List of fare zones within the area of a Fares Authority.</rdfs:comment>
         <rdfs:label xml:lang="en">FareZoneListInArea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#FaresParam -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#FaresParam">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasTraveller"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/fares#FaresPassenger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#fareAuthorityFilter"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#passengerCategory"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#travelClass"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Parameters for fares request.</rdfs:comment>
+        <rdfs:label xml:lang="en">FaresParam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#FaresPassenger -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#FaresPassenger">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#age"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#travellerCard"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Structure of a passenger profile for fares calculation.</rdfs:comment>
+        <rdfs:label xml:lang="en">FaresPassenger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#FaresRequest -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#FaresRequest">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasParams"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/fares#FaresParam"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Fares request structure.</rdfs:comment>
+        <rdfs:label xml:lang="en">FaresRequest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#FaresResponse -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#FaresResponse">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasErrorMessage"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/common#ErrorMessage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasFaresResult"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/fares#FaresResult"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Fares response element.</rdfs:comment>
+        <rdfs:label xml:lang="en">FaresResponse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#FaresResult -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#FaresResult">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Wrapper element for fares results.</rdfs:comment>
+        <rdfs:label xml:lang="en">FaresResult</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#MultiTripFares -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#MultiTripFares">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/trias/fares#FaresResult"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasMultiTripFaresResult"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/fares#MultiTripFaresResult"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Structure of a Multi Trip Fares Request result</rdfs:comment>
+        <rdfs:label xml:lang="en">MultiTripFares</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#MultiTripFaresRequest -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#MultiTripFaresRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/trias/fares#FaresRequest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasTrip"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/trips#Trip"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Structure of a Multi Trip Fares Request.</rdfs:comment>
+        <rdfs:label xml:lang="en">MultiTripFaresRequest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#MultiTripFaresResult -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#MultiTripFaresResult">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasErrorMessage"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/common#ErrorMessage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasTicket"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#passedZones"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/fares#FareZoneListInArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasStaticInfoUrl"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/utility#WebLink"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Fares and tickets for multiple trips.</rdfs:comment>
+        <rdfs:label xml:lang="en">MultiTripFaresResult</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#StaticFares -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#StaticFares">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/trias/fares#FaresResult"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasStaticFaresResult"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/fares#StaticFaresResult"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">StaticFares</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#StaticFaresRequest -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#StaticFaresRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/trias/fares#FaresRequest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#ticketRef"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#date"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">General fares information. May depend on date.</rdfs:comment>
+        <rdfs:label xml:lang="en">StaticFaresRequest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#StaticFaresResult -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#StaticFaresResult">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasTicket"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasStaticInfoUrl"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/utility#WebLink"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">General fares information.</rdfs:comment>
+        <rdfs:label xml:lang="en">StaticFaresResult</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#StopFares -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#StopFares">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/trias/fares#FaresResult"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasStopFaresResult"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/fares#StopFaresResult"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">StopFares</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#StopFaresRequest -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#StopFaresRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/trias/fares#FaresRequest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#stopPointRef"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#date"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Sub-request: stop-related fare information.</rdfs:comment>
+        <rdfs:label xml:lang="en">StopFaresRequest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#StopFaresResult -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#StopFaresResult">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasFareZoneListInArea"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/fares#FareZoneListInArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Stop-related fares information.</rdfs:comment>
+        <rdfs:label xml:lang="en">StopFaresResult</rdfs:label>
     </owl:Class>
     
 
@@ -218,8 +1159,141 @@
 
 
     <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#Ticket">
-        <rdfs:comment xml:lang="en">Model of a ticket and related information.</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasBookingInfo"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/fares#BookingInfo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasTariffLevelLabel"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasValidityFareZones"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/fares#FareZoneListInArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#validityAreaText"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#validityDurationText"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/utility#InternationalText"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#infoUrl"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/utility#WebLink"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#saleUrl"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/utility#WebLink"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#faresAuthorityRef"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#faresAuthorityText"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#ticketName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#currency"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#price"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#tariffLevel"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#validityDuration"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Ticket and associated information.</rdfs:comment>
         <rdfs:label xml:lang="en">Ticket</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#TripFares -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#TripFares">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/trias/fares#FaresResult"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasTripFaresResult"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/fares#TripFaresResult"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">TripFares</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#TripFaresRequest -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#TripFaresRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/mobility/trias/fares#FaresRequest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasTrip"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/trips#Trip"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Structure of a Single Trip Fares Request.</rdfs:comment>
+        <rdfs:label xml:lang="en">TripFaresRequest</rdfs:label>
     </owl:Class>
     
 
@@ -232,6 +1306,25 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasErrorMessage"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/common#ErrorMessage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasTicket"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/fares#Ticket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#passedZones"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/mobility/trias/fares#FareZoneListInArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#hasStaticInfoUrl"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/mobility/trias/utility#WebLink"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -251,6 +1344,89 @@
         <rdfs:comment xml:lang="en">Structure of a Single Trip Fare Request result.</rdfs:comment>
         <rdfs:label xml:lang="en">TripFaresResult</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/fares#TripTicketReference -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/fares#TripTicketReference">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#fromTripIdRef"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#ticketRef"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#toTripIdRef"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#toTripLegIdRef"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/mobility/trias/fares#fromTripLegIdRef"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Element that connects tickets to trips.</rdfs:comment>
+        <rdfs:label xml:lang="en">TripTicketReference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/trips#Trip -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/trips#Trip"/>
+    
+
+
+    <!-- https://w3id.org/mobility/trias/utility#InternationalText -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mobility/trias/utility#InternationalText"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/mobility/trias/fares#hasStaticInfoUrl">
+        <rdfs:comment xml:lang="en">URL for information pages.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasStaticInfoUrl</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/mobility/trias/fares#infoUrl">
+        <rdfs:comment xml:lang="en">URL for information pages.</rdfs:comment>
+        <rdfs:label xml:lang="en">infoUrl</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/mobility/trias/fares#saleUrl">
+        <rdfs:comment xml:lang="en">URL for online purchase options in order to purchase this ticket .</rdfs:comment>
+        <rdfs:label xml:lang="en">saleUrl</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
