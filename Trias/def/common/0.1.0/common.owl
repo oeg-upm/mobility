@@ -8,27 +8,21 @@
 
 <https://w3id.org/mobility/trias/common#> rdf:type owl:Ontology ;
                                            owl:versionIRI <https://w3id.org/mobility/trias/common/0.1> ;
-                                           <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> ,
-                                                                                   "2021-11-8"@en ;
                                            <http://purl.org/dc/elements/1.1/creator> "Jhon Toledo (Ontology Engienering Group - Universidad Politécnica de Madrid)"@en ,
                                                                                      "Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid"@en ,
                                                                                      "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"@en ;
-                                           <http://purl.org/dc/elements/1.1/description> "//TODO"@en ;
+                                           <http://purl.org/dc/elements/1.1/description> "Common module represent concepts and properties that are general enough to be used across all modules."@en ;
                                            <http://purl.org/dc/elements/1.1/identifier> "https://w3id.org/mobility/trias/common"@en ;
                                            <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)"@en ;
-                                           <http://purl.org/dc/elements/1.1/title> "Trias - Travellor Realtime Information and Advisory Standard"@en ;
-                                           rdfs:comment "//TODO"@en ;
-                                           rdfs:label "Trias - Travellor Realtime Information and Advisory Standard"@en ;
-                                           rdfs:seeAlso "//TODO"@en ;
-                                           owl:versionInfo "//TODO"@en .
+                                           <http://purl.org/dc/elements/1.1/title> "Ontology for the representation of commons elements in the Trias ontology"@en ;
+                                           <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0"@en ;
+                                           rdfs:comment "Common module represent concepts and properties that are general enough to be used across all modules."@en ;
+                                           rdfs:label "Ontology for the representation of commons elements in the Trias ontology"@en ;
+                                           owl:versionInfo "Common module represent concepts and properties that are general enough to be used across all modules."@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
-
-###  http://creativecommons.org/ns#license
-<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
-
 
 ###  http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
@@ -52,6 +46,10 @@
 
 ###  http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
