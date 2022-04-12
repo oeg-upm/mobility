@@ -1,0 +1,710 @@
+<h2 id="crossreference" class="list">Cross-reference for Ontology for the representation of core elements in the GTFS Realtime classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Ontology for the representation of core elements in the GTFS Realtime.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Alert" title="https://w3id.org/mobility/gtfs-rt/core#Alert">Alert</a>
+      </li>
+      <li>
+         <a href="#EntitySelector"
+            title="https://w3id.org/mobility/gtfs-rt/core#EntitySelector">EntitySelector</a>
+      </li>
+      <li>
+         <a href="#FeedEntity"
+            title="https://w3id.org/mobility/gtfs-rt/core#FeedEntity">FeedEntity</a>
+      </li>
+      <li>
+         <a href="#FeedHeader"
+            title="https://w3id.org/mobility/gtfs-rt/core#FeedHeader">FeedHeader</a>
+      </li>
+      <li>
+         <a href="#FeedMessage"
+            title="https://w3id.org/mobility/gtfs-rt/core#FeedMessage">FeedMessage</a>
+      </li>
+      <li>
+         <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+      </li>
+      <li>
+         <a href="#Position" title="https://w3id.org/mobility/gtfs-rt/core#Position">Position</a>
+      </li>
+      <li>
+         <a href="#StopTimeEvent"
+            title="https://w3id.org/mobility/gtfs-rt/core#StopTimeEvent">StopTimeEvent</a>
+      </li>
+      <li>
+         <a href="#StopTimeUpdate"
+            title="https://w3id.org/mobility/gtfs-rt/core#StopTimeUpdate">StopTimeUpdate</a>
+      </li>
+      <li>
+         <a href="#TimeRange" title="https://w3id.org/mobility/gtfs-rt/core#TimeRange">TimeRange</a>
+      </li>
+      <li>
+         <a href="#TranslatedString"
+            title="https://w3id.org/mobility/gtfs-rt/core#TranslatedString">TranslatedString</a>
+      </li>
+      <li>
+         <a href="#Translation"
+            title="https://w3id.org/mobility/gtfs-rt/core#Translation">Translation</a>
+      </li>
+      <li>
+         <a href="#TripDescriptor"
+            title="https://w3id.org/mobility/gtfs-rt/core#TripDescriptor">TripDescriptor</a>
+      </li>
+      <li>
+         <a href="#TripUpdate"
+            title="https://w3id.org/mobility/gtfs-rt/core#TripUpdate">TripUpdate</a>
+      </li>
+      <li>
+         <a href="#VehicleDescriptor"
+            title="https://w3id.org/mobility/gtfs-rt/core#VehicleDescriptor">VehicleDescriptor</a>
+      </li>
+      <li>
+         <a href="#VehiclePosition"
+            title="https://w3id.org/mobility/gtfs-rt/core#VehiclePosition">VehiclePosition</a>
+      </li>
+   </ul>
+   <div class="entity" id="Alert">
+      <h3>Alert<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#Alert</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasAlert" title="https://w3id.org/mobility/gtfs-rt/core#hasAlert">hasAlert</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="EntitySelector">
+      <h3>EntitySelector<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#EntitySelector</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FeedEntity">
+      <h3>FeedEntity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#FeedEntity</p>
+      <div class="comment">
+         <span class="markdown">A definition (or update) of an entity in the transit feed.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasAlert" title="https://w3id.org/mobility/gtfs-rt/core#hasAlert">hasAlert</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasTripUpdate"
+               title="https://w3id.org/mobility/gtfs-rt/core#hasTripUpdate">hasTripUpdate</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasVehiclePosition"
+               title="https://w3id.org/mobility/gtfs-rt/core#hasVehiclePosition">hasVehiclePosition</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasEntity" title="https://w3id.org/mobility/gtfs-rt/core#hasEntity">hasEntity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FeedHeader">
+      <h3>FeedHeader<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#FeedHeader</p>
+      <div class="comment">
+         <span class="markdown">Metadata about a feed, included in feed messages.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#Incrementalfetch"
+               title="https://w3id.org/mobility/gtfs-rt/core#Incrementalfetch">Incrementalfetch</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FeedMessage">
+      <h3>FeedMessage<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#FeedMessage</p>
+      <div class="comment">
+         <span class="markdown">The contents of a feed message. A realtime feed is always defined with relation to an existing GTFS feed.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasEntity" title="https://w3id.org/mobility/gtfs-rt/core#hasEntity">hasEntity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Message">
+      <h3>Message<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#Message</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Alert" title="https://w3id.org/mobility/gtfs-rt/core#Alert">Alert</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#EntitySelector"
+               title="https://w3id.org/mobility/gtfs-rt/core#EntitySelector">EntitySelector</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FeedEntity"
+               title="https://w3id.org/mobility/gtfs-rt/core#FeedEntity">FeedEntity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FeedHeader"
+               title="https://w3id.org/mobility/gtfs-rt/core#FeedHeader">FeedHeader</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FeedMessage"
+               title="https://w3id.org/mobility/gtfs-rt/core#FeedMessage">FeedMessage</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Position" title="https://w3id.org/mobility/gtfs-rt/core#Position">Position</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#StopTimeEvent"
+               title="https://w3id.org/mobility/gtfs-rt/core#StopTimeEvent">StopTimeEvent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#StopTimeUpdate"
+               title="https://w3id.org/mobility/gtfs-rt/core#StopTimeUpdate">StopTimeUpdate</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TimeRange" title="https://w3id.org/mobility/gtfs-rt/core#TimeRange">TimeRange</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TranslatedString"
+               title="https://w3id.org/mobility/gtfs-rt/core#TranslatedString">TranslatedString</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Translation"
+               title="https://w3id.org/mobility/gtfs-rt/core#Translation">Translation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TripDescriptor"
+               title="https://w3id.org/mobility/gtfs-rt/core#TripDescriptor">TripDescriptor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TripUpdate"
+               title="https://w3id.org/mobility/gtfs-rt/core#TripUpdate">TripUpdate</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VehicleDescriptor"
+               title="https://w3id.org/mobility/gtfs-rt/core#VehicleDescriptor">VehicleDescriptor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VehiclePosition"
+               title="https://w3id.org/mobility/gtfs-rt/core#VehiclePosition">VehiclePosition</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Position">
+      <h3>Position<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#Position</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="StopTimeEvent">
+      <h3>StopTimeEvent<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#StopTimeEvent</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="StopTimeUpdate">
+      <h3>StopTimeUpdate<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#StopTimeUpdate</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TimeRange">
+      <h3>TimeRange<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#TimeRange</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TranslatedString">
+      <h3>TranslatedString<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#TranslatedString</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Translation">
+      <h3>Translation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#Translation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TripDescriptor">
+      <h3>TripDescriptor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#TripDescriptor</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TripUpdate">
+      <h3>TripUpdate<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#TripUpdate</p>
+      <div class="comment">
+         <span class="markdown">Realtime update on the progress of a vehicle along a trip</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasTripUpdate"
+               title="https://w3id.org/mobility/gtfs-rt/core#hasTripUpdate">hasTripUpdate</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="VehicleDescriptor">
+      <h3>VehicleDescriptor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#VehicleDescriptor</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="VehiclePosition">
+      <h3>VehiclePosition<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#VehiclePosition</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message" title="https://w3id.org/mobility/gtfs-rt/core#Message">Message</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasVehiclePosition"
+               title="https://w3id.org/mobility/gtfs-rt/core#hasVehiclePosition">hasVehiclePosition</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasAlert" title="https://w3id.org/mobility/gtfs-rt/core#hasAlert">hasAlert</a>
+      </li>
+      <li>
+         <a href="#hasEntity" title="https://w3id.org/mobility/gtfs-rt/core#hasEntity">hasEntity</a>
+      </li>
+      <li>
+         <a href="#hasHeader" title="https://w3id.org/mobility/gtfs-rt/core#hasHeader">hasHeader</a>
+      </li>
+      <li>
+         <a href="#hasTripUpdate"
+            title="https://w3id.org/mobility/gtfs-rt/core#hasTripUpdate">hasTripUpdate</a>
+      </li>
+      <li>
+         <a href="#hasVehiclePosition"
+            title="https://w3id.org/mobility/gtfs-rt/core#hasVehiclePosition">hasVehiclePosition</a>
+      </li>
+      <li>
+         <a href="#Incrementalfetch"
+            title="https://w3id.org/mobility/gtfs-rt/core#Incrementalfetch">Incrementalfetch</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasAlert">
+      <h3>hasAlert<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#hasAlert</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/gtfs-rt/core#realTime"
+                  target="_blank"
+                  title="https://w3id.org/mobility/gtfs-rt/core#realTime">real time</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#FeedEntity"
+                  title="https://w3id.org/mobility/gtfs-rt/core#FeedEntity">FeedEntity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Alert" title="https://w3id.org/mobility/gtfs-rt/core#Alert">Alert</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasEntity">
+      <h3>hasEntity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#hasEntity</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/gtfs-rt/core#realTime"
+                  target="_blank"
+                  title="https://w3id.org/mobility/gtfs-rt/core#realTime">real time</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#FeedMessage"
+                  title="https://w3id.org/mobility/gtfs-rt/core#FeedMessage">FeedMessage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#FeedEntity"
+                  title="https://w3id.org/mobility/gtfs-rt/core#FeedEntity">FeedEntity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasHeader">
+      <h3>hasHeader<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#hasHeader</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/gtfs-rt/core#realTime"
+                  target="_blank"
+                  title="https://w3id.org/mobility/gtfs-rt/core#realTime">real time</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTripUpdate">
+      <h3>hasTripUpdate<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#hasTripUpdate</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/gtfs-rt/core#realTime"
+                  target="_blank"
+                  title="https://w3id.org/mobility/gtfs-rt/core#realTime">real time</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#FeedEntity"
+                  title="https://w3id.org/mobility/gtfs-rt/core#FeedEntity">FeedEntity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TripUpdate"
+                  title="https://w3id.org/mobility/gtfs-rt/core#TripUpdate">TripUpdate</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasVehiclePosition">
+      <h3>hasVehiclePosition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#hasVehiclePosition</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/gtfs-rt/core#realTime"
+                  target="_blank"
+                  title="https://w3id.org/mobility/gtfs-rt/core#realTime">real time</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#FeedEntity"
+                  title="https://w3id.org/mobility/gtfs-rt/core#FeedEntity">FeedEntity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#VehiclePosition"
+                  title="https://w3id.org/mobility/gtfs-rt/core#VehiclePosition">VehiclePosition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="Incrementalfetch">
+      <h3>Incrementalfetch<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#Incrementalfetch</p>
+      <div class="comment">
+         <span class="markdown">Realtime information for the feed</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="https://w3id.org/mobility/gtfs-rt/core#realTime"
+                  target="_blank"
+                  title="https://w3id.org/mobility/gtfs-rt/core#realTime">real time</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#FeedHeader"
+                  title="https://w3id.org/mobility/gtfs-rt/core#FeedHeader">FeedHeader</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/dcat#Dataset"
+                  target="_blank"
+                  title="http://www.w3.org/ns/dcat#Dataset">dataset</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#delay" title="https://w3id.org/mobility/gtfs-rt/core#delay">delay</a>
+      </li>
+      <li>
+         <a href="#is_deleted"
+            title="https://w3id.org/mobility/gtfs-rt/core#is_deleted">is_deleted</a>
+      </li>
+      <li>
+         <a href="#time" title="https://w3id.org/mobility/gtfs-rt/core#time">time</a>
+      </li>
+      <li>
+         <a href="#timestamp" title="https://w3id.org/mobility/gtfs-rt/core#timestamp">timestamp</a>
+      </li>
+      <li>
+         <a href="#version" title="https://w3id.org/mobility/gtfs-rt/core#version">version</a>
+      </li>
+   </ul>
+   <div class="entity" id="delay">
+      <h3>delay<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#delay</p>
+      <div class="comment">
+         <span class="markdown">The current schedule deviation for the trip. The delay field (in seconds) can be positive (meaning that the vehicle is late) or negative (meaning that the vehicle is ahead of schedule).</span>
+      </div>
+   </div>
+   <div class="entity" id="is_deleted">
+      <h3>is_deleted<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#is_deleted</p>
+      <div class="comment">
+         <span class="markdown">Whether this entity is to be deleted.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="time">
+      <h3>time<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#time</p>
+      <div class="comment">
+         <span class="markdown">Event as absolute time. In POSIX time (i.e., number of seconds since January 1st 1970 00:00:00 UTC).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="timestamp">
+      <h3>timestamp<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#timestamp</p>
+      <div class="comment">
+         <span class="markdown">This timestamp identifies the moment when the content of this feed has been created (in server time).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="version">
+      <h3>version<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mobility/gtfs-rt/core#version</p>
+      <div class="comment">
+         <span class="markdown">Gtfs realtime version</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

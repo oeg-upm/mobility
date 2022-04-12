@@ -1,0 +1,356 @@
+@prefix : <https://w3id.org/mobility/gtfs-rt/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gtfs: <http://vocab.gtfs.org/terms#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gtfs-rt: <https://w3id.org/mobility/gtfs-rt/core#> .
+@base <https://w3id.org/mobility/gtfs-rt/core#> .
+
+<https://w3id.org/mobility/gtfs-rt/core#> rdf:type owl:Ontology ;
+                                           owl:versionIRI <https://w3id.org/mobility/gtfs-rt/core/0.1.0> ;
+                                           owl:imports gtfs: ;
+                                           <http://purl.org/dc/elements/1.1/creator> "Jhon Toledo (Ontology Engienering Group - Universidad Politécnica de Madrid)"@en ,
+                                                                                     "Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid"@en ,
+                                                                                     "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"@en ;
+                                           <http://purl.org/dc/elements/1.1/description> "The core module represents concepts and properties that are general enough to be used across all modules."@en ;
+                                           <http://purl.org/dc/elements/1.1/identifier> "https://w3id.org/mobility/gtfs-rt/core"@en ;
+                                           <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)"@en ;
+                                           <http://purl.org/dc/elements/1.1/title> "Ontology for the representation of core elements in the GTFS Realtime"@en ;
+                                           <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0"@en ;
+                                           rdfs:comment "The core module represents concepts and properties that are general enough to be used across all modules."@en ;
+                                           rdfs:label "Ontology for the representation of core elements in the GTFS Realtime"@en ;
+                                           owl:versionInfo "The core module represents concepts and properties that are general enough to be used across all modules."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://vocab.gtfs.org/terms#pickupType
+gtfs:pickupType rdf:type owl:AnnotationProperty .
+
+
+###  http://vocab.gtfs.org/terms#route
+gtfs:route rdf:type owl:AnnotationProperty ;
+           rdfs:subPropertyOf gtfs:pickupType .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/mobility/gtfs-rt/core#Incrementalfetch
+gtfs-rt:Incrementalfetch rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf gtfs-rt:realTime ;
+                         rdfs:domain gtfs-rt:FeedHeader ;
+                         rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
+                         rdfs:comment "Realtime information for the feed"@en ;
+                         rdfs:label "Incrementalfetch"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#composedOf
+gtfs-rt:composedOf rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#hasAlert
+gtfs-rt:hasAlert rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf gtfs-rt:realTime ;
+                 rdfs:domain gtfs-rt:FeedEntity ;
+                 rdfs:range gtfs-rt:Alert ;
+                 rdfs:label "hasAlert"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#hasEntity
+gtfs-rt:hasEntity rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf gtfs-rt:realTime ;
+                  rdfs:domain gtfs-rt:FeedMessage ;
+                  rdfs:range gtfs-rt:FeedEntity ;
+                  rdfs:label "hasEntity"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#hasFeedHeader
+gtfs-rt:hasFeedHeader rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#hasHeader
+gtfs-rt:hasHeader rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf gtfs-rt:realTime ;
+                  rdfs:label "hasHeader"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#hasTripUpdate
+gtfs-rt:hasTripUpdate rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf gtfs-rt:realTime ;
+                      rdfs:domain gtfs-rt:FeedEntity ;
+                      rdfs:range gtfs-rt:TripUpdate ;
+                      rdfs:label "hasTripUpdate"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#hasVehiclePosition
+gtfs-rt:hasVehiclePosition rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf gtfs-rt:realTime ;
+                           rdfs:domain gtfs-rt:FeedEntity ;
+                           rdfs:range gtfs-rt:VehiclePosition ;
+                           rdfs:label "hasVehiclePosition"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#delay
+gtfs-rt:delay rdf:type owl:DatatypeProperty ;
+              rdfs:comment "The current schedule deviation for the trip. The delay field (in seconds) can be positive (meaning that the vehicle is late) or negative (meaning that the vehicle is ahead of schedule)."@en ;
+              rdfs:label "delay"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#is_deleted
+gtfs-rt:is_deleted rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:boolean ;
+                   rdfs:comment "Whether this entity is to be deleted."@en ;
+                   rdfs:label "is_deleted"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#opRealTime
+gtfs-rt:opRealTime rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#realTime
+gtfs-rt:realTime rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#time
+gtfs-rt:time rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:integer ;
+             rdfs:comment "Event as absolute time. In POSIX time (i.e., number of seconds since January 1st 1970 00:00:00 UTC)."@en ;
+             rdfs:label "time"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#timestamp
+gtfs-rt:timestamp rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "This timestamp identifies the moment when the content of this feed has been created (in server time)."@en ;
+                  rdfs:label "timestamp"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#version
+gtfs-rt:version rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Gtfs realtime version"@en ;
+                rdfs:label "version"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/mobility/gtfs-rt/core#Alert
+gtfs-rt:Alert rdf:type owl:Class ;
+              rdfs:subClassOf gtfs-rt:Message ;
+              rdfs:label "Alert"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#EntitySelector
+gtfs-rt:EntitySelector rdf:type owl:Class ;
+                       rdfs:subClassOf gtfs-rt:Message ;
+                       rdfs:label "EntitySelector"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#FeedEntity
+gtfs-rt:FeedEntity rdf:type owl:Class ;
+                   rdfs:subClassOf gtfs-rt:Message ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gtfs-rt:hasAlert ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass gtfs-rt:Alert
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gtfs-rt:hasTripUpdate ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass gtfs-rt:TripUpdate
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gtfs-rt:hasVehiclePosition ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass gtfs-rt:VehiclePosition
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://purl.org/dc/terms/identifier> ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onDataRange xsd:string
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gtfs-rt:is_deleted ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onDataRange xsd:boolean
+                                   ] ;
+                   rdfs:comment "A definition (or update) of an entity in the transit feed."@en ;
+                   rdfs:label "FeedEntity"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#FeedHeader
+gtfs-rt:FeedHeader rdf:type owl:Class ;
+                   rdfs:subClassOf gtfs-rt:Message ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gtfs-rt:Incrementalfetch ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <http://www.w3.org/ns/dcat#Dataset>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gtfs-rt:timestamp ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onDataRange xsd:string
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gtfs-rt:version ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onDataRange xsd:string
+                                   ] ;
+                   rdfs:comment "Metadata about a feed, included in feed messages."@en ;
+                   rdfs:label "FeedHeader"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#FeedMessage
+gtfs-rt:FeedMessage rdf:type owl:Class ;
+                    rdfs:subClassOf gtfs-rt:Message ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty gtfs-rt:hasEntity ;
+                                      owl:someValuesFrom gtfs-rt:FeedEntity
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty gtfs-rt:hasHeader ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass gtfs-rt:FeedHeader
+                                    ] ;
+                    rdfs:comment "The contents of a feed message. A realtime feed is always defined with relation to an existing GTFS feed."@en ;
+                    rdfs:label "FeedMessage"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#Message
+gtfs-rt:Message rdf:type owl:Class ;
+                rdfs:label "Message"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#Position
+gtfs-rt:Position rdf:type owl:Class ;
+                 rdfs:subClassOf gtfs-rt:Message ;
+                 rdfs:label "Position"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#StopTimeEvent
+gtfs-rt:StopTimeEvent rdf:type owl:Class ;
+                      rdfs:subClassOf gtfs-rt:Message ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty gtfs-rt:delay ;
+                                        owl:someValuesFrom xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty gtfs-rt:time ;
+                                        owl:someValuesFrom xsd:integer
+                                      ] ;
+                      rdfs:label "StopTimeEvent"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#StopTimeUpdate
+gtfs-rt:StopTimeUpdate rdf:type owl:Class ;
+                       rdfs:subClassOf gtfs-rt:Message ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty gtfs:arrivalTime ;
+                                         owl:someValuesFrom xsd:duration
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty gtfs:departureTime ;
+                                         owl:someValuesFrom xsd:duration
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty gtfs:stopSequence ;
+                                         owl:someValuesFrom xsd:negativeInteger
+                                       ] ;
+                       rdfs:label "StopTimeUpdate"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#TimeRange
+gtfs-rt:TimeRange rdf:type owl:Class ;
+                  rdfs:subClassOf gtfs-rt:Message ;
+                  rdfs:label "TimeRange"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#TranslatedString
+gtfs-rt:TranslatedString rdf:type owl:Class ;
+                         rdfs:subClassOf gtfs-rt:Message ;
+                         rdfs:label "TranslatedString"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#Translation
+gtfs-rt:Translation rdf:type owl:Class ;
+                    rdfs:subClassOf gtfs-rt:Message ;
+                    rdfs:label "Translation"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#TripDescriptor
+gtfs-rt:TripDescriptor rdf:type owl:Class ;
+                       rdfs:subClassOf gtfs-rt:Message ;
+                       rdfs:label "TripDescriptor"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#TripUpdate
+gtfs-rt:TripUpdate rdf:type owl:Class ;
+                   rdfs:subClassOf gtfs-rt:Message ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gtfs-rt:delay ;
+                                     owl:someValuesFrom xsd:string
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty gtfs-rt:timestamp ;
+                                     owl:someValuesFrom xsd:string
+                                   ] ;
+                   rdfs:comment "Realtime update on the progress of a vehicle along a trip"@en ;
+                   rdfs:label "TripUpdate"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#VehicleDescriptor
+gtfs-rt:VehicleDescriptor rdf:type owl:Class ;
+                          rdfs:subClassOf gtfs-rt:Message ;
+                          rdfs:label "VehicleDescriptor"@en .
+
+
+###  https://w3id.org/mobility/gtfs-rt/core#VehiclePosition
+gtfs-rt:VehiclePosition rdf:type owl:Class ;
+                        rdfs:subClassOf gtfs-rt:Message ;
+                        rdfs:label "VehiclePosition"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

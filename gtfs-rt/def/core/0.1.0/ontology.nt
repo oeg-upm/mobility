@@ -1,0 +1,327 @@
+<https://w3id.org/mobility/gtfs-rt/core#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/mobility/gtfs-rt/core#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/mobility/gtfs-rt/core/0.1.0> .
+<https://w3id.org/mobility/gtfs-rt/core#> <http://www.w3.org/2002/07/owl#imports> <http://vocab.gtfs.org/terms#> .
+<https://w3id.org/mobility/gtfs-rt/core#> <http://purl.org/dc/elements/1.1/creator> "Jhon Toledo (Ontology Engienering Group - Universidad Politécnica de Madrid)"@en .
+<https://w3id.org/mobility/gtfs-rt/core#> <http://purl.org/dc/elements/1.1/creator> "Miguel Angel García (Ontology Engienering Group - Universidad Politécnica de Madrid"@en .
+<https://w3id.org/mobility/gtfs-rt/core#> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"@en .
+<https://w3id.org/mobility/gtfs-rt/core#> <http://purl.org/dc/elements/1.1/description> "The core module represents concepts and properties that are general enough to be used across all modules."@en .
+<https://w3id.org/mobility/gtfs-rt/core#> <http://purl.org/dc/elements/1.1/identifier> "https://w3id.org/mobility/gtfs-rt/core"@en .
+<https://w3id.org/mobility/gtfs-rt/core#> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)"@en .
+<https://w3id.org/mobility/gtfs-rt/core#> <http://purl.org/dc/elements/1.1/title> "Ontology for the representation of core elements in the GTFS Realtime"@en .
+<https://w3id.org/mobility/gtfs-rt/core#> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0"@en .
+<https://w3id.org/mobility/gtfs-rt/core#> <http://www.w3.org/2000/01/rdf-schema#comment> "The core module represents concepts and properties that are general enough to be used across all modules."@en .
+<https://w3id.org/mobility/gtfs-rt/core#> <http://www.w3.org/2000/01/rdf-schema#label> "Ontology for the representation of core elements in the GTFS Realtime"@en .
+<https://w3id.org/mobility/gtfs-rt/core#> <http://www.w3.org/2002/07/owl#versionInfo> "The core module represents concepts and properties that are general enough to be used across all modules."@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://vocab.gtfs.org/terms#pickupType
+<http://vocab.gtfs.org/terms#pickupType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://vocab.gtfs.org/terms#route
+<http://vocab.gtfs.org/terms#route> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://vocab.gtfs.org/terms#route
+<http://vocab.gtfs.org/terms#route> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.gtfs.org/terms#pickupType> .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#Incrementalfetch
+<https://w3id.org/mobility/gtfs-rt/core#Incrementalfetch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/gtfs-rt/core#Incrementalfetch> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/mobility/gtfs-rt/core#realTime> .
+<https://w3id.org/mobility/gtfs-rt/core#realTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/gtfs-rt/core#Incrementalfetch> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/gtfs-rt/core#FeedHeader> .
+<https://w3id.org/mobility/gtfs-rt/core#Incrementalfetch> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Dataset> .
+<https://w3id.org/mobility/gtfs-rt/core#Incrementalfetch> <http://www.w3.org/2000/01/rdf-schema#comment> "Realtime information for the feed"@en .
+<https://w3id.org/mobility/gtfs-rt/core#Incrementalfetch> <http://www.w3.org/2000/01/rdf-schema#label> "Incrementalfetch"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#composedOf
+<https://w3id.org/mobility/gtfs-rt/core#composedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#hasAlert
+<https://w3id.org/mobility/gtfs-rt/core#hasAlert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/gtfs-rt/core#hasAlert> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/mobility/gtfs-rt/core#realTime> .
+<https://w3id.org/mobility/gtfs-rt/core#hasAlert> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/gtfs-rt/core#FeedEntity> .
+<https://w3id.org/mobility/gtfs-rt/core#hasAlert> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/gtfs-rt/core#Alert> .
+<https://w3id.org/mobility/gtfs-rt/core#hasAlert> <http://www.w3.org/2000/01/rdf-schema#label> "hasAlert"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#hasEntity
+<https://w3id.org/mobility/gtfs-rt/core#hasEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/gtfs-rt/core#hasEntity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/mobility/gtfs-rt/core#realTime> .
+<https://w3id.org/mobility/gtfs-rt/core#hasEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/gtfs-rt/core#FeedMessage> .
+<https://w3id.org/mobility/gtfs-rt/core#hasEntity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/gtfs-rt/core#FeedEntity> .
+<https://w3id.org/mobility/gtfs-rt/core#hasEntity> <http://www.w3.org/2000/01/rdf-schema#label> "hasEntity"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#hasFeedHeader
+<https://w3id.org/mobility/gtfs-rt/core#hasFeedHeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#hasHeader
+<https://w3id.org/mobility/gtfs-rt/core#hasHeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/gtfs-rt/core#hasHeader> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/mobility/gtfs-rt/core#realTime> .
+<https://w3id.org/mobility/gtfs-rt/core#hasHeader> <http://www.w3.org/2000/01/rdf-schema#label> "hasHeader"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#hasTripUpdate
+<https://w3id.org/mobility/gtfs-rt/core#hasTripUpdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/gtfs-rt/core#hasTripUpdate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/mobility/gtfs-rt/core#realTime> .
+<https://w3id.org/mobility/gtfs-rt/core#hasTripUpdate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/gtfs-rt/core#FeedEntity> .
+<https://w3id.org/mobility/gtfs-rt/core#hasTripUpdate> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/gtfs-rt/core#TripUpdate> .
+<https://w3id.org/mobility/gtfs-rt/core#hasTripUpdate> <http://www.w3.org/2000/01/rdf-schema#label> "hasTripUpdate"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#hasVehiclePosition
+<https://w3id.org/mobility/gtfs-rt/core#hasVehiclePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mobility/gtfs-rt/core#hasVehiclePosition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/mobility/gtfs-rt/core#realTime> .
+<https://w3id.org/mobility/gtfs-rt/core#hasVehiclePosition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mobility/gtfs-rt/core#FeedEntity> .
+<https://w3id.org/mobility/gtfs-rt/core#hasVehiclePosition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mobility/gtfs-rt/core#VehiclePosition> .
+<https://w3id.org/mobility/gtfs-rt/core#hasVehiclePosition> <http://www.w3.org/2000/01/rdf-schema#label> "hasVehiclePosition"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#delay
+<https://w3id.org/mobility/gtfs-rt/core#delay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/gtfs-rt/core#delay> <http://www.w3.org/2000/01/rdf-schema#comment> "The current schedule deviation for the trip. The delay field (in seconds) can be positive (meaning that the vehicle is late) or negative (meaning that the vehicle is ahead of schedule)."@en .
+<https://w3id.org/mobility/gtfs-rt/core#delay> <http://www.w3.org/2000/01/rdf-schema#label> "delay"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#is_deleted
+<https://w3id.org/mobility/gtfs-rt/core#is_deleted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/gtfs-rt/core#is_deleted> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/mobility/gtfs-rt/core#is_deleted> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether this entity is to be deleted."@en .
+<https://w3id.org/mobility/gtfs-rt/core#is_deleted> <http://www.w3.org/2000/01/rdf-schema#label> "is_deleted"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#opRealTime
+<https://w3id.org/mobility/gtfs-rt/core#opRealTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#realTime
+<https://w3id.org/mobility/gtfs-rt/core#realTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#time
+<https://w3id.org/mobility/gtfs-rt/core#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/gtfs-rt/core#time> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/mobility/gtfs-rt/core#time> <http://www.w3.org/2000/01/rdf-schema#comment> "Event as absolute time. In POSIX time (i.e., number of seconds since January 1st 1970 00:00:00 UTC)."@en .
+<https://w3id.org/mobility/gtfs-rt/core#time> <http://www.w3.org/2000/01/rdf-schema#label> "time"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#timestamp
+<https://w3id.org/mobility/gtfs-rt/core#timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/gtfs-rt/core#timestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/gtfs-rt/core#timestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "This timestamp identifies the moment when the content of this feed has been created (in server time)."@en .
+<https://w3id.org/mobility/gtfs-rt/core#timestamp> <http://www.w3.org/2000/01/rdf-schema#label> "timestamp"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#version
+<https://w3id.org/mobility/gtfs-rt/core#version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mobility/gtfs-rt/core#version> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/mobility/gtfs-rt/core#version> <http://www.w3.org/2000/01/rdf-schema#comment> "Gtfs realtime version"@en .
+<https://w3id.org/mobility/gtfs-rt/core#version> <http://www.w3.org/2000/01/rdf-schema#label> "version"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mobility/gtfs-rt/core#Alert
+<https://w3id.org/mobility/gtfs-rt/core#Alert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#Alert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#Alert> <http://www.w3.org/2000/01/rdf-schema#label> "Alert"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#EntitySelector
+<https://w3id.org/mobility/gtfs-rt/core#EntitySelector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#EntitySelector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#EntitySelector> <http://www.w3.org/2000/01/rdf-schema#label> "EntitySelector"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#FeedEntity
+<https://w3id.org/mobility/gtfs-rt/core#FeedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/gtfs-rt/core#Alert> .
+_:genid1 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/gtfs-rt/core#hasAlert> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/gtfs-rt/core#TripUpdate> .
+_:genid2 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/gtfs-rt/core#hasTripUpdate> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/gtfs-rt/core#VehiclePosition> .
+_:genid3 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/gtfs-rt/core#hasVehiclePosition> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid5 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/gtfs-rt/core#is_deleted> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A definition (or update) of an entity in the transit feed."@en .
+<https://w3id.org/mobility/gtfs-rt/core#FeedEntity> <http://www.w3.org/2000/01/rdf-schema#label> "FeedEntity"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#FeedHeader
+<https://w3id.org/mobility/gtfs-rt/core#FeedHeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedHeader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedHeader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/dcat#Dataset> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/gtfs-rt/core#Incrementalfetch> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedHeader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/gtfs-rt/core#timestamp> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedHeader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/gtfs-rt/core#version> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedHeader> <http://www.w3.org/2000/01/rdf-schema#comment> "Metadata about a feed, included in feed messages."@en .
+<https://w3id.org/mobility/gtfs-rt/core#FeedHeader> <http://www.w3.org/2000/01/rdf-schema#label> "FeedHeader"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#FeedMessage
+<https://w3id.org/mobility/gtfs-rt/core#FeedMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedMessage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedMessage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/mobility/gtfs-rt/core#FeedEntity> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/gtfs-rt/core#hasEntity> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedMessage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/mobility/gtfs-rt/core#FeedHeader> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/gtfs-rt/core#hasHeader> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#FeedMessage> <http://www.w3.org/2000/01/rdf-schema#comment> "The contents of a feed message. A realtime feed is always defined with relation to an existing GTFS feed."@en .
+<https://w3id.org/mobility/gtfs-rt/core#FeedMessage> <http://www.w3.org/2000/01/rdf-schema#label> "FeedMessage"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#Message
+<https://w3id.org/mobility/gtfs-rt/core#Message> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#Message> <http://www.w3.org/2000/01/rdf-schema#label> "Message"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#Position
+<https://w3id.org/mobility/gtfs-rt/core#Position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#Position> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#Position> <http://www.w3.org/2000/01/rdf-schema#label> "Position"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#StopTimeEvent
+<https://w3id.org/mobility/gtfs-rt/core#StopTimeEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#StopTimeEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#StopTimeEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/gtfs-rt/core#delay> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#StopTimeEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/gtfs-rt/core#time> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#StopTimeEvent> <http://www.w3.org/2000/01/rdf-schema#label> "StopTimeEvent"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#StopTimeUpdate
+<https://w3id.org/mobility/gtfs-rt/core#StopTimeUpdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#StopTimeUpdate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#StopTimeUpdate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#duration> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.gtfs.org/terms#arrivalTime> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#StopTimeUpdate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#duration> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.gtfs.org/terms#departureTime> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#StopTimeUpdate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#negativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.gtfs.org/terms#stopSequence> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#StopTimeUpdate> <http://www.w3.org/2000/01/rdf-schema#label> "StopTimeUpdate"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#TimeRange
+<https://w3id.org/mobility/gtfs-rt/core#TimeRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#TimeRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#TimeRange> <http://www.w3.org/2000/01/rdf-schema#label> "TimeRange"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#TranslatedString
+<https://w3id.org/mobility/gtfs-rt/core#TranslatedString> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#TranslatedString> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#TranslatedString> <http://www.w3.org/2000/01/rdf-schema#label> "TranslatedString"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#Translation
+<https://w3id.org/mobility/gtfs-rt/core#Translation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#Translation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#Translation> <http://www.w3.org/2000/01/rdf-schema#label> "Translation"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#TripDescriptor
+<https://w3id.org/mobility/gtfs-rt/core#TripDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#TripDescriptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#TripDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "TripDescriptor"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#TripUpdate
+<https://w3id.org/mobility/gtfs-rt/core#TripUpdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#TripUpdate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#TripUpdate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/gtfs-rt/core#delay> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#TripUpdate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/mobility/gtfs-rt/core#timestamp> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/mobility/gtfs-rt/core#TripUpdate> <http://www.w3.org/2000/01/rdf-schema#comment> "Realtime update on the progress of a vehicle along a trip"@en .
+<https://w3id.org/mobility/gtfs-rt/core#TripUpdate> <http://www.w3.org/2000/01/rdf-schema#label> "TripUpdate"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#VehicleDescriptor
+<https://w3id.org/mobility/gtfs-rt/core#VehicleDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#VehicleDescriptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#VehicleDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "VehicleDescriptor"@en .
+# 
+# https://w3id.org/mobility/gtfs-rt/core#VehiclePosition
+<https://w3id.org/mobility/gtfs-rt/core#VehiclePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mobility/gtfs-rt/core#VehiclePosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mobility/gtfs-rt/core#Message> .
+<https://w3id.org/mobility/gtfs-rt/core#VehiclePosition> <http://www.w3.org/2000/01/rdf-schema#label> "VehiclePosition"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
